@@ -3,7 +3,7 @@ The great Ableton + git experiment.
 
 Attempting to discover what we can and can't do with Ableton + git in the context of many collaborators on one .als file.
 
-Article: link to come
+Article: https://medium.com/@mark_henry/ableton-live-git-a-match-made-in-someplace-or-the-great-ableton-git-experiment-5a20dfe2734c
 
 ##Setup:
 
