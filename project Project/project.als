@@ -377,8 +377,8 @@
 											<RightTime Value="16" />
 										</ScrollerTimePreserver>
 										<TimeSelection>
-											<AnchorTime Value="0.25" />
-											<OtherTime Value="15.25" />
+											<AnchorTime Value="5" />
+											<OtherTime Value="5" />
 										</TimeSelection>
 										<Legato Value="false" />
 										<Ram Value="false" />
@@ -472,6 +472,27 @@
 														<MidiNoteEvent Time="15" Duration="0.3125" Velocity="90" OffVelocity="64" IsEnabled="true" />
 													</Notes>
 													<MidiKey Value="40" />
+												</KeyTrack>
+												<KeyTrack>
+													<Notes>
+														<MidiNoteEvent Time="0.5" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="1.5" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="2.5" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="3.25" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="4.25" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="4.75" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="5.75" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="6.5" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="8.5" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="9.5" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="10.5" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="11.25" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="12.25" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="12.75" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="13.75" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="14.5" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+													</Notes>
+													<MidiKey Value="43" />
 												</KeyTrack>
 												<KeyTrack>
 													<Notes>
@@ -49792,7 +49813,7 @@
 			<LoopStart Value="64" />
 			<LoopLength Value="16" />
 			<LoopIsSongStart Value="false" />
-			<CurrentTime Value="79.25" />
+			<CurrentTime Value="75.095085769134315" />
 			<PunchIn Value="false" />
 			<PunchOut Value="false" />
 			<DrawMode Value="false" />
@@ -49817,8 +49838,8 @@
 		</ScaleInformation>
 		<SmpteFormat Value="0" />
 		<TimeSelection>
-			<AnchorTime Value="64.25" />
-			<OtherTime Value="79.25" />
+			<AnchorTime Value="69" />
+			<OtherTime Value="69" />
 		</TimeSelection>
 		<SequencerNavigator>
 			<BeatTimeHelper>
