@@ -26,7 +26,7 @@
 				<SavedPlayingSlot Value="-1" />
 				<SavedPlayingOffset Value="0" />
 				<MidiFoldIn Value="true" />
-				<MidiPrelisten Value="true" />
+				<MidiPrelisten Value="false" />
 				<Freeze Value="false" />
 				<VelocityDetail Value="0" />
 				<NeedArrangerRefreeze Value="true" />
@@ -38,7 +38,7 @@
 							<AutomationLane>
 								<SelectedDevice Value="0" />
 								<SelectedEnvelope Value="0" />
-								<IsContentSelected Value="false" />
+								<IsContentSelected Value="true" />
 								<LaneHeight Value="85" />
 								<FadeViewVisible Value="false" />
 							</AutomationLane>
@@ -377,8 +377,8 @@
 											<RightTime Value="16" />
 										</ScrollerTimePreserver>
 										<TimeSelection>
-											<AnchorTime Value="0" />
-											<OtherTime Value="0" />
+											<AnchorTime Value="5" />
+											<OtherTime Value="5" />
 										</TimeSelection>
 										<Legato Value="false" />
 										<Ram Value="false" />
@@ -398,7 +398,7 @@
 											<GridIntervalPixel Value="20" />
 											<Ntoles Value="2" />
 											<SnapToGrid Value="true" />
-											<Fixed Value="false" />
+											<Fixed Value="true" />
 										</Grid>
 										<FreezeStart Value="0" />
 										<FreezeEnd Value="0" />
@@ -449,7 +449,7 @@
 												</KeyTrack>
 												<KeyTrack>
 													<Notes>
-														<MidiNoteEvent Time="0.98426235223110226" Duration="0.0625" Velocity="89" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="0.984262352231102255" Duration="0.0625" Velocity="89" OffVelocity="64" IsEnabled="true" />
 														<MidiNoteEvent Time="2.9842623522311023" Duration="0.0625" Velocity="89" OffVelocity="64" IsEnabled="true" />
 														<MidiNoteEvent Time="4.9842623522311023" Duration="0.0625" Velocity="89" OffVelocity="64" IsEnabled="true" />
 														<MidiNoteEvent Time="6.9842623522311023" Duration="0.0625" Velocity="89" OffVelocity="64" IsEnabled="true" />
@@ -475,6 +475,27 @@
 												</KeyTrack>
 												<KeyTrack>
 													<Notes>
+														<MidiNoteEvent Time="0.5" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="1.5" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="2.5" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="3.25" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="4.25" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="4.75" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="5.75" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="6.5" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="8.5" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="9.5" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="10.5" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="11.25" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="12.25" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="12.75" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="13.75" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="14.5" Duration="0.5" Velocity="100" OffVelocity="64" IsEnabled="true" />
+													</Notes>
+													<MidiKey Value="43" />
+												</KeyTrack>
+												<KeyTrack>
+													<Notes>
 														<MidiNoteEvent Time="1" Duration="0.5625" Velocity="89" OffVelocity="64" IsEnabled="true" />
 														<MidiNoteEvent Time="3" Duration="0.6875" Velocity="89" OffVelocity="64" IsEnabled="true" />
 														<MidiNoteEvent Time="5" Duration="0.5625" Velocity="89" OffVelocity="64" IsEnabled="true" />
@@ -486,20 +507,13 @@
 													</Notes>
 													<MidiKey Value="44" />
 												</KeyTrack>
-												<KeyTrack>
-													<Notes>
-														<MidiNoteEvent Time="7.5" Duration="0.5" Velocity="74" OffVelocity="64" IsEnabled="true" />
-														<MidiNoteEvent Time="15.5" Duration="0.5" Velocity="74" OffVelocity="64" IsEnabled="true" />
-													</Notes>
-													<MidiKey Value="51" />
-												</KeyTrack>
 											</KeyTracks>
 										</Notes>
 										<BankSelectCoarse Value="-1" />
 										<BankSelectFine Value="-1" />
 										<ProgramChange Value="-1" />
 										<NoteEditorFoldInZoom Value="176" />
-										<NoteEditorFoldInScroll Value="0" />
+										<NoteEditorFoldInScroll Value="-44" />
 										<NoteEditorFoldOutZoom Value="-1" />
 										<NoteEditorFoldOutScroll Value="-1" />
 									</MidiClip>
@@ -1070,13 +1084,22 @@
 													<RelativePathElement Dir="Drums" />
 												</RelativePath>
 												<Name Value="Kit-Core Chromatone.adg" />
-												<Type Value="1" />
+												<Type Value="2" />
 												<Data>
-													43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-													360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-													6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-													6900620072006100720079005C004400720075006D0073005C004B00690074002D0043006F007200
-													650020004300680072006F006D00610074006F006E0065002E006100640067000000
+													00000000021A000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+													656C482B000001AED02D174B69742D436F7265204368726F6D61746F6E652E616467000000000000
+													0000000000000000000000000000000000000000000000000000000000000000000001AED0DCD244
+													542E0000000000000000FFFFFFFF00000920000000000000000000000000000000054472756D7300
+													001000080000D189575C0000001100080000D244461E00000001001801AED02D01AEBD2001AEB810
+													01AEB80D01AEB80C01273F370002007A4D6163696E746F73682048443A4170706C69636174696F6E
+													733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E74656E74733A0041
+													70702D5265736F75726365733A00436F7265204C6962726172793A004472756D733A004B69742D43
+													6F7265204368726F6D61746F6E652E616467000E00300017004B00690074002D0043006F00720065
+													0020004300680072006F006D00610074006F006E0065002E006100640067000F001A000C004D0061
+													00630069006E0074006F00730068002000480044001200674170706C69636174696F6E732F41626C
+													65746F6E204C69766520392053756974652E6170702F436F6E74656E74732F4170702D5265736F75
+													726365732F436F7265204C6962726172792F4472756D732F4B69742D436F7265204368726F6D6174
+													6F6E652E61646700001300012F00FFFF0000
 												</Data>
 												<RefersToFolder Value="false" />
 												<SearchHint>
@@ -1108,13 +1131,22 @@
 														<RelativePathElement Dir="Drums" />
 													</RelativePath>
 													<Name Value="Kit-Core Chromatone.adg" />
-													<Type Value="1" />
+													<Type Value="2" />
 													<Data>
-														43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-														360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-														6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-														6900620072006100720079005C004400720075006D0073005C004B00690074002D0043006F007200
-														650020004300680072006F006D00610074006F006E0065002E006100640067000000
+														00000000021A000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+														656C482B000001AED02D174B69742D436F7265204368726F6D61746F6E652E616467000000000000
+														0000000000000000000000000000000000000000000000000000000000000000000001AED0DCD244
+														542E0000000000000000FFFFFFFF00000920000000000000000000000000000000054472756D7300
+														001000080000D189575C0000001100080000D244461E00000001001801AED02D01AEBD2001AEB810
+														01AEB80D01AEB80C01273F370002007A4D6163696E746F73682048443A4170706C69636174696F6E
+														733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E74656E74733A0041
+														70702D5265736F75726365733A00436F7265204C6962726172793A004472756D733A004B69742D43
+														6F7265204368726F6D61746F6E652E616467000E00300017004B00690074002D0043006F00720065
+														0020004300680072006F006D00610074006F006E0065002E006100640067000F001A000C004D0061
+														00630069006E0074006F00730068002000480044001200674170706C69636174696F6E732F41626C
+														65746F6E204C69766520392053756974652E6170702F436F6E74656E74732F4170702D5265736F75
+														726365732F436F7265204C6962726172792F4472756D732F4B69742D436F7265204368726F6D6174
+														6F6E652E61646700001300012F00FFFF0000
 													</Data>
 													<RefersToFolder Value="false" />
 													<SearchHint>
@@ -1138,13 +1170,22 @@
 															<RelativePathElement Dir="Drums" />
 														</RelativePath>
 														<Name Value="Kit-Core Chromatone.adg" />
-														<Type Value="1" />
+														<Type Value="2" />
 														<Data>
-															43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-															360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-															6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-															6900620072006100720079005C004400720075006D0073005C004B00690074002D0043006F007200
-															650020004300680072006F006D00610074006F006E0065002E006100640067000000
+															00000000021A000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+															656C482B000001AED02D174B69742D436F7265204368726F6D61746F6E652E616467000000000000
+															0000000000000000000000000000000000000000000000000000000000000000000001AED0DCD244
+															542E0000000000000000FFFFFFFF00000920000000000000000000000000000000054472756D7300
+															001000080000D189575C0000001100080000D244461E00000001001801AED02D01AEBD2001AEB810
+															01AEB80D01AEB80C01273F370002007A4D6163696E746F73682048443A4170706C69636174696F6E
+															733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E74656E74733A0041
+															70702D5265736F75726365733A00436F7265204C6962726172793A004472756D733A004B69742D43
+															6F7265204368726F6D61746F6E652E616467000E00300017004B00690074002D0043006F00720065
+															0020004300680072006F006D00610074006F006E0065002E006100640067000F001A000C004D0061
+															00630069006E0074006F00730068002000480044001200674170706C69636174696F6E732F41626C
+															65746F6E204C69766520392053756974652E6170702F436F6E74656E74732F4170702D5265736F75
+															726365732F436F7265204C6962726172792F4472756D732F4B69742D436F7265204368726F6D6174
+															6F6E652E61646700001300012F00FFFF0000
 														</Data>
 														<RefersToFolder Value="false" />
 														<SearchHint>
@@ -1291,19 +1332,30 @@
 																					<RelativePathElement Dir="Kick" />
 																				</RelativePath>
 																				<Name Value="Kick Vinyl DLD 1.wav" />
-																				<Type Value="1" />
+																				<Type Value="2" />
 																				<Data>
-																					43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																					360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																					6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																					6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																					5C004B00690063006B005C004B00690063006B002000560069006E0079006C00200044004C004400
-																					200031002E007700610076000000
+																					000000000230000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																					656C482B000001AED5B5144B69636B2056696E796C20444C4420312E776176000000000000000000
+																					0000000000000000000000000000000000000000000000000000000000000000000001AED6B6D244
+																					4DD60000000000000000FFFFFFFF00000920000000000000000000000000000000044B69636B0010
+																					00080000D189575C0000001100080000D2443FC600000001002001AED5B501AED31E01AED2CC01AE
+																					BD2001AEB81001AEB80D01AEB80C01273F37000200864D6163696E746F73682048443A4170706C69
+																					636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E7465
+																					6E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D706C65
+																					733A004472756D733A004B69636B3A004B69636B2056696E796C20444C4420312E776176000E002A
+																					0014004B00690063006B002000560069006E0079006C00200044004C004400200031002E00770061
+																					0076000F001A000C004D006100630069006E0074006F00730068002000480044001200714170706C
+																					69636174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F436F6E74656E
+																					74732F4170702D5265736F75726365732F436F7265204C6962726172792F53616D706C65732F4472
+																					756D732F4B69636B2F4B69636B2056696E796C20444C4420312E77617600001300012F00FFFF0000
 																				</Data>
 																				<RefersToFolder Value="false" />
 																				<SearchHint>
 																					<PathHint>
-																						<RelativePathElement Dir="trunk" />
+																						<RelativePathElement Dir="Applications" />
+																						<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																						<RelativePathElement Dir="Contents" />
+																						<RelativePathElement Dir="App-Resources" />
 																						<RelativePathElement Dir="Core Library" />
 																						<RelativePathElement Dir="Samples" />
 																						<RelativePathElement Dir="Drums" />
@@ -1317,7 +1369,7 @@
 																				<LivePackName Value="Core Library" />
 																				<LivePackId Value="www.ableton.com/0" />
 																			</FileRef>
-																			<LastModDate Value="1444879334" />
+																			<LastModDate Value="1444843334" />
 																			<SourceContext>
 																				<SourceContext>
 																					<OriginalFileRef>
@@ -1330,19 +1382,30 @@
 																								<RelativePathElement Dir="Kick" />
 																							</RelativePath>
 																							<Name Value="Kick Vinyl DLD 1.wav" />
-																							<Type Value="1" />
+																							<Type Value="2" />
 																							<Data>
-																								43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																								360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																								6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																								6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																								5C004B00690063006B005C004B00690063006B002000560069006E0079006C00200044004C004400
-																								200031002E007700610076000000
+																								000000000230000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																								656C482B000001AED5B5144B69636B2056696E796C20444C4420312E776176000000000000000000
+																								0000000000000000000000000000000000000000000000000000000000000000000001AED6B6D244
+																								4DD60000000000000000FFFFFFFF00000920000000000000000000000000000000044B69636B0010
+																								00080000D189575C0000001100080000D2443FC600000001002001AED5B501AED31E01AED2CC01AE
+																								BD2001AEB81001AEB80D01AEB80C01273F37000200864D6163696E746F73682048443A4170706C69
+																								636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E7465
+																								6E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D706C65
+																								733A004472756D733A004B69636B3A004B69636B2056696E796C20444C4420312E776176000E002A
+																								0014004B00690063006B002000560069006E0079006C00200044004C004400200031002E00770061
+																								0076000F001A000C004D006100630069006E0074006F00730068002000480044001200714170706C
+																								69636174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F436F6E74656E
+																								74732F4170702D5265736F75726365732F436F7265204C6962726172792F53616D706C65732F4472
+																								756D732F4B69636B2F4B69636B2056696E796C20444C4420312E77617600001300012F00FFFF0000
 																							</Data>
 																							<RefersToFolder Value="false" />
 																							<SearchHint>
 																								<PathHint>
-																									<RelativePathElement Dir="trunk" />
+																									<RelativePathElement Dir="Applications" />
+																									<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																									<RelativePathElement Dir="Contents" />
+																									<RelativePathElement Dir="App-Resources" />
 																									<RelativePathElement Dir="Core Library" />
 																									<RelativePathElement Dir="Samples" />
 																									<RelativePathElement Dir="Drums" />
@@ -1368,7 +1431,7 @@
 																		<SampleWarpProperties>
 																			<WarpMarkers>
 																				<WarpMarker SecTime="0" BeatTime="0" />
-																				<WarpMarker SecTime="0.015625000265588967" BeatTime="0.03125" />
+																				<WarpMarker SecTime="0.0156250002655889675" BeatTime="0.03125" />
 																			</WarpMarkers>
 																			<WarpMode Value="0" />
 																			<GranularityTones Value="30" />
@@ -2607,7 +2670,7 @@
 												</BranchSourceContext>
 											</Value>
 										</SourceContext>
-										<ColorIndex Value="159" />
+										<ColorIndex Value="140" />
 										<AutoColored Value="true" />
 										<SoloActivatedInSessionMixer Value="false" />
 										<DevicesListWrapper LomId="0" />
@@ -2871,19 +2934,30 @@
 																					<RelativePathElement Dir="Rim" />
 																				</RelativePath>
 																				<Name Value="Rim IzoViny.wav" />
-																				<Type Value="1" />
+																				<Type Value="2" />
 																				<Data>
-																					43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																					360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																					6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																					6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																					5C00520069006D005C00520069006D00200049007A006F00560069006E0079002E00770061007600
-																					0000
+																					00000000021A000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																					656C482B000001AED7780F52696D20497A6F56696E792E7761760000000000000000000000000000
+																					0000000000000000000000000000000000000000000000000000000000000000000001AED79DD244
+																					4DD20000000000000000FFFFFFFF000009200000000000000000000000000000000352696D000010
+																					00080000D189575C0000001100080000D2443FC200000001002001AED77801AED31E01AED2CC01AE
+																					BD2001AEB81001AEB80D01AEB80C01273F37000200804D6163696E746F73682048443A4170706C69
+																					636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E7465
+																					6E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D706C65
+																					733A004472756D733A0052696D3A0052696D20497A6F56696E792E776176000E0020000F00520069
+																					006D00200049007A006F00560069006E0079002E007700610076000F001A000C004D006100630069
+																					006E0074006F007300680020004800440012006B4170706C69636174696F6E732F41626C65746F6E
+																					204C69766520392053756974652E6170702F436F6E74656E74732F4170702D5265736F7572636573
+																					2F436F7265204C6962726172792F53616D706C65732F4472756D732F52696D2F52696D20497A6F56
+																					696E792E77617600001300012F00FFFF0000
 																				</Data>
 																				<RefersToFolder Value="false" />
 																				<SearchHint>
 																					<PathHint>
-																						<RelativePathElement Dir="trunk" />
+																						<RelativePathElement Dir="Applications" />
+																						<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																						<RelativePathElement Dir="Contents" />
+																						<RelativePathElement Dir="App-Resources" />
 																						<RelativePathElement Dir="Core Library" />
 																						<RelativePathElement Dir="Samples" />
 																						<RelativePathElement Dir="Drums" />
@@ -2897,7 +2971,7 @@
 																				<LivePackName Value="Core Library" />
 																				<LivePackId Value="www.ableton.com/0" />
 																			</FileRef>
-																			<LastModDate Value="1444879330" />
+																			<LastModDate Value="1444843330" />
 																			<SourceContext>
 																				<SourceContext>
 																					<OriginalFileRef>
@@ -2910,19 +2984,30 @@
 																								<RelativePathElement Dir="Rim" />
 																							</RelativePath>
 																							<Name Value="Rim IzoViny.wav" />
-																							<Type Value="1" />
+																							<Type Value="2" />
 																							<Data>
-																								43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																								360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																								6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																								6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																								5C00520069006D005C00520069006D00200049007A006F00560069006E0079002E00770061007600
-																								0000
+																								00000000021A000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																								656C482B000001AED7780F52696D20497A6F56696E792E7761760000000000000000000000000000
+																								0000000000000000000000000000000000000000000000000000000000000000000001AED79DD244
+																								4DD20000000000000000FFFFFFFF000009200000000000000000000000000000000352696D000010
+																								00080000D189575C0000001100080000D2443FC200000001002001AED77801AED31E01AED2CC01AE
+																								BD2001AEB81001AEB80D01AEB80C01273F37000200804D6163696E746F73682048443A4170706C69
+																								636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E7465
+																								6E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D706C65
+																								733A004472756D733A0052696D3A0052696D20497A6F56696E792E776176000E0020000F00520069
+																								006D00200049007A006F00560069006E0079002E007700610076000F001A000C004D006100630069
+																								006E0074006F007300680020004800440012006B4170706C69636174696F6E732F41626C65746F6E
+																								204C69766520392053756974652E6170702F436F6E74656E74732F4170702D5265736F7572636573
+																								2F436F7265204C6962726172792F53616D706C65732F4472756D732F52696D2F52696D20497A6F56
+																								696E792E77617600001300012F00FFFF0000
 																							</Data>
 																							<RefersToFolder Value="false" />
 																							<SearchHint>
 																								<PathHint>
-																									<RelativePathElement Dir="trunk" />
+																									<RelativePathElement Dir="Applications" />
+																									<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																									<RelativePathElement Dir="Contents" />
+																									<RelativePathElement Dir="App-Resources" />
 																									<RelativePathElement Dir="Core Library" />
 																									<RelativePathElement Dir="Samples" />
 																									<RelativePathElement Dir="Drums" />
@@ -2948,7 +3033,7 @@
 																		<SampleWarpProperties>
 																			<WarpMarkers>
 																				<WarpMarker SecTime="0" BeatTime="0" />
-																				<WarpMarker SecTime="0.015624999655815578" BeatTime="0.03125" />
+																				<WarpMarker SecTime="0.0156249996558155777" BeatTime="0.03125" />
 																			</WarpMarkers>
 																			<WarpMode Value="0" />
 																			<GranularityTones Value="30" />
@@ -4187,7 +4272,7 @@
 												</BranchSourceContext>
 											</Value>
 										</SourceContext>
-										<ColorIndex Value="159" />
+										<ColorIndex Value="140" />
 										<AutoColored Value="true" />
 										<SoloActivatedInSessionMixer Value="false" />
 										<DevicesListWrapper LomId="0" />
@@ -4451,19 +4536,31 @@
 																					<RelativePathElement Dir="Snare" />
 																				</RelativePath>
 																				<Name Value="Snare Vinyl DLB 2.wav" />
-																				<Type Value="1" />
+																				<Type Value="2" />
 																				<Data>
-																					43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																					360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																					6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																					6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																					5C0053006E006100720065005C0053006E006100720065002000560069006E0079006C0020004400
-																					4C004200200032002E007700610076000000
+																					000000000238000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																					656C482B000001AED7EE15536E6172652056696E796C20444C4220322E7761760000000000000000
+																					0000000000000000000000000000000000000000000000000000000000000000000001AED8DBD244
+																					4DD40000000000000000FFFFFFFF0000092000000000000000000000000000000005536E61726500
+																					001000080000D189575C0000001100080000D2443FC400000001002001AED7EE01AED31E01AED2CC
+																					01AEBD2001AEB81001AEB80D01AEB80C01273F37000200884D6163696E746F73682048443A417070
+																					6C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E
+																					74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D70
+																					6C65733A004472756D733A00536E6172653A00536E6172652056696E796C20444C4220322E776176
+																					000E002C00150053006E006100720065002000560069006E0079006C00200044004C004200200032
+																					002E007700610076000F001A000C004D006100630069006E0074006F007300680020004800440012
+																					00734170706C69636174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F
+																					436F6E74656E74732F4170702D5265736F75726365732F436F7265204C6962726172792F53616D70
+																					6C65732F4472756D732F536E6172652F536E6172652056696E796C20444C4220322E776176000013
+																					00012F00FFFF0000
 																				</Data>
 																				<RefersToFolder Value="false" />
 																				<SearchHint>
 																					<PathHint>
-																						<RelativePathElement Dir="trunk" />
+																						<RelativePathElement Dir="Applications" />
+																						<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																						<RelativePathElement Dir="Contents" />
+																						<RelativePathElement Dir="App-Resources" />
 																						<RelativePathElement Dir="Core Library" />
 																						<RelativePathElement Dir="Samples" />
 																						<RelativePathElement Dir="Drums" />
@@ -4477,7 +4574,7 @@
 																				<LivePackName Value="Core Library" />
 																				<LivePackId Value="www.ableton.com/0" />
 																			</FileRef>
-																			<LastModDate Value="1444879332" />
+																			<LastModDate Value="1444843332" />
 																			<SourceContext>
 																				<SourceContext>
 																					<OriginalFileRef>
@@ -4490,19 +4587,31 @@
 																								<RelativePathElement Dir="Snare" />
 																							</RelativePath>
 																							<Name Value="Snare Vinyl DLB 2.wav" />
-																							<Type Value="1" />
+																							<Type Value="2" />
 																							<Data>
-																								43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																								360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																								6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																								6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																								5C0053006E006100720065005C0053006E006100720065002000560069006E0079006C0020004400
-																								4C004200200032002E007700610076000000
+																								000000000238000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																								656C482B000001AED7EE15536E6172652056696E796C20444C4220322E7761760000000000000000
+																								0000000000000000000000000000000000000000000000000000000000000000000001AED8DBD244
+																								4DD40000000000000000FFFFFFFF0000092000000000000000000000000000000005536E61726500
+																								001000080000D189575C0000001100080000D2443FC400000001002001AED7EE01AED31E01AED2CC
+																								01AEBD2001AEB81001AEB80D01AEB80C01273F37000200884D6163696E746F73682048443A417070
+																								6C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E
+																								74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D70
+																								6C65733A004472756D733A00536E6172653A00536E6172652056696E796C20444C4220322E776176
+																								000E002C00150053006E006100720065002000560069006E0079006C00200044004C004200200032
+																								002E007700610076000F001A000C004D006100630069006E0074006F007300680020004800440012
+																								00734170706C69636174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F
+																								436F6E74656E74732F4170702D5265736F75726365732F436F7265204C6962726172792F53616D70
+																								6C65732F4472756D732F536E6172652F536E6172652056696E796C20444C4220322E776176000013
+																								00012F00FFFF0000
 																							</Data>
 																							<RefersToFolder Value="false" />
 																							<SearchHint>
 																								<PathHint>
-																									<RelativePathElement Dir="trunk" />
+																									<RelativePathElement Dir="Applications" />
+																									<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																									<RelativePathElement Dir="Contents" />
+																									<RelativePathElement Dir="App-Resources" />
 																									<RelativePathElement Dir="Core Library" />
 																									<RelativePathElement Dir="Samples" />
 																									<RelativePathElement Dir="Drums" />
@@ -4528,7 +4637,7 @@
 																		<SampleWarpProperties>
 																			<WarpMarkers>
 																				<WarpMarker SecTime="0" BeatTime="0" />
-																				<WarpMarker SecTime="0.015625000367984462" BeatTime="0.03125" />
+																				<WarpMarker SecTime="0.0156250003679844623" BeatTime="0.03125" />
 																			</WarpMarkers>
 																			<WarpMode Value="0" />
 																			<GranularityTones Value="30" />
@@ -5767,7 +5876,7 @@
 												</BranchSourceContext>
 											</Value>
 										</SourceContext>
-										<ColorIndex Value="159" />
+										<ColorIndex Value="140" />
 										<AutoColored Value="true" />
 										<SoloActivatedInSessionMixer Value="false" />
 										<DevicesListWrapper LomId="0" />
@@ -6031,19 +6140,30 @@
 																					<RelativePathElement Dir="Clap" />
 																				</RelativePath>
 																				<Name Value="Clap BitNighties.wav" />
-																				<Type Value="1" />
+																				<Type Value="2" />
 																				<Data>
-																					43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																					360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																					6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																					6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																					5C0043006C00610070005C0043006C006100700020004200690074004E0069006700680074006900
-																					650073002E007700610076000000
+																					000000000230000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																					656C482B000001AED36514436C6170204269744E696768746965732E776176000000000000000000
+																					0000000000000000000000000000000000000000000000000000000000000000000001AED36AD244
+																					4DD00000000000000000FFFFFFFF0000092000000000000000000000000000000004436C61700010
+																					00080000D189575C0000001100080000D2443FC000000001002001AED36501AED31E01AED2CC01AE
+																					BD2001AEB81001AEB80D01AEB80C01273F37000200864D6163696E746F73682048443A4170706C69
+																					636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E7465
+																					6E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D706C65
+																					733A004472756D733A00436C61703A00436C6170204269744E696768746965732E776176000E002A
+																					00140043006C006100700020004200690074004E0069006700680074006900650073002E00770061
+																					0076000F001A000C004D006100630069006E0074006F00730068002000480044001200714170706C
+																					69636174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F436F6E74656E
+																					74732F4170702D5265736F75726365732F436F7265204C6962726172792F53616D706C65732F4472
+																					756D732F436C61702F436C6170204269744E696768746965732E77617600001300012F00FFFF0000
 																				</Data>
 																				<RefersToFolder Value="false" />
 																				<SearchHint>
 																					<PathHint>
-																						<RelativePathElement Dir="trunk" />
+																						<RelativePathElement Dir="Applications" />
+																						<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																						<RelativePathElement Dir="Contents" />
+																						<RelativePathElement Dir="App-Resources" />
 																						<RelativePathElement Dir="Core Library" />
 																						<RelativePathElement Dir="Samples" />
 																						<RelativePathElement Dir="Drums" />
@@ -6057,7 +6177,7 @@
 																				<LivePackName Value="Core Library" />
 																				<LivePackId Value="www.ableton.com/0" />
 																			</FileRef>
-																			<LastModDate Value="1444879328" />
+																			<LastModDate Value="1444843328" />
 																			<SourceContext>
 																				<SourceContext>
 																					<OriginalFileRef>
@@ -6070,19 +6190,30 @@
 																								<RelativePathElement Dir="Clap" />
 																							</RelativePath>
 																							<Name Value="Clap BitNighties.wav" />
-																							<Type Value="1" />
+																							<Type Value="2" />
 																							<Data>
-																								43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																								360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																								6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																								6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																								5C0043006C00610070005C0043006C006100700020004200690074004E0069006700680074006900
-																								650073002E007700610076000000
+																								000000000230000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																								656C482B000001AED36514436C6170204269744E696768746965732E776176000000000000000000
+																								0000000000000000000000000000000000000000000000000000000000000000000001AED36AD244
+																								4DD00000000000000000FFFFFFFF0000092000000000000000000000000000000004436C61700010
+																								00080000D189575C0000001100080000D2443FC000000001002001AED36501AED31E01AED2CC01AE
+																								BD2001AEB81001AEB80D01AEB80C01273F37000200864D6163696E746F73682048443A4170706C69
+																								636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E7465
+																								6E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D706C65
+																								733A004472756D733A00436C61703A00436C6170204269744E696768746965732E776176000E002A
+																								00140043006C006100700020004200690074004E0069006700680074006900650073002E00770061
+																								0076000F001A000C004D006100630069006E0074006F00730068002000480044001200714170706C
+																								69636174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F436F6E74656E
+																								74732F4170702D5265736F75726365732F436F7265204C6962726172792F53616D706C65732F4472
+																								756D732F436C61702F436C6170204269744E696768746965732E77617600001300012F00FFFF0000
 																							</Data>
 																							<RefersToFolder Value="false" />
 																							<SearchHint>
 																								<PathHint>
-																									<RelativePathElement Dir="trunk" />
+																									<RelativePathElement Dir="Applications" />
+																									<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																									<RelativePathElement Dir="Contents" />
+																									<RelativePathElement Dir="App-Resources" />
 																									<RelativePathElement Dir="Core Library" />
 																									<RelativePathElement Dir="Samples" />
 																									<RelativePathElement Dir="Drums" />
@@ -6108,7 +6239,7 @@
 																		<SampleWarpProperties>
 																			<WarpMarkers>
 																				<WarpMarker SecTime="0" BeatTime="0" />
-																				<WarpMarker SecTime="0.015624999552675413" BeatTime="0.03125" />
+																				<WarpMarker SecTime="0.0156249995526754129" BeatTime="0.03125" />
 																			</WarpMarkers>
 																			<WarpMode Value="0" />
 																			<GranularityTones Value="30" />
@@ -7347,7 +7478,7 @@
 												</BranchSourceContext>
 											</Value>
 										</SourceContext>
-										<ColorIndex Value="159" />
+										<ColorIndex Value="140" />
 										<AutoColored Value="true" />
 										<SoloActivatedInSessionMixer Value="false" />
 										<DevicesListWrapper LomId="0" />
@@ -7611,19 +7742,30 @@
 																					<RelativePathElement Dir="Kick" />
 																				</RelativePath>
 																				<Name Value="Kick BlueRoom.wav" />
-																				<Type Value="1" />
+																				<Type Value="2" />
 																				<Data>
-																					43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																					360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																					6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																					6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																					5C004B00690063006B005C004B00690063006B00200042006C007500650052006F006F006D002E00
-																					7700610076000000
+																					000000000224000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																					656C482B000001AED5B5114B69636B20426C7565526F6F6D2E776176000000000000000000000000
+																					0000000000000000000000000000000000000000000000000000000000000000000001AED5F0D244
+																					4DB60000000000000000FFFFFFFF00000920000000000000000000000000000000044B69636B0010
+																					00080000D189575C0000001100080000D2443FA600000001002001AED5B501AED31E01AED2CC01AE
+																					BD2001AEB81001AEB80D01AEB80C01273F37000200834D6163696E746F73682048443A4170706C69
+																					636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E7465
+																					6E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D706C65
+																					733A004472756D733A004B69636B3A004B69636B20426C7565526F6F6D2E77617600000E00240011
+																					004B00690063006B00200042006C007500650052006F006F006D002E007700610076000F001A000C
+																					004D006100630069006E0074006F007300680020004800440012006E4170706C69636174696F6E73
+																					2F41626C65746F6E204C69766520392053756974652E6170702F436F6E74656E74732F4170702D52
+																					65736F75726365732F436F7265204C6962726172792F53616D706C65732F4472756D732F4B69636B
+																					2F4B69636B20426C7565526F6F6D2E776176001300012F00FFFF0000
 																				</Data>
 																				<RefersToFolder Value="false" />
 																				<SearchHint>
 																					<PathHint>
-																						<RelativePathElement Dir="trunk" />
+																						<RelativePathElement Dir="Applications" />
+																						<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																						<RelativePathElement Dir="Contents" />
+																						<RelativePathElement Dir="App-Resources" />
 																						<RelativePathElement Dir="Core Library" />
 																						<RelativePathElement Dir="Samples" />
 																						<RelativePathElement Dir="Drums" />
@@ -7637,7 +7779,7 @@
 																				<LivePackName Value="Core Library" />
 																				<LivePackId Value="www.ableton.com/0" />
 																			</FileRef>
-																			<LastModDate Value="1444879302" />
+																			<LastModDate Value="1444843302" />
 																			<SourceContext>
 																				<SourceContext>
 																					<OriginalFileRef>
@@ -7650,19 +7792,30 @@
 																								<RelativePathElement Dir="Kick" />
 																							</RelativePath>
 																							<Name Value="Kick BlueRoom.wav" />
-																							<Type Value="1" />
+																							<Type Value="2" />
 																							<Data>
-																								43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																								360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																								6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																								6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																								5C004B00690063006B005C004B00690063006B00200042006C007500650052006F006F006D002E00
-																								7700610076000000
+																								000000000224000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																								656C482B000001AED5B5114B69636B20426C7565526F6F6D2E776176000000000000000000000000
+																								0000000000000000000000000000000000000000000000000000000000000000000001AED5F0D244
+																								4DB60000000000000000FFFFFFFF00000920000000000000000000000000000000044B69636B0010
+																								00080000D189575C0000001100080000D2443FA600000001002001AED5B501AED31E01AED2CC01AE
+																								BD2001AEB81001AEB80D01AEB80C01273F37000200834D6163696E746F73682048443A4170706C69
+																								636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E7465
+																								6E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D706C65
+																								733A004472756D733A004B69636B3A004B69636B20426C7565526F6F6D2E77617600000E00240011
+																								004B00690063006B00200042006C007500650052006F006F006D002E007700610076000F001A000C
+																								004D006100630069006E0074006F007300680020004800440012006E4170706C69636174696F6E73
+																								2F41626C65746F6E204C69766520392053756974652E6170702F436F6E74656E74732F4170702D52
+																								65736F75726365732F436F7265204C6962726172792F53616D706C65732F4472756D732F4B69636B
+																								2F4B69636B20426C7565526F6F6D2E776176001300012F00FFFF0000
 																							</Data>
 																							<RefersToFolder Value="false" />
 																							<SearchHint>
 																								<PathHint>
-																									<RelativePathElement Dir="trunk" />
+																									<RelativePathElement Dir="Applications" />
+																									<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																									<RelativePathElement Dir="Contents" />
+																									<RelativePathElement Dir="App-Resources" />
 																									<RelativePathElement Dir="Core Library" />
 																									<RelativePathElement Dir="Samples" />
 																									<RelativePathElement Dir="Drums" />
@@ -7688,7 +7841,7 @@
 																		<SampleWarpProperties>
 																			<WarpMarkers>
 																				<WarpMarker SecTime="0" BeatTime="0" />
-																				<WarpMarker SecTime="0.015624999658064539" BeatTime="0.03125" />
+																				<WarpMarker SecTime="0.0156249996580645392" BeatTime="0.03125" />
 																			</WarpMarkers>
 																			<WarpMode Value="0" />
 																			<GranularityTones Value="30" />
@@ -7723,7 +7876,7 @@
 																			</BeatGrid>
 																		</SampleWarpProperties>
 																		<SlicePoints>
-																			<SlicePoint TimeInSeconds="0.000022675736961451248" Rank="0" NormalizedEnergy="1" />
+																			<SlicePoint TimeInSeconds="0.0000226757369614512476" Rank="0" NormalizedEnergy="1" />
 																		</SlicePoints>
 																	</MultiSamplePart>
 																</SampleParts>
@@ -8929,7 +9082,7 @@
 												</BranchSourceContext>
 											</Value>
 										</SourceContext>
-										<ColorIndex Value="159" />
+										<ColorIndex Value="140" />
 										<AutoColored Value="true" />
 										<SoloActivatedInSessionMixer Value="false" />
 										<DevicesListWrapper LomId="0" />
@@ -9193,19 +9346,30 @@
 																					<RelativePathElement Dir="Tom" />
 																				</RelativePath>
 																				<Name Value="Tom Reg MPC 3.wav" />
-																				<Type Value="1" />
+																				<Type Value="2" />
 																				<Data>
-																					43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																					360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																					6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																					6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																					5C0054006F006D005C0054006F006D00200052006500670020004D0050004300200033002E007700
-																					610076000000
+																					000000000222000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																					656C482B000001AED94711546F6D20526567204D504320332E776176000000000000000000000000
+																					0000000000000000000000000000000000000000000000000000000000000000000001AEDA2CD244
+																					4DBE0000000000000000FFFFFFFF0000092000000000000000000000000000000003546F6D000010
+																					00080000D189575C0000001100080000D2443FAE00000001002001AED94701AED31E01AED2CC01AE
+																					BD2001AEB81001AEB80D01AEB80C01273F37000200824D6163696E746F73682048443A4170706C69
+																					636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E7465
+																					6E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D706C65
+																					733A004472756D733A00546F6D3A00546F6D20526567204D504320332E776176000E002400110054
+																					006F006D00200052006500670020004D0050004300200033002E007700610076000F001A000C004D
+																					006100630069006E0074006F007300680020004800440012006D4170706C69636174696F6E732F41
+																					626C65746F6E204C69766520392053756974652E6170702F436F6E74656E74732F4170702D526573
+																					6F75726365732F436F7265204C6962726172792F53616D706C65732F4472756D732F546F6D2F546F
+																					6D20526567204D504320332E77617600001300012F00FFFF0000
 																				</Data>
 																				<RefersToFolder Value="false" />
 																				<SearchHint>
 																					<PathHint>
-																						<RelativePathElement Dir="trunk" />
+																						<RelativePathElement Dir="Applications" />
+																						<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																						<RelativePathElement Dir="Contents" />
+																						<RelativePathElement Dir="App-Resources" />
 																						<RelativePathElement Dir="Core Library" />
 																						<RelativePathElement Dir="Samples" />
 																						<RelativePathElement Dir="Drums" />
@@ -9219,7 +9383,7 @@
 																				<LivePackName Value="Core Library" />
 																				<LivePackId Value="www.ableton.com/0" />
 																			</FileRef>
-																			<LastModDate Value="1444879310" />
+																			<LastModDate Value="1444843310" />
 																			<SourceContext>
 																				<SourceContext>
 																					<OriginalFileRef>
@@ -9232,19 +9396,30 @@
 																								<RelativePathElement Dir="Tom" />
 																							</RelativePath>
 																							<Name Value="Tom Reg MPC 3.wav" />
-																							<Type Value="1" />
+																							<Type Value="2" />
 																							<Data>
-																								43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																								360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																								6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																								6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																								5C0054006F006D005C0054006F006D00200052006500670020004D0050004300200033002E007700
-																								610076000000
+																								000000000222000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																								656C482B000001AED94711546F6D20526567204D504320332E776176000000000000000000000000
+																								0000000000000000000000000000000000000000000000000000000000000000000001AEDA2CD244
+																								4DBE0000000000000000FFFFFFFF0000092000000000000000000000000000000003546F6D000010
+																								00080000D189575C0000001100080000D2443FAE00000001002001AED94701AED31E01AED2CC01AE
+																								BD2001AEB81001AEB80D01AEB80C01273F37000200824D6163696E746F73682048443A4170706C69
+																								636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E7465
+																								6E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D706C65
+																								733A004472756D733A00546F6D3A00546F6D20526567204D504320332E776176000E002400110054
+																								006F006D00200052006500670020004D0050004300200033002E007700610076000F001A000C004D
+																								006100630069006E0074006F007300680020004800440012006D4170706C69636174696F6E732F41
+																								626C65746F6E204C69766520392053756974652E6170702F436F6E74656E74732F4170702D526573
+																								6F75726365732F436F7265204C6962726172792F53616D706C65732F4472756D732F546F6D2F546F
+																								6D20526567204D504320332E77617600001300012F00FFFF0000
 																							</Data>
 																							<RefersToFolder Value="false" />
 																							<SearchHint>
 																								<PathHint>
-																									<RelativePathElement Dir="trunk" />
+																									<RelativePathElement Dir="Applications" />
+																									<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																									<RelativePathElement Dir="Contents" />
+																									<RelativePathElement Dir="App-Resources" />
 																									<RelativePathElement Dir="Core Library" />
 																									<RelativePathElement Dir="Samples" />
 																									<RelativePathElement Dir="Drums" />
@@ -9270,7 +9445,7 @@
 																		<SampleWarpProperties>
 																			<WarpMarkers>
 																				<WarpMarker SecTime="0" BeatTime="0" />
-																				<WarpMarker SecTime="0.015625000253039468" BeatTime="0.03125" />
+																				<WarpMarker SecTime="0.0156250002530394679" BeatTime="0.03125" />
 																			</WarpMarkers>
 																			<WarpMode Value="0" />
 																			<GranularityTones Value="30" />
@@ -9305,7 +9480,7 @@
 																			</BeatGrid>
 																		</SampleWarpProperties>
 																		<SlicePoints>
-																			<SlicePoint TimeInSeconds="0.000022675736961451248" Rank="0" NormalizedEnergy="1" />
+																			<SlicePoint TimeInSeconds="0.0000226757369614512476" Rank="0" NormalizedEnergy="1" />
 																		</SlicePoints>
 																	</MultiSamplePart>
 																</SampleParts>
@@ -10511,7 +10686,7 @@
 												</BranchSourceContext>
 											</Value>
 										</SourceContext>
-										<ColorIndex Value="159" />
+										<ColorIndex Value="140" />
 										<AutoColored Value="true" />
 										<SoloActivatedInSessionMixer Value="false" />
 										<DevicesListWrapper LomId="0" />
@@ -10775,19 +10950,31 @@
 																					<RelativePathElement Dir="Hihat" />
 																				</RelativePath>
 																				<Name Value="Hihat Vinyl DLF Closed 1.wav" />
-																				<Type Value="1" />
+																				<Type Value="2" />
 																				<Data>
-																					43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																					360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																					6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																					6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																					5C00480069006800610074005C00480069006800610074002000560069006E0079006C0020004400
-																					4C004600200043006C006F00730065006400200031002E007700610076000000
+																					000000000254000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																					656C482B000001AED4981C48696861742056696E796C20444C4620436C6F73656420312E77617600
+																					0000000000000000000000000000000000000000000000000000000000000000000001AED54DD244
+																					4DC40000000000000000FFFFFFFF0000092000000000000000000000000000000005486968617400
+																					001000080000D189575C0000001100080000D2443FB400000001002001AED49801AED31E01AED2CC
+																					01AEBD2001AEB81001AEB80D01AEB80C01273F370002008F4D6163696E746F73682048443A417070
+																					6C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E
+																					74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D70
+																					6C65733A004472756D733A0048696861743A0048696861742056696E796C20444C4620436C6F7365
+																					6420312E77617600000E003A001C00480069006800610074002000560069006E0079006C00200044
+																					004C004600200043006C006F00730065006400200031002E007700610076000F001A000C004D0061
+																					00630069006E0074006F007300680020004800440012007A4170706C69636174696F6E732F41626C
+																					65746F6E204C69766520392053756974652E6170702F436F6E74656E74732F4170702D5265736F75
+																					726365732F436F7265204C6962726172792F53616D706C65732F4472756D732F48696861742F4869
+																					6861742056696E796C20444C4620436C6F73656420312E776176001300012F00FFFF0000
 																				</Data>
 																				<RefersToFolder Value="false" />
 																				<SearchHint>
 																					<PathHint>
-																						<RelativePathElement Dir="trunk" />
+																						<RelativePathElement Dir="Applications" />
+																						<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																						<RelativePathElement Dir="Contents" />
+																						<RelativePathElement Dir="App-Resources" />
 																						<RelativePathElement Dir="Core Library" />
 																						<RelativePathElement Dir="Samples" />
 																						<RelativePathElement Dir="Drums" />
@@ -10801,7 +10988,7 @@
 																				<LivePackName Value="Core Library" />
 																				<LivePackId Value="www.ableton.com/0" />
 																			</FileRef>
-																			<LastModDate Value="1444879316" />
+																			<LastModDate Value="1444843316" />
 																			<SourceContext>
 																				<SourceContext>
 																					<OriginalFileRef>
@@ -10814,19 +11001,31 @@
 																								<RelativePathElement Dir="Hihat" />
 																							</RelativePath>
 																							<Name Value="Hihat Vinyl DLF Closed 1.wav" />
-																							<Type Value="1" />
+																							<Type Value="2" />
 																							<Data>
-																								43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																								360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																								6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																								6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																								5C00480069006800610074005C00480069006800610074002000560069006E0079006C0020004400
-																								4C004600200043006C006F00730065006400200031002E007700610076000000
+																								000000000254000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																								656C482B000001AED4981C48696861742056696E796C20444C4620436C6F73656420312E77617600
+																								0000000000000000000000000000000000000000000000000000000000000000000001AED54DD244
+																								4DC40000000000000000FFFFFFFF0000092000000000000000000000000000000005486968617400
+																								001000080000D189575C0000001100080000D2443FB400000001002001AED49801AED31E01AED2CC
+																								01AEBD2001AEB81001AEB80D01AEB80C01273F370002008F4D6163696E746F73682048443A417070
+																								6C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E
+																								74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D70
+																								6C65733A004472756D733A0048696861743A0048696861742056696E796C20444C4620436C6F7365
+																								6420312E77617600000E003A001C00480069006800610074002000560069006E0079006C00200044
+																								004C004600200043006C006F00730065006400200031002E007700610076000F001A000C004D0061
+																								00630069006E0074006F007300680020004800440012007A4170706C69636174696F6E732F41626C
+																								65746F6E204C69766520392053756974652E6170702F436F6E74656E74732F4170702D5265736F75
+																								726365732F436F7265204C6962726172792F53616D706C65732F4472756D732F48696861742F4869
+																								6861742056696E796C20444C4620436C6F73656420312E776176001300012F00FFFF0000
 																							</Data>
 																							<RefersToFolder Value="false" />
 																							<SearchHint>
 																								<PathHint>
-																									<RelativePathElement Dir="trunk" />
+																									<RelativePathElement Dir="Applications" />
+																									<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																									<RelativePathElement Dir="Contents" />
+																									<RelativePathElement Dir="App-Resources" />
 																									<RelativePathElement Dir="Core Library" />
 																									<RelativePathElement Dir="Samples" />
 																									<RelativePathElement Dir="Drums" />
@@ -10852,7 +11051,7 @@
 																		<SampleWarpProperties>
 																			<WarpMarkers>
 																				<WarpMarker SecTime="0" BeatTime="0" />
-																				<WarpMarker SecTime="0.015624999826692056" BeatTime="0.03125" />
+																				<WarpMarker SecTime="0.0156249998266920556" BeatTime="0.03125" />
 																			</WarpMarkers>
 																			<WarpMode Value="0" />
 																			<GranularityTones Value="30" />
@@ -12091,7 +12290,7 @@
 												</BranchSourceContext>
 											</Value>
 										</SourceContext>
-										<ColorIndex Value="159" />
+										<ColorIndex Value="140" />
 										<AutoColored Value="true" />
 										<SoloActivatedInSessionMixer Value="false" />
 										<DevicesListWrapper LomId="0" />
@@ -12355,19 +12554,30 @@
 																					<RelativePathElement Dir="Tom" />
 																				</RelativePath>
 																				<Name Value="Tom Reg MPC 1.wav" />
-																				<Type Value="1" />
+																				<Type Value="2" />
 																				<Data>
-																					43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																					360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																					6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																					6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																					5C0054006F006D005C0054006F006D00200052006500670020004D0050004300200031002E007700
-																					610076000000
+																					000000000222000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																					656C482B000001AED94711546F6D20526567204D504320312E776176000000000000000000000000
+																					0000000000000000000000000000000000000000000000000000000000000000000001AEDA28D244
+																					4DAA0000000000000000FFFFFFFF0000092000000000000000000000000000000003546F6D000010
+																					00080000D189575C0000001100080000D2443F9A00000001002001AED94701AED31E01AED2CC01AE
+																					BD2001AEB81001AEB80D01AEB80C01273F37000200824D6163696E746F73682048443A4170706C69
+																					636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E7465
+																					6E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D706C65
+																					733A004472756D733A00546F6D3A00546F6D20526567204D504320312E776176000E002400110054
+																					006F006D00200052006500670020004D0050004300200031002E007700610076000F001A000C004D
+																					006100630069006E0074006F007300680020004800440012006D4170706C69636174696F6E732F41
+																					626C65746F6E204C69766520392053756974652E6170702F436F6E74656E74732F4170702D526573
+																					6F75726365732F436F7265204C6962726172792F53616D706C65732F4472756D732F546F6D2F546F
+																					6D20526567204D504320312E77617600001300012F00FFFF0000
 																				</Data>
 																				<RefersToFolder Value="false" />
 																				<SearchHint>
 																					<PathHint>
-																						<RelativePathElement Dir="trunk" />
+																						<RelativePathElement Dir="Applications" />
+																						<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																						<RelativePathElement Dir="Contents" />
+																						<RelativePathElement Dir="App-Resources" />
 																						<RelativePathElement Dir="Core Library" />
 																						<RelativePathElement Dir="Samples" />
 																						<RelativePathElement Dir="Drums" />
@@ -12381,7 +12591,7 @@
 																				<LivePackName Value="Core Library" />
 																				<LivePackId Value="www.ableton.com/0" />
 																			</FileRef>
-																			<LastModDate Value="1444879290" />
+																			<LastModDate Value="1444843290" />
 																			<SourceContext>
 																				<SourceContext>
 																					<OriginalFileRef>
@@ -12394,19 +12604,30 @@
 																								<RelativePathElement Dir="Tom" />
 																							</RelativePath>
 																							<Name Value="Tom Reg MPC 1.wav" />
-																							<Type Value="1" />
+																							<Type Value="2" />
 																							<Data>
-																								43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																								360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																								6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																								6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																								5C0054006F006D005C0054006F006D00200052006500670020004D0050004300200031002E007700
-																								610076000000
+																								000000000222000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																								656C482B000001AED94711546F6D20526567204D504320312E776176000000000000000000000000
+																								0000000000000000000000000000000000000000000000000000000000000000000001AEDA28D244
+																								4DAA0000000000000000FFFFFFFF0000092000000000000000000000000000000003546F6D000010
+																								00080000D189575C0000001100080000D2443F9A00000001002001AED94701AED31E01AED2CC01AE
+																								BD2001AEB81001AEB80D01AEB80C01273F37000200824D6163696E746F73682048443A4170706C69
+																								636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E7465
+																								6E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D706C65
+																								733A004472756D733A00546F6D3A00546F6D20526567204D504320312E776176000E002400110054
+																								006F006D00200052006500670020004D0050004300200031002E007700610076000F001A000C004D
+																								006100630069006E0074006F007300680020004800440012006D4170706C69636174696F6E732F41
+																								626C65746F6E204C69766520392053756974652E6170702F436F6E74656E74732F4170702D526573
+																								6F75726365732F436F7265204C6962726172792F53616D706C65732F4472756D732F546F6D2F546F
+																								6D20526567204D504320312E77617600001300012F00FFFF0000
 																							</Data>
 																							<RefersToFolder Value="false" />
 																							<SearchHint>
 																								<PathHint>
-																									<RelativePathElement Dir="trunk" />
+																									<RelativePathElement Dir="Applications" />
+																									<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																									<RelativePathElement Dir="Contents" />
+																									<RelativePathElement Dir="App-Resources" />
 																									<RelativePathElement Dir="Core Library" />
 																									<RelativePathElement Dir="Samples" />
 																									<RelativePathElement Dir="Drums" />
@@ -12432,7 +12653,7 @@
 																		<SampleWarpProperties>
 																			<WarpMarkers>
 																				<WarpMarker SecTime="0" BeatTime="0" />
-																				<WarpMarker SecTime="0.015624999509401436" BeatTime="0.03125" />
+																				<WarpMarker SecTime="0.0156249995094014365" BeatTime="0.03125" />
 																			</WarpMarkers>
 																			<WarpMode Value="0" />
 																			<GranularityTones Value="30" />
@@ -12467,7 +12688,7 @@
 																			</BeatGrid>
 																		</SampleWarpProperties>
 																		<SlicePoints>
-																			<SlicePoint TimeInSeconds="0.0011111111111111111" Rank="0" NormalizedEnergy="1" />
+																			<SlicePoint TimeInSeconds="0.00111111111111111111" Rank="0" NormalizedEnergy="1" />
 																		</SlicePoints>
 																	</MultiSamplePart>
 																</SampleParts>
@@ -13673,7 +13894,7 @@
 												</BranchSourceContext>
 											</Value>
 										</SourceContext>
-										<ColorIndex Value="159" />
+										<ColorIndex Value="140" />
 										<AutoColored Value="true" />
 										<SoloActivatedInSessionMixer Value="false" />
 										<DevicesListWrapper LomId="0" />
@@ -13937,19 +14158,30 @@
 																					<RelativePathElement Dir="Snare" />
 																				</RelativePath>
 																				<Name Value="Snare Lot 2.wav" />
-																				<Type Value="1" />
+																				<Type Value="2" />
 																				<Data>
-																					43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																					360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																					6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																					6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																					5C0053006E006100720065005C0053006E0061007200650020004C006F007400200032002E007700
-																					610076000000
+																					000000000220000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																					656C482B000001AED7EE0F536E617265204C6F7420322E7761760000000000000000000000000000
+																					0000000000000000000000000000000000000000000000000000000000000000000001AED871D244
+																					4DA80000000000000000FFFFFFFF0000092000000000000000000000000000000005536E61726500
+																					001000080000D189575C0000001100080000D2443F9800000001002001AED7EE01AED31E01AED2CC
+																					01AEBD2001AEB81001AEB80D01AEB80C01273F37000200824D6163696E746F73682048443A417070
+																					6C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E
+																					74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D70
+																					6C65733A004472756D733A00536E6172653A00536E617265204C6F7420322E776176000E0020000F
+																					0053006E0061007200650020004C006F007400200032002E007700610076000F001A000C004D0061
+																					00630069006E0074006F007300680020004800440012006D4170706C69636174696F6E732F41626C
+																					65746F6E204C69766520392053756974652E6170702F436F6E74656E74732F4170702D5265736F75
+																					726365732F436F7265204C6962726172792F53616D706C65732F4472756D732F536E6172652F536E
+																					617265204C6F7420322E77617600001300012F00FFFF0000
 																				</Data>
 																				<RefersToFolder Value="false" />
 																				<SearchHint>
 																					<PathHint>
-																						<RelativePathElement Dir="trunk" />
+																						<RelativePathElement Dir="Applications" />
+																						<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																						<RelativePathElement Dir="Contents" />
+																						<RelativePathElement Dir="App-Resources" />
 																						<RelativePathElement Dir="Core Library" />
 																						<RelativePathElement Dir="Samples" />
 																						<RelativePathElement Dir="Drums" />
@@ -13963,7 +14195,7 @@
 																				<LivePackName Value="Core Library" />
 																				<LivePackId Value="www.ableton.com/0" />
 																			</FileRef>
-																			<LastModDate Value="1444879288" />
+																			<LastModDate Value="1444843288" />
 																			<SourceContext>
 																				<SourceContext>
 																					<OriginalFileRef>
@@ -13976,19 +14208,30 @@
 																								<RelativePathElement Dir="Snare" />
 																							</RelativePath>
 																							<Name Value="Snare Lot 2.wav" />
-																							<Type Value="1" />
+																							<Type Value="2" />
 																							<Data>
-																								43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																								360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																								6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																								6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																								5C0053006E006100720065005C0053006E0061007200650020004C006F007400200032002E007700
-																								610076000000
+																								000000000220000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																								656C482B000001AED7EE0F536E617265204C6F7420322E7761760000000000000000000000000000
+																								0000000000000000000000000000000000000000000000000000000000000000000001AED871D244
+																								4DA80000000000000000FFFFFFFF0000092000000000000000000000000000000005536E61726500
+																								001000080000D189575C0000001100080000D2443F9800000001002001AED7EE01AED31E01AED2CC
+																								01AEBD2001AEB81001AEB80D01AEB80C01273F37000200824D6163696E746F73682048443A417070
+																								6C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E
+																								74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D70
+																								6C65733A004472756D733A00536E6172653A00536E617265204C6F7420322E776176000E0020000F
+																								0053006E0061007200650020004C006F007400200032002E007700610076000F001A000C004D0061
+																								00630069006E0074006F007300680020004800440012006D4170706C69636174696F6E732F41626C
+																								65746F6E204C69766520392053756974652E6170702F436F6E74656E74732F4170702D5265736F75
+																								726365732F436F7265204C6962726172792F53616D706C65732F4472756D732F536E6172652F536E
+																								617265204C6F7420322E77617600001300012F00FFFF0000
 																							</Data>
 																							<RefersToFolder Value="false" />
 																							<SearchHint>
 																								<PathHint>
-																									<RelativePathElement Dir="trunk" />
+																									<RelativePathElement Dir="Applications" />
+																									<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																									<RelativePathElement Dir="Contents" />
+																									<RelativePathElement Dir="App-Resources" />
 																									<RelativePathElement Dir="Core Library" />
 																									<RelativePathElement Dir="Samples" />
 																									<RelativePathElement Dir="Drums" />
@@ -15253,7 +15496,7 @@
 												</BranchSourceContext>
 											</Value>
 										</SourceContext>
-										<ColorIndex Value="159" />
+										<ColorIndex Value="140" />
 										<AutoColored Value="true" />
 										<SoloActivatedInSessionMixer Value="false" />
 										<DevicesListWrapper LomId="0" />
@@ -15517,19 +15760,31 @@
 																					<RelativePathElement Dir="Conga" />
 																				</RelativePath>
 																				<Name Value="Conga WeedKilla 1.wav" />
-																				<Type Value="1" />
+																				<Type Value="2" />
 																				<Data>
-																					43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																					360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																					6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																					6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																					5C0043006F006E00670061005C0043006F006E0067006100200057006500650064004B0069006C00
-																					6C006100200031002E007700610076000000
+																					000000000238000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																					656C482B000001AED3BC15436F6E676120576565644B696C6C6120312E7761760000000000000000
+																					0000000000000000000000000000000000000000000000000000000000000000000001AED3D3D244
+																					4DA00000000000000000FFFFFFFF0000092000000000000000000000000000000005436F6E676100
+																					001000080000D189575C0000001100080000D2443F9000000001002001AED3BC01AED31E01AED2CC
+																					01AEBD2001AEB81001AEB80D01AEB80C01273F37000200884D6163696E746F73682048443A417070
+																					6C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E
+																					74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D70
+																					6C65733A004472756D733A00436F6E67613A00436F6E676120576565644B696C6C6120312E776176
+																					000E002C00150043006F006E0067006100200057006500650064004B0069006C006C006100200031
+																					002E007700610076000F001A000C004D006100630069006E0074006F007300680020004800440012
+																					00734170706C69636174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F
+																					436F6E74656E74732F4170702D5265736F75726365732F436F7265204C6962726172792F53616D70
+																					6C65732F4472756D732F436F6E67612F436F6E676120576565644B696C6C6120312E776176000013
+																					00012F00FFFF0000
 																				</Data>
 																				<RefersToFolder Value="false" />
 																				<SearchHint>
 																					<PathHint>
-																						<RelativePathElement Dir="trunk" />
+																						<RelativePathElement Dir="Applications" />
+																						<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																						<RelativePathElement Dir="Contents" />
+																						<RelativePathElement Dir="App-Resources" />
 																						<RelativePathElement Dir="Core Library" />
 																						<RelativePathElement Dir="Samples" />
 																						<RelativePathElement Dir="Drums" />
@@ -15543,7 +15798,7 @@
 																				<LivePackName Value="Core Library" />
 																				<LivePackId Value="www.ableton.com/0" />
 																			</FileRef>
-																			<LastModDate Value="1444879280" />
+																			<LastModDate Value="1444843280" />
 																			<SourceContext>
 																				<SourceContext>
 																					<OriginalFileRef>
@@ -15556,19 +15811,31 @@
 																								<RelativePathElement Dir="Conga" />
 																							</RelativePath>
 																							<Name Value="Conga WeedKilla 1.wav" />
-																							<Type Value="1" />
+																							<Type Value="2" />
 																							<Data>
-																								43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																								360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																								6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																								6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																								5C0043006F006E00670061005C0043006F006E0067006100200057006500650064004B0069006C00
-																								6C006100200031002E007700610076000000
+																								000000000238000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																								656C482B000001AED3BC15436F6E676120576565644B696C6C6120312E7761760000000000000000
+																								0000000000000000000000000000000000000000000000000000000000000000000001AED3D3D244
+																								4DA00000000000000000FFFFFFFF0000092000000000000000000000000000000005436F6E676100
+																								001000080000D189575C0000001100080000D2443F9000000001002001AED3BC01AED31E01AED2CC
+																								01AEBD2001AEB81001AEB80D01AEB80C01273F37000200884D6163696E746F73682048443A417070
+																								6C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E
+																								74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D70
+																								6C65733A004472756D733A00436F6E67613A00436F6E676120576565644B696C6C6120312E776176
+																								000E002C00150043006F006E0067006100200057006500650064004B0069006C006C006100200031
+																								002E007700610076000F001A000C004D006100630069006E0074006F007300680020004800440012
+																								00734170706C69636174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F
+																								436F6E74656E74732F4170702D5265736F75726365732F436F7265204C6962726172792F53616D70
+																								6C65732F4472756D732F436F6E67612F436F6E676120576565644B696C6C6120312E776176000013
+																								00012F00FFFF0000
 																							</Data>
 																							<RefersToFolder Value="false" />
 																							<SearchHint>
 																								<PathHint>
-																									<RelativePathElement Dir="trunk" />
+																									<RelativePathElement Dir="Applications" />
+																									<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																									<RelativePathElement Dir="Contents" />
+																									<RelativePathElement Dir="App-Resources" />
 																									<RelativePathElement Dir="Core Library" />
 																									<RelativePathElement Dir="Samples" />
 																									<RelativePathElement Dir="Drums" />
@@ -15594,7 +15861,7 @@
 																		<SampleWarpProperties>
 																			<WarpMarkers>
 																				<WarpMarker SecTime="0" BeatTime="0" />
-																				<WarpMarker SecTime="0.015625000586590974" BeatTime="0.03125" />
+																				<WarpMarker SecTime="0.0156250005865909737" BeatTime="0.03125" />
 																			</WarpMarkers>
 																			<WarpMode Value="0" />
 																			<GranularityTones Value="30" />
@@ -16833,7 +17100,7 @@
 												</BranchSourceContext>
 											</Value>
 										</SourceContext>
-										<ColorIndex Value="159" />
+										<ColorIndex Value="140" />
 										<AutoColored Value="true" />
 										<SoloActivatedInSessionMixer Value="false" />
 										<DevicesListWrapper LomId="0" />
@@ -17097,19 +17364,31 @@
 																					<RelativePathElement Dir="Hihat" />
 																				</RelativePath>
 																				<Name Value="Hihat Vinyl DLG Open.wav" />
-																				<Type Value="1" />
+																				<Type Value="2" />
 																				<Data>
-																					43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																					360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																					6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																					6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																					5C00480069006800610074005C00480069006800610074002000560069006E0079006C0020004400
-																					4C00470020004F00700065006E002E007700610076000000
+																					000000000244000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																					656C482B000001AED4981848696861742056696E796C20444C47204F70656E2E7761760000000000
+																					0000000000000000000000000000000000000000000000000000000000000000000001AED553D244
+																					4D8A0000000000000000FFFFFFFF0000092000000000000000000000000000000005486968617400
+																					001000080000D189575C0000001100080000D2443F7A00000001002001AED49801AED31E01AED2CC
+																					01AEBD2001AEB81001AEB80D01AEB80C01273F370002008B4D6163696E746F73682048443A417070
+																					6C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E
+																					74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D70
+																					6C65733A004472756D733A0048696861743A0048696861742056696E796C20444C47204F70656E2E
+																					77617600000E0032001800480069006800610074002000560069006E0079006C00200044004C0047
+																					0020004F00700065006E002E007700610076000F001A000C004D006100630069006E0074006F0073
+																					0068002000480044001200764170706C69636174696F6E732F41626C65746F6E204C697665203920
+																					53756974652E6170702F436F6E74656E74732F4170702D5265736F75726365732F436F7265204C69
+																					62726172792F53616D706C65732F4472756D732F48696861742F48696861742056696E796C20444C
+																					47204F70656E2E776176001300012F00FFFF0000
 																				</Data>
 																				<RefersToFolder Value="false" />
 																				<SearchHint>
 																					<PathHint>
-																						<RelativePathElement Dir="trunk" />
+																						<RelativePathElement Dir="Applications" />
+																						<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																						<RelativePathElement Dir="Contents" />
+																						<RelativePathElement Dir="App-Resources" />
 																						<RelativePathElement Dir="Core Library" />
 																						<RelativePathElement Dir="Samples" />
 																						<RelativePathElement Dir="Drums" />
@@ -17123,7 +17402,7 @@
 																				<LivePackName Value="Core Library" />
 																				<LivePackId Value="www.ableton.com/0" />
 																			</FileRef>
-																			<LastModDate Value="1444879258" />
+																			<LastModDate Value="1444843258" />
 																			<SourceContext>
 																				<SourceContext>
 																					<OriginalFileRef>
@@ -17136,19 +17415,31 @@
 																								<RelativePathElement Dir="Hihat" />
 																							</RelativePath>
 																							<Name Value="Hihat Vinyl DLG Open.wav" />
-																							<Type Value="1" />
+																							<Type Value="2" />
 																							<Data>
-																								43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																								360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																								6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																								6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																								5C00480069006800610074005C00480069006800610074002000560069006E0079006C0020004400
-																								4C00470020004F00700065006E002E007700610076000000
+																								000000000244000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																								656C482B000001AED4981848696861742056696E796C20444C47204F70656E2E7761760000000000
+																								0000000000000000000000000000000000000000000000000000000000000000000001AED553D244
+																								4D8A0000000000000000FFFFFFFF0000092000000000000000000000000000000005486968617400
+																								001000080000D189575C0000001100080000D2443F7A00000001002001AED49801AED31E01AED2CC
+																								01AEBD2001AEB81001AEB80D01AEB80C01273F370002008B4D6163696E746F73682048443A417070
+																								6C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E
+																								74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D70
+																								6C65733A004472756D733A0048696861743A0048696861742056696E796C20444C47204F70656E2E
+																								77617600000E0032001800480069006800610074002000560069006E0079006C00200044004C0047
+																								0020004F00700065006E002E007700610076000F001A000C004D006100630069006E0074006F0073
+																								0068002000480044001200764170706C69636174696F6E732F41626C65746F6E204C697665203920
+																								53756974652E6170702F436F6E74656E74732F4170702D5265736F75726365732F436F7265204C69
+																								62726172792F53616D706C65732F4472756D732F48696861742F48696861742056696E796C20444C
+																								47204F70656E2E776176001300012F00FFFF0000
 																							</Data>
 																							<RefersToFolder Value="false" />
 																							<SearchHint>
 																								<PathHint>
-																									<RelativePathElement Dir="trunk" />
+																									<RelativePathElement Dir="Applications" />
+																									<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																									<RelativePathElement Dir="Contents" />
+																									<RelativePathElement Dir="App-Resources" />
 																									<RelativePathElement Dir="Core Library" />
 																									<RelativePathElement Dir="Samples" />
 																									<RelativePathElement Dir="Drums" />
@@ -17174,7 +17465,7 @@
 																		<SampleWarpProperties>
 																			<WarpMarkers>
 																				<WarpMarker SecTime="0" BeatTime="0" />
-																				<WarpMarker SecTime="0.015625000111139289" BeatTime="0.03125" />
+																				<WarpMarker SecTime="0.0156250001111392887" BeatTime="0.03125" />
 																			</WarpMarkers>
 																			<WarpMode Value="0" />
 																			<GranularityTones Value="30" />
@@ -17209,7 +17500,7 @@
 																			</BeatGrid>
 																		</SampleWarpProperties>
 																		<SlicePoints>
-																			<SlicePoint TimeInSeconds="0.0019727891156462586" Rank="0" NormalizedEnergy="1" />
+																			<SlicePoint TimeInSeconds="0.00197278911564625859" Rank="0" NormalizedEnergy="1" />
 																		</SlicePoints>
 																	</MultiSamplePart>
 																</SampleParts>
@@ -18415,7 +18706,7 @@
 												</BranchSourceContext>
 											</Value>
 										</SourceContext>
-										<ColorIndex Value="159" />
+										<ColorIndex Value="140" />
 										<AutoColored Value="true" />
 										<SoloActivatedInSessionMixer Value="false" />
 										<DevicesListWrapper LomId="0" />
@@ -18679,19 +18970,31 @@
 																					<RelativePathElement Dir="Conga" />
 																				</RelativePath>
 																				<Name Value="Conga WeedKilla 3.wav" />
-																				<Type Value="1" />
+																				<Type Value="2" />
 																				<Data>
-																					43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																					360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																					6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																					6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																					5C0043006F006E00670061005C0043006F006E0067006100200057006500650064004B0069006C00
-																					6C006100200033002E007700610076000000
+																					000000000238000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																					656C482B000001AED3BC15436F6E676120576565644B696C6C6120332E7761760000000000000000
+																					0000000000000000000000000000000000000000000000000000000000000000000001AED3D7D244
+																					4D8E0000000000000000FFFFFFFF0000092000000000000000000000000000000005436F6E676100
+																					001000080000D189575C0000001100080000D2443F7E00000001002001AED3BC01AED31E01AED2CC
+																					01AEBD2001AEB81001AEB80D01AEB80C01273F37000200884D6163696E746F73682048443A417070
+																					6C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E
+																					74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D70
+																					6C65733A004472756D733A00436F6E67613A00436F6E676120576565644B696C6C6120332E776176
+																					000E002C00150043006F006E0067006100200057006500650064004B0069006C006C006100200033
+																					002E007700610076000F001A000C004D006100630069006E0074006F007300680020004800440012
+																					00734170706C69636174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F
+																					436F6E74656E74732F4170702D5265736F75726365732F436F7265204C6962726172792F53616D70
+																					6C65732F4472756D732F436F6E67612F436F6E676120576565644B696C6C6120332E776176000013
+																					00012F00FFFF0000
 																				</Data>
 																				<RefersToFolder Value="false" />
 																				<SearchHint>
 																					<PathHint>
-																						<RelativePathElement Dir="trunk" />
+																						<RelativePathElement Dir="Applications" />
+																						<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																						<RelativePathElement Dir="Contents" />
+																						<RelativePathElement Dir="App-Resources" />
 																						<RelativePathElement Dir="Core Library" />
 																						<RelativePathElement Dir="Samples" />
 																						<RelativePathElement Dir="Drums" />
@@ -18705,7 +19008,7 @@
 																				<LivePackName Value="Core Library" />
 																				<LivePackId Value="www.ableton.com/0" />
 																			</FileRef>
-																			<LastModDate Value="1444879262" />
+																			<LastModDate Value="1444843262" />
 																			<SourceContext>
 																				<SourceContext>
 																					<OriginalFileRef>
@@ -18718,19 +19021,31 @@
 																								<RelativePathElement Dir="Conga" />
 																							</RelativePath>
 																							<Name Value="Conga WeedKilla 3.wav" />
-																							<Type Value="1" />
+																							<Type Value="2" />
 																							<Data>
-																								43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																								360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																								6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																								6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																								5C0043006F006E00670061005C0043006F006E0067006100200057006500650064004B0069006C00
-																								6C006100200033002E007700610076000000
+																								000000000238000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																								656C482B000001AED3BC15436F6E676120576565644B696C6C6120332E7761760000000000000000
+																								0000000000000000000000000000000000000000000000000000000000000000000001AED3D7D244
+																								4D8E0000000000000000FFFFFFFF0000092000000000000000000000000000000005436F6E676100
+																								001000080000D189575C0000001100080000D2443F7E00000001002001AED3BC01AED31E01AED2CC
+																								01AEBD2001AEB81001AEB80D01AEB80C01273F37000200884D6163696E746F73682048443A417070
+																								6C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E
+																								74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D70
+																								6C65733A004472756D733A00436F6E67613A00436F6E676120576565644B696C6C6120332E776176
+																								000E002C00150043006F006E0067006100200057006500650064004B0069006C006C006100200033
+																								002E007700610076000F001A000C004D006100630069006E0074006F007300680020004800440012
+																								00734170706C69636174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F
+																								436F6E74656E74732F4170702D5265736F75726365732F436F7265204C6962726172792F53616D70
+																								6C65732F4472756D732F436F6E67612F436F6E676120576565644B696C6C6120332E776176000013
+																								00012F00FFFF0000
 																							</Data>
 																							<RefersToFolder Value="false" />
 																							<SearchHint>
 																								<PathHint>
-																									<RelativePathElement Dir="trunk" />
+																									<RelativePathElement Dir="Applications" />
+																									<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																									<RelativePathElement Dir="Contents" />
+																									<RelativePathElement Dir="App-Resources" />
 																									<RelativePathElement Dir="Core Library" />
 																									<RelativePathElement Dir="Samples" />
 																									<RelativePathElement Dir="Drums" />
@@ -18756,7 +19071,7 @@
 																		<SampleWarpProperties>
 																			<WarpMarkers>
 																				<WarpMarker SecTime="0" BeatTime="0" />
-																				<WarpMarker SecTime="0.01562500051139681" BeatTime="0.03125" />
+																				<WarpMarker SecTime="0.0156250005113968103" BeatTime="0.03125" />
 																			</WarpMarkers>
 																			<WarpMode Value="0" />
 																			<GranularityTones Value="30" />
@@ -19995,7 +20310,7 @@
 												</BranchSourceContext>
 											</Value>
 										</SourceContext>
-										<ColorIndex Value="159" />
+										<ColorIndex Value="140" />
 										<AutoColored Value="true" />
 										<SoloActivatedInSessionMixer Value="false" />
 										<DevicesListWrapper LomId="0" />
@@ -20259,19 +20574,31 @@
 																					<RelativePathElement Dir="Misc Percussion" />
 																				</RelativePath>
 																				<Name Value="OrchPerc Vinyl 1.wav" />
-																				<Type Value="1" />
+																				<Type Value="2" />
 																				<Data>
-																					43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																					360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																					6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																					6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																					5C004D006900730063002000500065007200630075007300730069006F006E005C004F0072006300
-																					680050006500720063002000560069006E0079006C00200031002E007700610076000000
+																					000000000252000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																					656C482B000001AED706144F726368506572632056696E796C20312E776176000000000000000000
+																					0000000000000000000000000000000000000000000000000000000000000000000001AED713D244
+																					4DBE0000000000000000FFFFFFFF000009200000000000000000000000000000000F4D6973632050
+																					657263757373696F6E00001000080000D189575C0000001100080000D2443FAE00000001002001AE
+																					D70601AED31E01AED2CC01AEBD2001AEB81001AEB80D01AEB80C01273F37000200914D6163696E74
+																					6F73682048443A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974
+																					652E6170703A00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962
+																					726172793A0053616D706C65733A004472756D733A004D6973632050657263757373696F6E3A004F
+																					726368506572632056696E796C20312E77617600000E002A0014004F007200630068005000650072
+																					0063002000560069006E0079006C00200031002E007700610076000F001A000C004D006100630069
+																					006E0074006F007300680020004800440012007C4170706C69636174696F6E732F41626C65746F6E
+																					204C69766520392053756974652E6170702F436F6E74656E74732F4170702D5265736F7572636573
+																					2F436F7265204C6962726172792F53616D706C65732F4472756D732F4D6973632050657263757373
+																					696F6E2F4F726368506572632056696E796C20312E776176001300012F00FFFF0000
 																				</Data>
 																				<RefersToFolder Value="false" />
 																				<SearchHint>
 																					<PathHint>
-																						<RelativePathElement Dir="trunk" />
+																						<RelativePathElement Dir="Applications" />
+																						<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																						<RelativePathElement Dir="Contents" />
+																						<RelativePathElement Dir="App-Resources" />
 																						<RelativePathElement Dir="Core Library" />
 																						<RelativePathElement Dir="Samples" />
 																						<RelativePathElement Dir="Drums" />
@@ -20285,7 +20612,7 @@
 																				<LivePackName Value="Core Library" />
 																				<LivePackId Value="www.ableton.com/0" />
 																			</FileRef>
-																			<LastModDate Value="1444879310" />
+																			<LastModDate Value="1444843310" />
 																			<SourceContext>
 																				<SourceContext>
 																					<OriginalFileRef>
@@ -20298,19 +20625,31 @@
 																								<RelativePathElement Dir="Misc Percussion" />
 																							</RelativePath>
 																							<Name Value="OrchPerc Vinyl 1.wav" />
-																							<Type Value="1" />
+																							<Type Value="2" />
 																							<Data>
-																								43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																								360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																								6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																								6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																								5C004D006900730063002000500065007200630075007300730069006F006E005C004F0072006300
-																								680050006500720063002000560069006E0079006C00200031002E007700610076000000
+																								000000000252000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																								656C482B000001AED706144F726368506572632056696E796C20312E776176000000000000000000
+																								0000000000000000000000000000000000000000000000000000000000000000000001AED713D244
+																								4DBE0000000000000000FFFFFFFF000009200000000000000000000000000000000F4D6973632050
+																								657263757373696F6E00001000080000D189575C0000001100080000D2443FAE00000001002001AE
+																								D70601AED31E01AED2CC01AEBD2001AEB81001AEB80D01AEB80C01273F37000200914D6163696E74
+																								6F73682048443A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974
+																								652E6170703A00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962
+																								726172793A0053616D706C65733A004472756D733A004D6973632050657263757373696F6E3A004F
+																								726368506572632056696E796C20312E77617600000E002A0014004F007200630068005000650072
+																								0063002000560069006E0079006C00200031002E007700610076000F001A000C004D006100630069
+																								006E0074006F007300680020004800440012007C4170706C69636174696F6E732F41626C65746F6E
+																								204C69766520392053756974652E6170702F436F6E74656E74732F4170702D5265736F7572636573
+																								2F436F7265204C6962726172792F53616D706C65732F4472756D732F4D6973632050657263757373
+																								696F6E2F4F726368506572632056696E796C20312E776176001300012F00FFFF0000
 																							</Data>
 																							<RefersToFolder Value="false" />
 																							<SearchHint>
 																								<PathHint>
-																									<RelativePathElement Dir="trunk" />
+																									<RelativePathElement Dir="Applications" />
+																									<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																									<RelativePathElement Dir="Contents" />
+																									<RelativePathElement Dir="App-Resources" />
 																									<RelativePathElement Dir="Core Library" />
 																									<RelativePathElement Dir="Samples" />
 																									<RelativePathElement Dir="Drums" />
@@ -20336,7 +20675,7 @@
 																		<SampleWarpProperties>
 																			<WarpMarkers>
 																				<WarpMarker SecTime="0" BeatTime="0" />
-																				<WarpMarker SecTime="0.015625000663257237" BeatTime="0.03125" />
+																				<WarpMarker SecTime="0.0156250006632572373" BeatTime="0.03125" />
 																			</WarpMarkers>
 																			<WarpMode Value="0" />
 																			<GranularityTones Value="30" />
@@ -20371,7 +20710,7 @@
 																			</BeatGrid>
 																		</SampleWarpProperties>
 																		<SlicePoints>
-																			<SlicePoint TimeInSeconds="0.000022675736961451248" Rank="0" NormalizedEnergy="1" />
+																			<SlicePoint TimeInSeconds="0.0000226757369614512476" Rank="0" NormalizedEnergy="1" />
 																		</SlicePoints>
 																	</MultiSamplePart>
 																</SampleParts>
@@ -21577,7 +21916,7 @@
 												</BranchSourceContext>
 											</Value>
 										</SourceContext>
-										<ColorIndex Value="159" />
+										<ColorIndex Value="140" />
 										<AutoColored Value="true" />
 										<SoloActivatedInSessionMixer Value="false" />
 										<DevicesListWrapper LomId="0" />
@@ -21841,19 +22180,30 @@
 																					<RelativePathElement Dir="Cymbal" />
 																				</RelativePath>
 																				<Name Value="Cymbal Roomy.wav" />
-																				<Type Value="1" />
+																				<Type Value="2" />
 																				<Data>
-																					43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																					360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																					6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																					6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																					5C00430079006D00620061006C005C00430079006D00620061006C00200052006F006F006D007900
-																					2E007700610076000000
+																					000000000226000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																					656C482B000001AED3E51043796D62616C20526F6F6D792E77617600000000000000000000000000
+																					0000000000000000000000000000000000000000000000000000000000000000000001AED416D244
+																					4DD60000000000000000FFFFFFFF000009200000000000000000000000000000000643796D62616C
+																					001000080000D189575C0000001100080000D2443FC600000001002001AED3E501AED31E01AED2CC
+																					01AEBD2001AEB81001AEB80D01AEB80C01273F37000200844D6163696E746F73682048443A417070
+																					6C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E
+																					74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D70
+																					6C65733A004472756D733A0043796D62616C3A0043796D62616C20526F6F6D792E776176000E0022
+																					001000430079006D00620061006C00200052006F006F006D0079002E007700610076000F001A000C
+																					004D006100630069006E0074006F007300680020004800440012006F4170706C69636174696F6E73
+																					2F41626C65746F6E204C69766520392053756974652E6170702F436F6E74656E74732F4170702D52
+																					65736F75726365732F436F7265204C6962726172792F53616D706C65732F4472756D732F43796D62
+																					616C2F43796D62616C20526F6F6D792E77617600001300012F00FFFF0000
 																				</Data>
 																				<RefersToFolder Value="false" />
 																				<SearchHint>
 																					<PathHint>
-																						<RelativePathElement Dir="trunk" />
+																						<RelativePathElement Dir="Applications" />
+																						<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																						<RelativePathElement Dir="Contents" />
+																						<RelativePathElement Dir="App-Resources" />
 																						<RelativePathElement Dir="Core Library" />
 																						<RelativePathElement Dir="Samples" />
 																						<RelativePathElement Dir="Drums" />
@@ -21867,7 +22217,7 @@
 																				<LivePackName Value="Core Library" />
 																				<LivePackId Value="www.ableton.com/0" />
 																			</FileRef>
-																			<LastModDate Value="1444879334" />
+																			<LastModDate Value="1444843334" />
 																			<SourceContext>
 																				<SourceContext>
 																					<OriginalFileRef>
@@ -21880,19 +22230,30 @@
 																								<RelativePathElement Dir="Cymbal" />
 																							</RelativePath>
 																							<Name Value="Cymbal Roomy.wav" />
-																							<Type Value="1" />
+																							<Type Value="2" />
 																							<Data>
-																								43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																								360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																								6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																								6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																								5C00430079006D00620061006C005C00430079006D00620061006C00200052006F006F006D007900
-																								2E007700610076000000
+																								000000000226000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																								656C482B000001AED3E51043796D62616C20526F6F6D792E77617600000000000000000000000000
+																								0000000000000000000000000000000000000000000000000000000000000000000001AED416D244
+																								4DD60000000000000000FFFFFFFF000009200000000000000000000000000000000643796D62616C
+																								001000080000D189575C0000001100080000D2443FC600000001002001AED3E501AED31E01AED2CC
+																								01AEBD2001AEB81001AEB80D01AEB80C01273F37000200844D6163696E746F73682048443A417070
+																								6C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E
+																								74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D70
+																								6C65733A004472756D733A0043796D62616C3A0043796D62616C20526F6F6D792E776176000E0022
+																								001000430079006D00620061006C00200052006F006F006D0079002E007700610076000F001A000C
+																								004D006100630069006E0074006F007300680020004800440012006F4170706C69636174696F6E73
+																								2F41626C65746F6E204C69766520392053756974652E6170702F436F6E74656E74732F4170702D52
+																								65736F75726365732F436F7265204C6962726172792F53616D706C65732F4472756D732F43796D62
+																								616C2F43796D62616C20526F6F6D792E77617600001300012F00FFFF0000
 																							</Data>
 																							<RefersToFolder Value="false" />
 																							<SearchHint>
 																								<PathHint>
-																									<RelativePathElement Dir="trunk" />
+																									<RelativePathElement Dir="Applications" />
+																									<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																									<RelativePathElement Dir="Contents" />
+																									<RelativePathElement Dir="App-Resources" />
 																									<RelativePathElement Dir="Core Library" />
 																									<RelativePathElement Dir="Samples" />
 																									<RelativePathElement Dir="Drums" />
@@ -21918,7 +22279,7 @@
 																		<SampleWarpProperties>
 																			<WarpMarkers>
 																				<WarpMarker SecTime="0" BeatTime="0" />
-																				<WarpMarker SecTime="0.0157593714569161" BeatTime="0.03125" />
+																				<WarpMarker SecTime="0.0157593714569160999" BeatTime="0.03125" />
 																			</WarpMarkers>
 																			<WarpMode Value="0" />
 																			<GranularityTones Value="30" />
@@ -21953,7 +22314,7 @@
 																			</BeatGrid>
 																		</SampleWarpProperties>
 																		<SlicePoints>
-																			<SlicePoint TimeInSeconds="0.030090702947845806" Rank="0" NormalizedEnergy="1" />
+																			<SlicePoint TimeInSeconds="0.0300907029478458057" Rank="0" NormalizedEnergy="1" />
 																		</SlicePoints>
 																	</MultiSamplePart>
 																</SampleParts>
@@ -23159,7 +23520,7 @@
 												</BranchSourceContext>
 											</Value>
 										</SourceContext>
-										<ColorIndex Value="159" />
+										<ColorIndex Value="140" />
 										<AutoColored Value="true" />
 										<SoloActivatedInSessionMixer Value="false" />
 										<DevicesListWrapper LomId="0" />
@@ -23423,19 +23784,31 @@
 																					<RelativePathElement Dir="Misc Percussion" />
 																				</RelativePath>
 																				<Name Value="Perc Rattle SP.wav" />
-																				<Type Value="1" />
+																				<Type Value="2" />
 																				<Data>
-																					43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																					360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																					6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																					6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																					5C004D006900730063002000500065007200630075007300730069006F006E005C00500065007200
-																					6300200052006100740074006C0065002000530050002E007700610076000000
+																					00000000024A000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																					656C482B000001AED706125065726320526174746C652053502E7761760000000000000000000000
+																					0000000000000000000000000000000000000000000000000000000000000000000001AED725D244
+																					4DD40000000000000000FFFFFFFF000009200000000000000000000000000000000F4D6973632050
+																					657263757373696F6E00001000080000D189575C0000001100080000D2443FC400000001002001AE
+																					D70601AED31E01AED2CC01AEBD2001AEB81001AEB80D01AEB80C01273F370002008F4D6163696E74
+																					6F73682048443A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974
+																					652E6170703A00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962
+																					726172793A0053616D706C65733A004472756D733A004D6973632050657263757373696F6E3A0050
+																					65726320526174746C652053502E77617600000E0026001200500065007200630020005200610074
+																					0074006C0065002000530050002E007700610076000F001A000C004D006100630069006E0074006F
+																					007300680020004800440012007A4170706C69636174696F6E732F41626C65746F6E204C69766520
+																					392053756974652E6170702F436F6E74656E74732F4170702D5265736F75726365732F436F726520
+																					4C6962726172792F53616D706C65732F4472756D732F4D6973632050657263757373696F6E2F5065
+																					726320526174746C652053502E776176001300012F00FFFF0000
 																				</Data>
 																				<RefersToFolder Value="false" />
 																				<SearchHint>
 																					<PathHint>
-																						<RelativePathElement Dir="trunk" />
+																						<RelativePathElement Dir="Applications" />
+																						<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																						<RelativePathElement Dir="Contents" />
+																						<RelativePathElement Dir="App-Resources" />
 																						<RelativePathElement Dir="Core Library" />
 																						<RelativePathElement Dir="Samples" />
 																						<RelativePathElement Dir="Drums" />
@@ -23449,7 +23822,7 @@
 																				<LivePackName Value="Core Library" />
 																				<LivePackId Value="www.ableton.com/0" />
 																			</FileRef>
-																			<LastModDate Value="1444879332" />
+																			<LastModDate Value="1444843332" />
 																			<SourceContext>
 																				<SourceContext>
 																					<OriginalFileRef>
@@ -23462,19 +23835,31 @@
 																								<RelativePathElement Dir="Misc Percussion" />
 																							</RelativePath>
 																							<Name Value="Perc Rattle SP.wav" />
-																							<Type Value="1" />
+																							<Type Value="2" />
 																							<Data>
-																								43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																								360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																								6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																								6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																								5C004D006900730063002000500065007200630075007300730069006F006E005C00500065007200
-																								6300200052006100740074006C0065002000530050002E007700610076000000
+																								00000000024A000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																								656C482B000001AED706125065726320526174746C652053502E7761760000000000000000000000
+																								0000000000000000000000000000000000000000000000000000000000000000000001AED725D244
+																								4DD40000000000000000FFFFFFFF000009200000000000000000000000000000000F4D6973632050
+																								657263757373696F6E00001000080000D189575C0000001100080000D2443FC400000001002001AE
+																								D70601AED31E01AED2CC01AEBD2001AEB81001AEB80D01AEB80C01273F370002008F4D6163696E74
+																								6F73682048443A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974
+																								652E6170703A00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962
+																								726172793A0053616D706C65733A004472756D733A004D6973632050657263757373696F6E3A0050
+																								65726320526174746C652053502E77617600000E0026001200500065007200630020005200610074
+																								0074006C0065002000530050002E007700610076000F001A000C004D006100630069006E0074006F
+																								007300680020004800440012007A4170706C69636174696F6E732F41626C65746F6E204C69766520
+																								392053756974652E6170702F436F6E74656E74732F4170702D5265736F75726365732F436F726520
+																								4C6962726172792F53616D706C65732F4472756D732F4D6973632050657263757373696F6E2F5065
+																								726320526174746C652053502E776176001300012F00FFFF0000
 																							</Data>
 																							<RefersToFolder Value="false" />
 																							<SearchHint>
 																								<PathHint>
-																									<RelativePathElement Dir="trunk" />
+																									<RelativePathElement Dir="Applications" />
+																									<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																									<RelativePathElement Dir="Contents" />
+																									<RelativePathElement Dir="App-Resources" />
 																									<RelativePathElement Dir="Core Library" />
 																									<RelativePathElement Dir="Samples" />
 																									<RelativePathElement Dir="Drums" />
@@ -23500,7 +23885,7 @@
 																		<SampleWarpProperties>
 																			<WarpMarkers>
 																				<WarpMarker SecTime="0" BeatTime="0" />
-																				<WarpMarker SecTime="0.01562500022836744" BeatTime="0.03125" />
+																				<WarpMarker SecTime="0.0156250002283674395" BeatTime="0.03125" />
 																			</WarpMarkers>
 																			<WarpMode Value="0" />
 																			<GranularityTones Value="30" />
@@ -23535,8 +23920,8 @@
 																			</BeatGrid>
 																		</SampleWarpProperties>
 																		<SlicePoints>
-																			<SlicePoint TimeInSeconds="0.05011337868480726" Rank="0" NormalizedEnergy="1" />
-																			<SlicePoint TimeInSeconds="0.18641723356009071" Rank="0" NormalizedEnergy="0.092164680652805142" />
+																			<SlicePoint TimeInSeconds="0.0501133786848072596" Rank="0" NormalizedEnergy="1" />
+																			<SlicePoint TimeInSeconds="0.186417233560090712" Rank="0" NormalizedEnergy="0.0921646806528051421" />
 																		</SlicePoints>
 																	</MultiSamplePart>
 																</SampleParts>
@@ -24742,7 +25127,7 @@
 												</BranchSourceContext>
 											</Value>
 										</SourceContext>
-										<ColorIndex Value="159" />
+										<ColorIndex Value="140" />
 										<AutoColored Value="true" />
 										<SoloActivatedInSessionMixer Value="false" />
 										<DevicesListWrapper LomId="0" />
@@ -25006,19 +25391,30 @@
 																					<RelativePathElement Dir="Ride" />
 																				</RelativePath>
 																				<Name Value="Ride Bluesbreak.wav" />
-																				<Type Value="1" />
+																				<Type Value="2" />
 																				<Data>
-																					43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																					360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																					6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																					6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																					5C0052006900640065005C005200690064006500200042006C007500650073006200720065006100
-																					6B002E007700610076000000
+																					00000000022C000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																					656C482B000001AED74B135269646520426C756573627265616B2E77617600000000000000000000
+																					0000000000000000000000000000000000000000000000000000000000000000000001AED750D244
+																					4DA20000000000000000FFFFFFFF0000092000000000000000000000000000000004526964650010
+																					00080000D189575C0000001100080000D2443F9200000001002001AED74B01AED31E01AED2CC01AE
+																					BD2001AEB81001AEB80D01AEB80C01273F37000200854D6163696E746F73682048443A4170706C69
+																					636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E7465
+																					6E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D706C65
+																					733A004472756D733A00526964653A005269646520426C756573627265616B2E77617600000E0028
+																					0013005200690064006500200042006C0075006500730062007200650061006B002E007700610076
+																					000F001A000C004D006100630069006E0074006F00730068002000480044001200704170706C6963
+																					6174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F436F6E74656E7473
+																					2F4170702D5265736F75726365732F436F7265204C6962726172792F53616D706C65732F4472756D
+																					732F526964652F5269646520426C756573627265616B2E776176001300012F00FFFF0000
 																				</Data>
 																				<RefersToFolder Value="false" />
 																				<SearchHint>
 																					<PathHint>
-																						<RelativePathElement Dir="trunk" />
+																						<RelativePathElement Dir="Applications" />
+																						<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																						<RelativePathElement Dir="Contents" />
+																						<RelativePathElement Dir="App-Resources" />
 																						<RelativePathElement Dir="Core Library" />
 																						<RelativePathElement Dir="Samples" />
 																						<RelativePathElement Dir="Drums" />
@@ -25032,7 +25428,7 @@
 																				<LivePackName Value="Core Library" />
 																				<LivePackId Value="www.ableton.com/0" />
 																			</FileRef>
-																			<LastModDate Value="1444879282" />
+																			<LastModDate Value="1444843282" />
 																			<SourceContext>
 																				<SourceContext>
 																					<OriginalFileRef>
@@ -25045,19 +25441,30 @@
 																								<RelativePathElement Dir="Ride" />
 																							</RelativePath>
 																							<Name Value="Ride Bluesbreak.wav" />
-																							<Type Value="1" />
+																							<Type Value="2" />
 																							<Data>
-																								43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																								360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																								6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																								6900620072006100720079005C00530061006D0070006C00650073005C004400720075006D007300
-																								5C0052006900640065005C005200690064006500200042006C007500650073006200720065006100
-																								6B002E007700610076000000
+																								00000000022C000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																								656C482B000001AED74B135269646520426C756573627265616B2E77617600000000000000000000
+																								0000000000000000000000000000000000000000000000000000000000000000000001AED750D244
+																								4DA20000000000000000FFFFFFFF0000092000000000000000000000000000000004526964650010
+																								00080000D189575C0000001100080000D2443F9200000001002001AED74B01AED31E01AED2CC01AE
+																								BD2001AEB81001AEB80D01AEB80C01273F37000200854D6163696E746F73682048443A4170706C69
+																								636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A00436F6E7465
+																								6E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A0053616D706C65
+																								733A004472756D733A00526964653A005269646520426C756573627265616B2E77617600000E0028
+																								0013005200690064006500200042006C0075006500730062007200650061006B002E007700610076
+																								000F001A000C004D006100630069006E0074006F00730068002000480044001200704170706C6963
+																								6174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F436F6E74656E7473
+																								2F4170702D5265736F75726365732F436F7265204C6962726172792F53616D706C65732F4472756D
+																								732F526964652F5269646520426C756573627265616B2E776176001300012F00FFFF0000
 																							</Data>
 																							<RefersToFolder Value="false" />
 																							<SearchHint>
 																								<PathHint>
-																									<RelativePathElement Dir="trunk" />
+																									<RelativePathElement Dir="Applications" />
+																									<RelativePathElement Dir="Ableton Live 9 Suite.app" />
+																									<RelativePathElement Dir="Contents" />
+																									<RelativePathElement Dir="App-Resources" />
 																									<RelativePathElement Dir="Core Library" />
 																									<RelativePathElement Dir="Samples" />
 																									<RelativePathElement Dir="Drums" />
@@ -25083,7 +25490,7 @@
 																		<SampleWarpProperties>
 																			<WarpMarkers>
 																				<WarpMarker SecTime="0" BeatTime="0" />
-																				<WarpMarker SecTime="0.018330587443310658" BeatTime="0.03125" />
+																				<WarpMarker SecTime="0.0183305874433106579" BeatTime="0.03125" />
 																			</WarpMarkers>
 																			<WarpMode Value="0" />
 																			<GranularityTones Value="30" />
@@ -25118,7 +25525,7 @@
 																			</BeatGrid>
 																		</SampleWarpProperties>
 																		<SlicePoints>
-																			<SlicePoint TimeInSeconds="0.000090702947845804991" Rank="0" NormalizedEnergy="1" />
+																			<SlicePoint TimeInSeconds="0.0000907029478458049905" Rank="0" NormalizedEnergy="1" />
 																		</SlicePoints>
 																	</MultiSamplePart>
 																</SampleParts>
@@ -26324,7 +26731,7 @@
 												</BranchSourceContext>
 											</Value>
 										</SourceContext>
-										<ColorIndex Value="159" />
+										<ColorIndex Value="140" />
 										<AutoColored Value="true" />
 										<SoloActivatedInSessionMixer Value="false" />
 										<DevicesListWrapper LomId="0" />
@@ -26760,15 +27167,23 @@
 													<RelativePathElement Dir="Mixing &amp; Mastering" />
 												</RelativePath>
 												<Name Value="Boombox Drums.adg" />
-												<Type Value="1" />
+												<Type Value="2" />
 												<Data>
-													43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-													360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-													6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-													6900620072006100720079005C0041007500640069006F0020004500660066006500630074002000
-													5200610063006B0073005C004D006900780069006E0067002000260020004D006100730074006500
-													720069006E0067005C0042006F006F006D0062006F00780020004400720075006D0073002E006100
-													640067000000
+													000000000254000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+													656C482B000001AEC8CB11426F6F6D626F78204472756D732E616467000000000000000000000000
+													0000000000000000000000000000000000000000000000000000000000000000000001AEC8CED244
+													553E0000000000000000FFFFFFFF00000920000000000000000000000000000000124D6978696E67
+													2026204D6173746572696E67001000080000D189575C0000001100080000D244472E00000001001C
+													01AEC8CB01AEC8C101AEBD2001AEB81001AEB80D01AEB80C01273F37000200954D6163696E746F73
+													682048443A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E
+													6170703A00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C69627261
+													72793A00417564696F20456666656374205261636B733A004D6978696E672026204D617374657269
+													6E673A00426F6F6D626F78204472756D732E61646700000E002400110042006F006F006D0062006F
+													00780020004400720075006D0073002E006100640067000F001A000C004D006100630069006E0074
+													006F00730068002000480044001200814170706C69636174696F6E732F41626C65746F6E204C6976
+													6520392053756974652E6170702F436F6E74656E74732F4170702D5265736F75726365732F436F72
+													65204C6962726172792F417564696F20456666656374205261636B732F4D6978696E672026204D61
+													73746572696E672F426F6F6D626F78204472756D732E61646700001300012F00FFFF0000
 												</Data>
 												<RefersToFolder Value="false" />
 												<SearchHint>
@@ -26801,15 +27216,23 @@
 														<RelativePathElement Dir="Mixing &amp; Mastering" />
 													</RelativePath>
 													<Name Value="Boombox Drums.adg" />
-													<Type Value="1" />
+													<Type Value="2" />
 													<Data>
-														43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-														360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-														6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-														6900620072006100720079005C0041007500640069006F0020004500660066006500630074002000
-														5200610063006B0073005C004D006900780069006E0067002000260020004D006100730074006500
-														720069006E0067005C0042006F006F006D0062006F00780020004400720075006D0073002E006100
-														640067000000
+														000000000254000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+														656C482B000001AEC8CB11426F6F6D626F78204472756D732E616467000000000000000000000000
+														0000000000000000000000000000000000000000000000000000000000000000000001AEC8CED244
+														553E0000000000000000FFFFFFFF00000920000000000000000000000000000000124D6978696E67
+														2026204D6173746572696E67001000080000D189575C0000001100080000D244472E00000001001C
+														01AEC8CB01AEC8C101AEBD2001AEB81001AEB80D01AEB80C01273F37000200954D6163696E746F73
+														682048443A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E
+														6170703A00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C69627261
+														72793A00417564696F20456666656374205261636B733A004D6978696E672026204D617374657269
+														6E673A00426F6F6D626F78204472756D732E61646700000E002400110042006F006F006D0062006F
+														00780020004400720075006D0073002E006100640067000F001A000C004D006100630069006E0074
+														006F00730068002000480044001200814170706C69636174696F6E732F41626C65746F6E204C6976
+														6520392053756974652E6170702F436F6E74656E74732F4170702D5265736F75726365732F436F72
+														65204C6962726172792F417564696F20456666656374205261636B732F4D6978696E672026204D61
+														73746572696E672F426F6F6D626F78204472756D732E61646700001300012F00FFFF0000
 													</Data>
 													<RefersToFolder Value="false" />
 													<SearchHint>
@@ -26834,15 +27257,23 @@
 															<RelativePathElement Dir="Mixing &amp; Mastering" />
 														</RelativePath>
 														<Name Value="Boombox Drums.adg" />
-														<Type Value="1" />
+														<Type Value="2" />
 														<Data>
-															43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-															360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-															6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-															6900620072006100720079005C0041007500640069006F0020004500660066006500630074002000
-															5200610063006B0073005C004D006900780069006E0067002000260020004D006100730074006500
-															720069006E0067005C0042006F006F006D0062006F00780020004400720075006D0073002E006100
-															640067000000
+															000000000254000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+															656C482B000001AEC8CB11426F6F6D626F78204472756D732E616467000000000000000000000000
+															0000000000000000000000000000000000000000000000000000000000000000000001AEC8CED244
+															553E0000000000000000FFFFFFFF00000920000000000000000000000000000000124D6978696E67
+															2026204D6173746572696E67001000080000D189575C0000001100080000D244472E00000001001C
+															01AEC8CB01AEC8C101AEBD2001AEB81001AEB80D01AEB80C01273F37000200954D6163696E746F73
+															682048443A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E
+															6170703A00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C69627261
+															72793A00417564696F20456666656374205261636B733A004D6978696E672026204D617374657269
+															6E673A00426F6F6D626F78204472756D732E61646700000E002400110042006F006F006D0062006F
+															00780020004400720075006D0073002E006100640067000F001A000C004D006100630069006E0074
+															006F00730068002000480044001200814170706C69636174696F6E732F41626C65746F6E204C6976
+															6520392053756974652E6170702F436F6E74656E74732F4170702D5265736F75726365732F436F72
+															65204C6962726172792F417564696F20456666656374205261636B732F4D6978696E672026204D61
+															73746572696E672F426F6F6D626F78204472756D732E61646700001300012F00FFFF0000
 														</Data>
 														<RefersToFolder Value="false" />
 														<SearchHint>
@@ -26910,15 +27341,24 @@
 																			<RelativePathElement Dir="Instrument" />
 																		</RelativePath>
 																		<Name Value="Electric Git EQ 1.adv" />
-																		<Type Value="1" />
+																		<Type Value="2" />
 																		<Data>
-																			43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																			360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																			6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																			6900620072006100720079005C0044006500760069006300650073005C0041007500640069006F00
-																			200045006600660065006300740073005C00450051002000450069006700680074005C0049006E00
-																			73007400720075006D0065006E0074005C0045006C00650063007400720069006300200047006900
-																			7400200045005100200031002E006100640076000000
+																			00000000026E000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																			656C482B000001AECA5E15456C6563747269632047697420455120312E6164760000000000000000
+																			0000000000000000000000000000000000000000000000000000000000000000000001AECA65D244
+																			54220000000000000000FFFFFFFF000009200000000000000000000000000000000A496E73747275
+																			6D656E74001000080000D189575C0000001100080000D244461200000001002401AECA5E01AECA2D
+																			01AEC98501AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F370002009F4D6163696E746F73
+																			682048443A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E
+																			6170703A00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C69627261
+																			72793A00446576696365733A00417564696F20456666656374733A0045512045696768743A00496E
+																			737472756D656E743A00456C6563747269632047697420455120312E61647600000E002C00150045
+																			006C006500630074007200690063002000470069007400200045005100200031002E006100640076
+																			000F001A000C004D006100630069006E0074006F00730068002000480044001200894170706C6963
+																			6174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F436F6E74656E7473
+																			2F4170702D5265736F75726365732F436F7265204C6962726172792F446576696365732F41756469
+																			6F20456666656374732F45512045696768742F496E737472756D656E742F456C6563747269632047
+																			697420455120312E61647600001300012F00FFFF0000
 																		</Data>
 																		<RefersToFolder Value="false" />
 																		<SearchHint>
@@ -28691,14 +29131,22 @@
 																			<RelativePathElement Dir="Compressor" />
 																		</RelativePath>
 																		<Name Value="" />
-																		<Type Value="1" />
+																		<Type Value="2" />
 																		<Data>
-																			43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																			360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																			6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																			6900620072006100720079005C0044006500760069006300650073005C0041007500640069006F00
-																			200045006600660065006300740073005C0043006F006D00700072006500730073006F0072005C00
-																			0000
+																			000000000212000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+																			656C482B000001AEC9850A436F6D70726573736F7200000000000000000000000000000000000000
+																			0000000000000000000000000000000000000000000000000000000000000000000001AEC9F1D252
+																			9FE60000000000000000FFFFFFFF000009200000000000000000000000000000000D417564696F20
+																			4566666563747300001000080000D189575C0000001100080000D2529FE600000001001C01AEC985
+																			01AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F370002007E4D6163696E746F7368204844
+																			3A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A
+																			00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00
+																			446576696365733A00417564696F20456666656374733A00436F6D70726573736F72000E0016000A
+																			0043006F006D00700072006500730073006F0072000F001A000C004D006100630069006E0074006F
+																			007300680020004800440012006A4170706C69636174696F6E732F41626C65746F6E204C69766520
+																			392053756974652E6170702F436F6E74656E74732F4170702D5265736F75726365732F436F726520
+																			4C6962726172792F446576696365732F417564696F20456666656374732F436F6D70726573736F72
+																			001300012F00FFFF0000
 																		</Data>
 																		<RefersToFolder Value="true" />
 																		<SearchHint>
@@ -28765,7 +29213,7 @@
 															<Manual Value="40.0000381" />
 															<MidiControllerRange>
 																<Min Value="1" />
-																<Max Value="340282326356119260000000000000000000000" />
+																<Max Value="340282326356119256160033759537265639424" />
 															</MidiControllerRange>
 															<AutomationTarget Id="16878">
 																<LockEnvelope Value="0" />
@@ -29248,13 +29696,22 @@
 																			<RelativePathElement Dir="Saturator" />
 																		</RelativePath>
 																		<Name Value="" />
-																		<Type Value="1" />
+																		<Type Value="2" />
 																		<Data>
-																			43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																			360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																			6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																			6900620072006100720079005C0044006500760069006300650073005C0041007500640069006F00
-																			200045006600660065006300740073005C0053006100740075007200610074006F0072005C000000
+																			000000000210000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+																			656C482B000001AEC98509536174757261746F720000000000000000000000000000000000000000
+																			0000000000000000000000000000000000000000000000000000000000000000000001AECB8CD252
+																			9FE70000000000000000FFFFFFFF000009200000000000000000000000000000000D417564696F20
+																			4566666563747300001000080000D189575C0000001100080000D2529FE700000001001C01AEC985
+																			01AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F370002007D4D6163696E746F7368204844
+																			3A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A
+																			00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00
+																			446576696365733A00417564696F20456666656374733A00536174757261746F7200000E00140009
+																			0053006100740075007200610074006F0072000F001A000C004D006100630069006E0074006F0073
+																			0068002000480044001200694170706C69636174696F6E732F41626C65746F6E204C697665203920
+																			53756974652E6170702F436F6E74656E74732F4170702D5265736F75726365732F436F7265204C69
+																			62726172792F446576696365732F417564696F20456666656374732F536174757261746F72000013
+																			00012F00FFFF0000
 																		</Data>
 																		<RefersToFolder Value="true" />
 																		<SearchHint>
@@ -29649,15 +30106,24 @@
 																<RelativePathElement Dir="Compressor" />
 															</RelativePath>
 															<Name Value="Classical Compression.adv" />
-															<Type Value="1" />
+															<Type Value="2" />
 															<Data>
-																43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																6900620072006100720079005C0044006500760069006300650073005C0041007500640069006F00
-																200045006600660065006300740073005C0043006F006D00700072006500730073006F0072005C00
-																43006C006100730073006900630061006C00200043006F006D007000720065007300730069006F00
-																6E002E006100640076000000
+																000000000266000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																656C482B000001AEC9F119436C6173736963616C20436F6D7072657373696F6E2E61647600000000
+																0000000000000000000000000000000000000000000000000000000000000000000001AEC9F7D244
+																55420000000000000000FFFFFFFF000009200000000000000000000000000000000A436F6D707265
+																73736F72001000080000D189575C0000001100080000D244473200000001002001AEC9F101AEC985
+																01AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F37000200994D6163696E746F7368204844
+																3A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A
+																00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00
+																446576696365733A00417564696F20456666656374733A00436F6D70726573736F723A00436C6173
+																736963616C20436F6D7072657373696F6E2E61647600000E003400190043006C0061007300730069
+																00630061006C00200043006F006D007000720065007300730069006F006E002E006100640076000F
+																001A000C004D006100630069006E0074006F00730068002000480044001200844170706C69636174
+																696F6E732F41626C65746F6E204C69766520392053756974652E6170702F436F6E74656E74732F41
+																70702D5265736F75726365732F436F7265204C6962726172792F446576696365732F417564696F20
+																456666656374732F436F6D70726573736F722F436C6173736963616C20436F6D7072657373696F6E
+																2E616476001300012F00FFFF0000
 															</Data>
 															<RefersToFolder Value="false" />
 															<SearchHint>
@@ -29683,15 +30149,24 @@
 																	<RelativePathElement Dir="Compressor" />
 																</RelativePath>
 																<Name Value="Classical Compression.adv" />
-																<Type Value="1" />
+																<Type Value="2" />
 																<Data>
-																	43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																	360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																	6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																	6900620072006100720079005C0044006500760069006300650073005C0041007500640069006F00
-																	200045006600660065006300740073005C0043006F006D00700072006500730073006F0072005C00
-																	43006C006100730073006900630061006C00200043006F006D007000720065007300730069006F00
-																	6E002E006100640076000000
+																	000000000266000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																	656C482B000001AEC9F119436C6173736963616C20436F6D7072657373696F6E2E61647600000000
+																	0000000000000000000000000000000000000000000000000000000000000000000001AEC9F7D244
+																	55420000000000000000FFFFFFFF000009200000000000000000000000000000000A436F6D707265
+																	73736F72001000080000D189575C0000001100080000D244473200000001002001AEC9F101AEC985
+																	01AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F37000200994D6163696E746F7368204844
+																	3A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A
+																	00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00
+																	446576696365733A00417564696F20456666656374733A00436F6D70726573736F723A00436C6173
+																	736963616C20436F6D7072657373696F6E2E61647600000E003400190043006C0061007300730069
+																	00630061006C00200043006F006D007000720065007300730069006F006E002E006100640076000F
+																	001A000C004D006100630069006E0074006F00730068002000480044001200844170706C69636174
+																	696F6E732F41626C65746F6E204C69766520392053756974652E6170702F436F6E74656E74732F41
+																	70702D5265736F75726365732F436F7265204C6962726172792F446576696365732F417564696F20
+																	456666656374732F436F6D70726573736F722F436C6173736963616C20436F6D7072657373696F6E
+																	2E616476001300012F00FFFF0000
 																</Data>
 																<RefersToFolder Value="false" />
 																<SearchHint>
@@ -31001,14 +31476,23 @@
 													<RelativePathElement Dir="Piano &amp; Keys" />
 												</RelativePath>
 												<Name Value="Old School Roads.adg" />
-												<Type Value="1" />
+												<Type Value="2" />
 												<Data>
-													43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-													360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-													6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-													6900620072006100720079005C0053006F0075006E00640073005C005000690061006E006F002000
-													260020004B006500790073005C004F006C00640020005300630068006F006F006C00200052006F00
-													6100640073002E006100640067000000
+													000000000234000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+													656C482B000001AEDF0F144F6C64205363686F6F6C20526F6164732E616467000000000000000000
+													0000000000000000000000000000000000000000000000000000000000000000000001AEDF16D244
+													54EC0000000000000000FFFFFFFF000009200000000000000000000000000000000C5069616E6F20
+													26204B657973001000080000D189575C0000001100080000D24446DC00000001001C01AEDF0F01AE
+													DECA01AEBD2001AEB81001AEB80D01AEB80C01273F37000200864D6163696E746F73682048443A41
+													70706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A0043
+													6F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00536F
+													756E64733A005069616E6F2026204B6579733A004F6C64205363686F6F6C20526F6164732E616467
+													000E002A0014004F006C00640020005300630068006F006F006C00200052006F006100640073002E
+													006100640067000F001A000C004D006100630069006E0074006F0073006800200048004400120072
+													4170706C69636174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F436F
+													6E74656E74732F4170702D5265736F75726365732F436F7265204C6962726172792F536F756E6473
+													2F5069616E6F2026204B6579732F4F6C64205363686F6F6C20526F6164732E616467001300012F00
+													FFFF0000
 												</Data>
 												<RefersToFolder Value="false" />
 												<SearchHint>
@@ -31041,14 +31525,23 @@
 														<RelativePathElement Dir="Piano &amp; Keys" />
 													</RelativePath>
 													<Name Value="Old School Roads.adg" />
-													<Type Value="1" />
+													<Type Value="2" />
 													<Data>
-														43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-														360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-														6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-														6900620072006100720079005C0053006F0075006E00640073005C005000690061006E006F002000
-														260020004B006500790073005C004F006C00640020005300630068006F006F006C00200052006F00
-														6100640073002E006100640067000000
+														000000000234000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+														656C482B000001AEDF0F144F6C64205363686F6F6C20526F6164732E616467000000000000000000
+														0000000000000000000000000000000000000000000000000000000000000000000001AEDF16D244
+														54EC0000000000000000FFFFFFFF000009200000000000000000000000000000000C5069616E6F20
+														26204B657973001000080000D189575C0000001100080000D24446DC00000001001C01AEDF0F01AE
+														DECA01AEBD2001AEB81001AEB80D01AEB80C01273F37000200864D6163696E746F73682048443A41
+														70706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A0043
+														6F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00536F
+														756E64733A005069616E6F2026204B6579733A004F6C64205363686F6F6C20526F6164732E616467
+														000E002A0014004F006C00640020005300630068006F006F006C00200052006F006100640073002E
+														006100640067000F001A000C004D006100630069006E0074006F0073006800200048004400120072
+														4170706C69636174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F436F
+														6E74656E74732F4170702D5265736F75726365732F436F7265204C6962726172792F536F756E6473
+														2F5069616E6F2026204B6579732F4F6C64205363686F6F6C20526F6164732E616467001300012F00
+														FFFF0000
 													</Data>
 													<RefersToFolder Value="false" />
 													<SearchHint>
@@ -31073,14 +31566,23 @@
 															<RelativePathElement Dir="Piano &amp; Keys" />
 														</RelativePath>
 														<Name Value="Old School Roads.adg" />
-														<Type Value="1" />
+														<Type Value="2" />
 														<Data>
-															43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-															360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-															6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-															6900620072006100720079005C0053006F0075006E00640073005C005000690061006E006F002000
-															260020004B006500790073005C004F006C00640020005300630068006F006F006C00200052006F00
-															6100640073002E006100640067000000
+															000000000234000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+															656C482B000001AEDF0F144F6C64205363686F6F6C20526F6164732E616467000000000000000000
+															0000000000000000000000000000000000000000000000000000000000000000000001AEDF16D244
+															54EC0000000000000000FFFFFFFF000009200000000000000000000000000000000C5069616E6F20
+															26204B657973001000080000D189575C0000001100080000D24446DC00000001001C01AEDF0F01AE
+															DECA01AEBD2001AEB81001AEB80D01AEB80C01273F37000200864D6163696E746F73682048443A41
+															70706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A0043
+															6F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00536F
+															756E64733A005069616E6F2026204B6579733A004F6C64205363686F6F6C20526F6164732E616467
+															000E002A0014004F006C00640020005300630068006F006F006C00200052006F006100640073002E
+															006100640067000F001A000C004D006100630069006E0074006F0073006800200048004400120072
+															4170706C69636174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F436F
+															6E74656E74732F4170702D5265736F75726365732F436F7265204C6962726172792F536F756E6473
+															2F5069616E6F2026204B6579732F4F6C64205363686F6F6C20526F6164732E616467001300012F00
+															FFFF0000
 														</Data>
 														<RefersToFolder Value="false" />
 														<SearchHint>
@@ -31147,13 +31649,21 @@
 																			<RelativePathElement Dir="Electric" />
 																		</RelativePath>
 																		<Name Value="" />
-																		<Type Value="1" />
+																		<Type Value="2" />
 																		<Data>
-																			43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																			360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																			6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																			6900620072006100720079005C0044006500760069006300650073005C0049006E00730074007200
-																			75006D0065006E00740073005C0045006C006500630074007200690063005C000000
+																			000000000204000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+																			656C482B000001AECBD608456C656374726963000000000000000000000000000000000000000000
+																			0000000000000000000000000000000000000000000000000000000000000000000001AECCEED252
+																			9FE70000000000000000FFFFFFFF000009200000000000000000000000000000000B496E73747275
+																			6D656E747300001000080000D189575C0000001100080000D2529FE700000001001C01AECBD601AE
+																			C98401AEBD2001AEB81001AEB80D01AEB80C01273F370002007A4D6163696E746F73682048443A41
+																			70706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A0043
+																			6F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A004465
+																			76696365733A00496E737472756D656E74733A00456C656374726963000E001200080045006C0065
+																			00630074007200690063000F001A000C004D006100630069006E0074006F00730068002000480044
+																			001200664170706C69636174696F6E732F41626C65746F6E204C69766520392053756974652E6170
+																			702F436F6E74656E74732F4170702D5265736F75726365732F436F7265204C6962726172792F4465
+																			76696365732F496E737472756D656E74732F456C656374726963001300012F00FFFF0000
 																		</Data>
 																		<RefersToFolder Value="true" />
 																		<SearchHint>
@@ -31917,13 +32427,22 @@
 																			<RelativePathElement Dir="EQ Eight" />
 																		</RelativePath>
 																		<Name Value="" />
-																		<Type Value="1" />
+																		<Type Value="2" />
 																		<Data>
-																			43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																			360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																			6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																			6900620072006100720079005C0044006500760069006300650073005C0041007500640069006F00
-																			200045006600660065006300740073005C00450051002000450069006700680074005C000000
+																			00000000020A000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+																			656C482B000001AEC985084551204569676874000000000000000000000000000000000000000000
+																			0000000000000000000000000000000000000000000000000000000000000000000001AECA2DD252
+																			9FE60000000000000000FFFFFFFF000009200000000000000000000000000000000D417564696F20
+																			4566666563747300001000080000D189575C0000001100080000D2529FE600000001001C01AEC985
+																			01AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F370002007C4D6163696E746F7368204844
+																			3A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A
+																			00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00
+																			446576696365733A00417564696F20456666656374733A004551204569676874000E001200080045
+																			0051002000450069006700680074000F001A000C004D006100630069006E0074006F007300680020
+																			00480044001200684170706C69636174696F6E732F41626C65746F6E204C69766520392053756974
+																			652E6170702F436F6E74656E74732F4170702D5265736F75726365732F436F7265204C6962726172
+																			792F446576696365732F417564696F20456666656374732F4551204569676874001300012F00FFFF
+																			0000
 																		</Data>
 																		<RefersToFolder Value="true" />
 																		<SearchHint>
@@ -33670,13 +34189,21 @@
 																			<RelativePathElement Dir="Cabinet" />
 																		</RelativePath>
 																		<Name Value="" />
-																		<Type Value="1" />
+																		<Type Value="2" />
 																		<Data>
-																			43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																			360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																			6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																			6900620072006100720079005C0044006500760069006300650073005C0041007500640069006F00
-																			200045006600660065006300740073005C0043006100620069006E00650074005C000000
+																			000000000208000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+																			656C482B000001AEC98507436162696E657400000000000000000000000000000000000000000000
+																			0000000000000000000000000000000000000000000000000000000000000000000001AEC9D3D252
+																			9FE60000000000000000FFFFFFFF000009200000000000000000000000000000000D417564696F20
+																			4566666563747300001000080000D189575C0000001100080000D2529FE600000001001C01AEC985
+																			01AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F370002007B4D6163696E746F7368204844
+																			3A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A
+																			00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00
+																			446576696365733A00417564696F20456666656374733A00436162696E657400000E001000070043
+																			006100620069006E00650074000F001A000C004D006100630069006E0074006F0073006800200048
+																			0044001200674170706C69636174696F6E732F41626C65746F6E204C69766520392053756974652E
+																			6170702F436F6E74656E74732F4170702D5265736F75726365732F436F7265204C6962726172792F
+																			446576696365732F417564696F20456666656374732F436162696E657400001300012F00FFFF0000
 																		</Data>
 																		<RefersToFolder Value="true" />
 																		<SearchHint>
@@ -33834,13 +34361,21 @@
 																			<RelativePathElement Dir="Amp" />
 																		</RelativePath>
 																		<Name Value="" />
-																		<Type Value="1" />
+																		<Type Value="2" />
 																		<Data>
-																			43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																			360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																			6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																			6900620072006100720079005C0044006500760069006300650073005C0041007500640069006F00
-																			200045006600660065006300740073005C0041006D0070005C000000
+																			0000000001F8000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+																			656C482B000001AEC98503416D700000000000000000000000000000000000000000000000000000
+																			0000000000000000000000000000000000000000000000000000000000000000000001AEC988D252
+																			9FE50000000000000000FFFFFFFF000009200000000000000000000000000000000D417564696F20
+																			4566666563747300001000080000D189575C0000001100080000D2529FE500000001001C01AEC985
+																			01AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F37000200774D6163696E746F7368204844
+																			3A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A
+																			00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00
+																			446576696365733A00417564696F20456666656374733A00416D7000000E000800030041006D0070
+																			000F001A000C004D006100630069006E0074006F00730068002000480044001200634170706C6963
+																			6174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F436F6E74656E7473
+																			2F4170702D5265736F75726365732F436F7265204C6962726172792F446576696365732F41756469
+																			6F20456666656374732F416D7000001300012F00FFFF0000
 																		</Data>
 																		<RefersToFolder Value="true" />
 																		<SearchHint>
@@ -34102,14 +34637,23 @@
 																			<RelativePathElement Dir="Auto Pan" />
 																		</RelativePath>
 																		<Name Value="Around The Head.adv" />
-																		<Type Value="1" />
+																		<Type Value="2" />
 																		<Data>
-																			43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																			360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																			6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																			6900620072006100720079005C0044006500760069006300650073005C0041007500640069006F00
-																			200045006600660065006300740073005C004100750074006F002000500061006E005C0041007200
-																			6F0075006E0064002000540068006500200048006500610064002E006100640076000000
+																			000000000248000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+																			656C482B000001AEC9B51341726F756E642054686520486561642E61647600000000000000000000
+																			0000000000000000000000000000000000000000000000000000000000000000000001AEC9BAD244
+																			554E0000000000000000FFFFFFFF00000920000000000000000000000000000000084175746F2050
+																			616E001000080000D189575C0000001100080000D244473E00000001002001AEC9B501AEC98501AE
+																			C98401AEBD2001AEB81001AEB80D01AEB80C01273F37000200914D6163696E746F73682048443A41
+																			70706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A0043
+																			6F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A004465
+																			76696365733A00417564696F20456666656374733A004175746F2050616E3A0041726F756E642054
+																			686520486561642E61647600000E0028001300410072006F0075006E006400200054006800650020
+																			0048006500610064002E006100640076000F001A000C004D006100630069006E0074006F00730068
+																			0020004800440012007C4170706C69636174696F6E732F41626C65746F6E204C6976652039205375
+																			6974652E6170702F436F6E74656E74732F4170702D5265736F75726365732F436F7265204C696272
+																			6172792F446576696365732F417564696F20456666656374732F4175746F2050616E2F41726F756E
+																			642054686520486561642E616476001300012F00FFFF0000
 																		</Data>
 																		<RefersToFolder Value="false" />
 																		<SearchHint>
@@ -34471,13 +35015,21 @@
 																			<RelativePathElement Dir="Phaser" />
 																		</RelativePath>
 																		<Name Value="" />
-																		<Type Value="1" />
+																		<Type Value="2" />
 																		<Data>
-																			43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																			360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																			6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																			6900620072006100720079005C0044006500760069006300650073005C0041007500640069006F00
-																			200045006600660065006300740073005C005000680061007300650072005C000000
+																			000000000202000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+																			656C482B000001AEC985065068617365720000000000000000000000000000000000000000000000
+																			0000000000000000000000000000000000000000000000000000000000000000000001AECB11D252
+																			9FE60000000000000000FFFFFFFF000009200000000000000000000000000000000D417564696F20
+																			4566666563747300001000080000D189575C0000001100080000D2529FE600000001001C01AEC985
+																			01AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F370002007A4D6163696E746F7368204844
+																			3A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A
+																			00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00
+																			446576696365733A00417564696F20456666656374733A00506861736572000E000E000600500068
+																			0061007300650072000F001A000C004D006100630069006E0074006F007300680020004800440012
+																			00664170706C69636174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F
+																			436F6E74656E74732F4170702D5265736F75726365732F436F7265204C6962726172792F44657669
+																			6365732F417564696F20456666656374732F506861736572001300012F00FFFF0000
 																		</Data>
 																		<RefersToFolder Value="true" />
 																		<SearchHint>
@@ -34987,14 +35539,22 @@
 																			<RelativePathElement Dir="Filter Delay" />
 																		</RelativePath>
 																		<Name Value="" />
-																		<Type Value="1" />
+																		<Type Value="2" />
 																		<Data>
-																			43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																			360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																			6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																			6900620072006100720079005C0044006500760069006300650073005C0041007500640069006F00
-																			200045006600660065006300740073005C00460069006C007400650072002000440065006C006100
-																			79005C000000
+																			00000000021A000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+																			656C482B000001AEC9850C46696C7465722044656C61790000000000000000000000000000000000
+																			0000000000000000000000000000000000000000000000000000000000000000000001AECA84D252
+																			9FE60000000000000000FFFFFFFF000009200000000000000000000000000000000D417564696F20
+																			4566666563747300001000080000D189575C0000001100080000D2529FE600000001001C01AEC985
+																			01AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F37000200804D6163696E746F7368204844
+																			3A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A
+																			00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00
+																			446576696365733A00417564696F20456666656374733A0046696C7465722044656C6179000E001A
+																			000C00460069006C007400650072002000440065006C00610079000F001A000C004D006100630069
+																			006E0074006F007300680020004800440012006C4170706C69636174696F6E732F41626C65746F6E
+																			204C69766520392053756974652E6170702F436F6E74656E74732F4170702D5265736F7572636573
+																			2F436F7265204C6962726172792F446576696365732F417564696F20456666656374732F46696C74
+																			65722044656C6179001300012F00FFFF0000
 																		</Data>
 																		<RefersToFolder Value="true" />
 																		<SearchHint>
@@ -35928,14 +36488,22 @@
 																			<RelativePathElement Dir="Note Length" />
 																		</RelativePath>
 																		<Name Value="" />
-																		<Type Value="1" />
+																		<Type Value="2" />
 																		<Data>
-																			43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																			360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																			6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																			6900620072006100720079005C0044006500760069006300650073005C004D006900640069002000
-																			45006600660065006300740073005C004E006F007400650020004C0065006E006700740068005C00
-																			0000
+																			000000000212000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+																			656C482B000001AECF9A0B4E6F7465204C656E677468000000000000000000000000000000000000
+																			0000000000000000000000000000000000000000000000000000000000000000000001AECFC5D252
+																			9FE90000000000000000FFFFFFFF000009200000000000000000000000000000000C4D6964692045
+																			666665637473001000080000D189575C0000001100080000D2529FE900000001001C01AECF9A01AE
+																			C98401AEBD2001AEB81001AEB80D01AEB80C01273F370002007E4D6163696E746F73682048443A41
+																			70706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A0043
+																			6F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A004465
+																			76696365733A004D69646920456666656374733A004E6F7465204C656E677468000E0018000B004E
+																			006F007400650020004C0065006E006700740068000F001A000C004D006100630069006E0074006F
+																			007300680020004800440012006A4170706C69636174696F6E732F41626C65746F6E204C69766520
+																			392053756974652E6170702F436F6E74656E74732F4170702D5265736F75726365732F436F726520
+																			4C6962726172792F446576696365732F4D69646920456666656374732F4E6F7465204C656E677468
+																			001300012F00FFFF0000
 																		</Data>
 																		<RefersToFolder Value="true" />
 																		<SearchHint>
@@ -36161,13 +36729,21 @@
 																			<RelativePathElement Dir="Tension" />
 																		</RelativePath>
 																		<Name Value="" />
-																		<Type Value="1" />
+																		<Type Value="2" />
 																		<Data>
-																			43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-																			360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-																			6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-																			6900620072006100720079005C0044006500760069006300650073005C0049006E00730074007200
-																			75006D0065006E00740073005C00540065006E00730069006F006E005C000000
+																			000000000202000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+																			656C482B000001AECBD60754656E73696F6E00000000000000000000000000000000000000000000
+																			0000000000000000000000000000000000000000000000000000000000000000000001AECF17D252
+																			9FE90000000000000000FFFFFFFF000009200000000000000000000000000000000B496E73747275
+																			6D656E747300001000080000D189575C0000001100080000D2529FE900000001001C01AECBD601AE
+																			C98401AEBD2001AEB81001AEB80D01AEB80C01273F37000200794D6163696E746F73682048443A41
+																			70706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A0043
+																			6F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A004465
+																			76696365733A00496E737472756D656E74733A0054656E73696F6E00000E0010000700540065006E
+																			00730069006F006E000F001A000C004D006100630069006E0074006F007300680020004800440012
+																			00654170706C69636174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F
+																			436F6E74656E74732F4170702D5265736F75726365732F436F7265204C6962726172792F44657669
+																			6365732F496E737472756D656E74732F54656E73696F6E00001300012F00FFFF0000
 																		</Data>
 																		<RefersToFolder Value="true" />
 																		<SearchHint>
@@ -38621,7 +39197,7 @@
 					<UserName Value="Bass" />
 					<Annotation Value="" />
 				</Name>
-				<ColorIndex Value="185" />
+				<ColorIndex Value="151" />
 				<TrackGroupId Value="-1" />
 				<TrackUnfolded Value="true" />
 				<DevicesListWrapper LomId="0" />
@@ -38641,7 +39217,7 @@
 							<AutomationLane>
 								<SelectedDevice Value="0" />
 								<SelectedEnvelope Value="0" />
-								<IsContentSelected Value="true" />
+								<IsContentSelected Value="false" />
 								<LaneHeight Value="85" />
 								<FadeViewVisible Value="false" />
 							</AutomationLane>
@@ -38693,7 +39269,7 @@
 							</MidiCCOnOffThresholds>
 						</On>
 						<ParametersListWrapper LomId="0" />
-						<LastSelectedTimeableIndex Value="0" />
+						<LastSelectedTimeableIndex Value="5" />
 						<LastSelectedClipEnvelopeIndex Value="0" />
 						<LastPresetRef>
 							<Value />
@@ -38938,11 +39514,118 @@
 						<ClipTimeable>
 							<LomId Value="0" />
 							<ArrangerAutomation>
-								<Events />
+								<Events>
+									<MidiClip Time="64">
+										<LomId Value="0" />
+										<LomIdView Value="0" />
+										<WarpMarkers>
+											<WarpMarker SecTime="0" BeatTime="0" />
+											<WarpMarker SecTime="0.021746032251659355" BeatTime="0.03125" />
+										</WarpMarkers>
+										<MarkersGenerated Value="false" />
+										<CurrentStart Value="64" />
+										<CurrentEnd Value="80" />
+										<Loop>
+											<LoopStart Value="0" />
+											<LoopEnd Value="16" />
+											<StartRelative Value="0" />
+											<LoopOn Value="true" />
+											<OutMarker Value="16" />
+											<HiddenLoopStart Value="0" />
+											<HiddenLoopEnd Value="4" />
+										</Loop>
+										<Name Value="" />
+										<Annotation Value="" />
+										<ColorIndex Value="11" />
+										<LaunchMode Value="0" />
+										<LaunchQuantisation Value="0" />
+										<TimeSignature>
+											<TimeSignatures>
+												<RemoteableTimeSignature>
+													<Numerator Value="4" />
+													<Denominator Value="4" />
+													<Time Value="0" />
+												</RemoteableTimeSignature>
+											</TimeSignatures>
+										</TimeSignature>
+										<Envelopes>
+											<Envelopes />
+										</Envelopes>
+										<ScrollerTimePreserver>
+											<LeftTime Value="0" />
+											<RightTime Value="15.999999999999998" />
+										</ScrollerTimePreserver>
+										<TimeSelection>
+											<AnchorTime Value="2.25" />
+											<OtherTime Value="2.25" />
+										</TimeSelection>
+										<Legato Value="false" />
+										<Ram Value="false" />
+										<GrooveSettings>
+											<GrooveId Value="-1" />
+										</GrooveSettings>
+										<Disabled Value="false" />
+										<VelocityAmount Value="0" />
+										<FollowTime Value="4" />
+										<FollowActionA Value="0" />
+										<FollowActionB Value="0" />
+										<FollowChanceA Value="1" />
+										<FollowChanceB Value="0" />
+										<Grid>
+											<FixedNumerator Value="1" />
+											<FixedDenominator Value="16" />
+											<GridIntervalPixel Value="20" />
+											<Ntoles Value="2" />
+											<SnapToGrid Value="true" />
+											<Fixed Value="true" />
+										</Grid>
+										<FreezeStart Value="0" />
+										<FreezeEnd Value="0" />
+										<IsSongTempoMaster Value="false" />
+										<IsWarped Value="true" />
+										<Notes>
+											<KeyTracks>
+												<KeyTrack>
+													<Notes>
+														<MidiNoteEvent Time="0" Duration="0.75" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="2" Duration="0.75" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="4" Duration="0.75" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="6" Duration="0.75" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="8" Duration="0.75" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="10" Duration="0.75" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="12" Duration="0.75" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="14" Duration="0.75" Velocity="100" OffVelocity="64" IsEnabled="true" />
+													</Notes>
+													<MidiKey Value="33" />
+												</KeyTrack>
+												<KeyTrack>
+													<Notes>
+														<MidiNoteEvent Time="0.75" Duration="1" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="2.75" Duration="0.75" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="4.75" Duration="1" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="6.75" Duration="1" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="8.75" Duration="1" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="10.75" Duration="0.75" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="12.75" Duration="1" Velocity="100" OffVelocity="64" IsEnabled="true" />
+														<MidiNoteEvent Time="14.75" Duration="1" Velocity="100" OffVelocity="64" IsEnabled="true" />
+													</Notes>
+													<MidiKey Value="39" />
+												</KeyTrack>
+											</KeyTracks>
+										</Notes>
+										<BankSelectCoarse Value="-1" />
+										<BankSelectFine Value="-1" />
+										<ProgramChange Value="-1" />
+										<NoteEditorFoldInZoom Value="-1" />
+										<NoteEditorFoldInScroll Value="-1" />
+										<NoteEditorFoldOutZoom Value="866" />
+										<NoteEditorFoldOutScroll Value="-575" />
+									</MidiClip>
+								</Events>
 							</ArrangerAutomation>
 						</ClipTimeable>
 						<Recorder>
-							<IsArmed Value="true" />
+							<IsArmed Value="false" />
 							<TakeCounter Value="0" />
 						</Recorder>
 						<MidiControllers>
@@ -39493,8 +40176,8 @@
 									</MidiCCOnOffThresholds>
 								</On>
 								<ParametersListWrapper LomId="0" />
-								<LastSelectedTimeableIndex Value="0" />
-								<LastSelectedClipEnvelopeIndex Value="0" />
+								<LastSelectedTimeableIndex Value="148" />
+								<LastSelectedClipEnvelopeIndex Value="148" />
 								<LastPresetRef>
 									<Value>
 										<AbletonDefaultPresetRef>
@@ -39507,13 +40190,21 @@
 													<RelativePathElement Dir="Operator" />
 												</RelativePath>
 												<Name Value="" />
-												<Type Value="1" />
+												<Type Value="2" />
 												<Data>
-													43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-													360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-													6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-													6900620072006100720079005C0044006500760069006300650073005C0049006E00730074007200
-													75006D0065006E00740073005C004F00700065007200610074006F0072005C000000
+													000000000204000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+													656C482B000001AECBD6084F70657261746F72000000000000000000000000000000000000000000
+													0000000000000000000000000000000000000000000000000000000000000000000001AECD2AD252
+													9FE90000000000000000FFFFFFFF000009200000000000000000000000000000000B496E73747275
+													6D656E747300001000080000D189575C0000001100080000D2529FE900000001001C01AECBD601AE
+													C98401AEBD2001AEB81001AEB80D01AEB80C01273F370002007A4D6163696E746F73682048443A41
+													70706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A0043
+													6F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A004465
+													76696365733A00496E737472756D656E74733A004F70657261746F72000E00120008004F00700065
+													007200610074006F0072000F001A000C004D006100630069006E0074006F00730068002000480044
+													001200664170706C69636174696F6E732F41626C65746F6E204C69766520392053756974652E6170
+													702F436F6E74656E74732F4170702D5265736F75726365732F436F7265204C6962726172792F4465
+													76696365732F496E737472756D656E74732F4F70657261746F72001300012F00FFFF0000
 												</Data>
 												<RefersToFolder Value="true" />
 												<SearchHint>
@@ -39548,13 +40239,21 @@
 														<RelativePathElement Dir="Operator" />
 													</RelativePath>
 													<Name Value="" />
-													<Type Value="1" />
+													<Type Value="2" />
 													<Data>
-														43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-														360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-														6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-														6900620072006100720079005C0044006500760069006300650073005C0049006E00730074007200
-														75006D0065006E00740073005C004F00700065007200610074006F0072005C000000
+														000000000204000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+														656C482B000001AECBD6084F70657261746F72000000000000000000000000000000000000000000
+														0000000000000000000000000000000000000000000000000000000000000000000001AECD2AD252
+														9FE90000000000000000FFFFFFFF000009200000000000000000000000000000000B496E73747275
+														6D656E747300001000080000D189575C0000001100080000D2529FE900000001001C01AECBD601AE
+														C98401AEBD2001AEB81001AEB80D01AEB80C01273F370002007A4D6163696E746F73682048443A41
+														70706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A0043
+														6F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A004465
+														76696365733A00496E737472756D656E74733A004F70657261746F72000E00120008004F00700065
+														007200610074006F0072000F001A000C004D006100630069006E0074006F00730068002000480044
+														001200664170706C69636174696F6E732F41626C65746F6E204C69766520392053756974652E6170
+														702F436F6E74656E74732F4170702D5265736F75726365732F436F7265204C6962726172792F4465
+														76696365732F496E737472756D656E74732F4F70657261746F72001300012F00FFFF0000
 													</Data>
 													<RefersToFolder Value="true" />
 													<SearchHint>
@@ -39580,13 +40279,21 @@
 															<RelativePathElement Dir="Operator" />
 														</RelativePath>
 														<Name Value="" />
-														<Type Value="1" />
+														<Type Value="2" />
 														<Data>
-															43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-															360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-															6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-															6900620072006100720079005C0044006500760069006300650073005C0049006E00730074007200
-															75006D0065006E00740073005C004F00700065007200610074006F0072005C000000
+															000000000204000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+															656C482B000001AECBD6084F70657261746F72000000000000000000000000000000000000000000
+															0000000000000000000000000000000000000000000000000000000000000000000001AECD2AD252
+															9FE90000000000000000FFFFFFFF000009200000000000000000000000000000000B496E73747275
+															6D656E747300001000080000D189575C0000001100080000D2529FE900000001001C01AECBD601AE
+															C98401AEBD2001AEB81001AEB80D01AEB80C01273F370002007A4D6163696E746F73682048443A41
+															70706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A0043
+															6F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A004465
+															76696365733A00496E737472756D656E74733A004F70657261746F72000E00120008004F00700065
+															007200610074006F0072000F001A000C004D006100630069006E0074006F00730068002000480044
+															001200664170706C69636174696F6E732F41626C65746F6E204C69766520392053756974652E6170
+															702F436F6E74656E74732F4170702D5265736F75726365732F436F7265204C6962726172792F4465
+															76696365732F496E737472756D656E74732F4F70657261746F72001300012F00FFFF0000
 														</Data>
 														<RefersToFolder Value="true" />
 														<SearchHint>
@@ -42459,7 +43166,7 @@
 											<Events />
 										</ModulationAutomation>
 									</Transpose>
-									<TransposeRelativePosition Value="-1073741824" />
+									<TransposeRelativePosition Value="1" />
 									<PitchBendRange>
 										<LomId Value="0" />
 										<ArrangerAutomation>
@@ -42619,10 +43326,10 @@
 										<LomId Value="0" />
 										<ArrangerAutomation>
 											<Events>
-												<BoolEvent Time="-63072000" Value="false" />
+												<BoolEvent Time="-63072000" Value="true" />
 											</Events>
 										</ArrangerAutomation>
-										<Manual Value="false" />
+										<Manual Value="true" />
 										<AutomationTarget Id="20318">
 											<LockEnvelope Value="0" />
 										</AutomationTarget>
@@ -42635,10 +43342,10 @@
 										<LomId Value="0" />
 										<ArrangerAutomation>
 											<Events>
-												<FloatEvent Time="-63072000" Value="50" />
+												<FloatEvent Time="-63072000" Value="1000.00012" />
 											</Events>
 										</ArrangerAutomation>
-										<Manual Value="50.0000153" />
+										<Manual Value="1000.00012" />
 										<MidiControllerRange>
 											<Min Value="0.1000000015" />
 											<Max Value="10000" />
@@ -42661,10 +43368,10 @@
 										<LomId Value="0" />
 										<ArrangerAutomation>
 											<Events>
-												<BoolEvent Time="-63072000" Value="false" />
+												<BoolEvent Time="-63072000" Value="true" />
 											</Events>
 										</ArrangerAutomation>
-										<Manual Value="false" />
+										<Manual Value="true" />
 										<AutomationTarget Id="20321">
 											<LockEnvelope Value="0" />
 										</AutomationTarget>
@@ -42701,10 +43408,10 @@
 										<LomId Value="0" />
 										<ArrangerAutomation>
 											<Events>
-												<FloatEvent Time="-63072000" Value="64" />
+												<FloatEvent Time="-63072000" Value="20" />
 											</Events>
 										</ArrangerAutomation>
-										<Manual Value="64" />
+										<Manual Value="20" />
 										<MidiControllerRange>
 											<Min Value="0" />
 											<Max Value="127" />
@@ -42784,10 +43491,10 @@
 										<LomId Value="0" />
 										<ArrangerAutomation>
 											<Events>
-												<FloatEvent Time="-63072000" Value="0.25" />
+												<FloatEvent Time="-63072000" Value="0.3000000119" />
 											</Events>
 										</ArrangerAutomation>
-										<Manual Value="0.25" />
+										<Manual Value="0.3000000119" />
 										<MidiControllerRange>
 											<Min Value="0" />
 											<Max Value="1" />
@@ -43205,10 +43912,10 @@
 										<LomId Value="0" />
 										<ArrangerAutomation>
 											<Events>
-												<BoolEvent Time="-63072000" Value="false" />
+												<BoolEvent Time="-63072000" Value="true" />
 											</Events>
 										</ArrangerAutomation>
-										<Manual Value="false" />
+										<Manual Value="true" />
 										<AutomationTarget Id="20368">
 											<LockEnvelope Value="0" />
 										</AutomationTarget>
@@ -43521,10 +44228,10 @@
 											<LomId Value="0" />
 											<ArrangerAutomation>
 												<Events>
-													<FloatEvent Time="-63072000" Value="0" />
+													<FloatEvent Time="-63072000" Value="1" />
 												</Events>
 											</ArrangerAutomation>
-											<Manual Value="0" />
+											<Manual Value="1" />
 											<MidiControllerRange>
 												<Min Value="-1" />
 												<Max Value="1" />
@@ -44349,6 +45056,348 @@
 									<NeutralKey Value="60" />
 								</MidiCtrl>
 							</Operator>
+							<Amp Id="6">
+								<LomId Value="0" />
+								<LomIdView Value="0" />
+								<IsExpanded Value="true" />
+								<On>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<BoolEvent Time="-63072000" Value="true" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="true" />
+									<AutomationTarget Id="21154">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<MidiCCOnOffThresholds>
+										<Min Value="64" />
+										<Max Value="127" />
+									</MidiCCOnOffThresholds>
+								</On>
+								<ParametersListWrapper LomId="0" />
+								<LastSelectedTimeableIndex Value="9" />
+								<LastSelectedClipEnvelopeIndex Value="0" />
+								<LastPresetRef>
+									<Value>
+										<AbletonDefaultPresetRef>
+											<FileRef>
+												<HasRelativePath Value="true" />
+												<RelativePathType Value="5" />
+												<RelativePath>
+													<RelativePathElement Dir="Devices" />
+													<RelativePathElement Dir="Audio Effects" />
+													<RelativePathElement Dir="Amp" />
+												</RelativePath>
+												<Name Value="" />
+												<Type Value="2" />
+												<Data>
+													0000000001F8000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+													656C482B000001AEC98503416D700000000000000000000000000000000000000000000000000000
+													0000000000000000000000000000000000000000000000000000000000000000000001AEC988D252
+													9FE50000000000000000FFFFFFFF000009200000000000000000000000000000000D417564696F20
+													4566666563747300001000080000D189575C0000001100080000D2529FE500000001001C01AEC985
+													01AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F37000200774D6163696E746F7368204844
+													3A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A
+													00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00
+													446576696365733A00417564696F20456666656374733A00416D7000000E000800030041006D0070
+													000F001A000C004D006100630069006E0074006F00730068002000480044001200634170706C6963
+													6174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F436F6E74656E7473
+													2F4170702D5265736F75726365732F436F7265204C6962726172792F446576696365732F41756469
+													6F20456666656374732F416D7000001300012F00FFFF0000
+												</Data>
+												<RefersToFolder Value="true" />
+												<SearchHint>
+													<PathHint />
+													<FileSize Value="0" />
+													<Crc Value="0" />
+													<MaxCrcSize Value="0" />
+													<HasExtendedInfo Value="false" />
+												</SearchHint>
+												<LivePackName Value="Core Library" />
+												<LivePackId Value="www.ableton.com/0" />
+											</FileRef>
+											<DeviceId Name="Amp" />
+										</AbletonDefaultPresetRef>
+									</Value>
+								</LastPresetRef>
+								<LockedScripts />
+								<IsFolded Value="false" />
+								<ShouldShowPresetName Value="false" />
+								<UserName Value="" />
+								<Annotation Value="" />
+								<SourceContext>
+									<Value>
+										<BranchSourceContext>
+											<OriginalFileRef>
+												<FileRef>
+													<HasRelativePath Value="true" />
+													<RelativePathType Value="5" />
+													<RelativePath>
+														<RelativePathElement Dir="Devices" />
+														<RelativePathElement Dir="Audio Effects" />
+														<RelativePathElement Dir="Amp" />
+													</RelativePath>
+													<Name Value="" />
+													<Type Value="2" />
+													<Data>
+														0000000001F8000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+														656C482B000001AEC98503416D700000000000000000000000000000000000000000000000000000
+														0000000000000000000000000000000000000000000000000000000000000000000001AEC988D252
+														9FE50000000000000000FFFFFFFF000009200000000000000000000000000000000D417564696F20
+														4566666563747300001000080000D189575C0000001100080000D2529FE500000001001C01AEC985
+														01AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F37000200774D6163696E746F7368204844
+														3A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A
+														00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00
+														446576696365733A00417564696F20456666656374733A00416D7000000E000800030041006D0070
+														000F001A000C004D006100630069006E0074006F00730068002000480044001200634170706C6963
+														6174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F436F6E74656E7473
+														2F4170702D5265736F75726365732F436F7265204C6962726172792F446576696365732F41756469
+														6F20456666656374732F416D7000001300012F00FFFF0000
+													</Data>
+													<RefersToFolder Value="true" />
+													<SearchHint>
+														<PathHint />
+														<FileSize Value="0" />
+														<Crc Value="0" />
+														<MaxCrcSize Value="0" />
+														<HasExtendedInfo Value="false" />
+													</SearchHint>
+													<LivePackName Value="Core Library" />
+													<LivePackId Value="www.ableton.com/0" />
+												</FileRef>
+											</OriginalFileRef>
+											<BrowserContentPath Value="query:AudioFx#Amp" />
+											<PresetRef>
+												<AbletonDefaultPresetRef>
+													<FileRef>
+														<HasRelativePath Value="true" />
+														<RelativePathType Value="5" />
+														<RelativePath>
+															<RelativePathElement Dir="Devices" />
+															<RelativePathElement Dir="Audio Effects" />
+															<RelativePathElement Dir="Amp" />
+														</RelativePath>
+														<Name Value="" />
+														<Type Value="2" />
+														<Data>
+															0000000001F8000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+															656C482B000001AEC98503416D700000000000000000000000000000000000000000000000000000
+															0000000000000000000000000000000000000000000000000000000000000000000001AEC988D252
+															9FE50000000000000000FFFFFFFF000009200000000000000000000000000000000D417564696F20
+															4566666563747300001000080000D189575C0000001100080000D2529FE500000001001C01AEC985
+															01AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F37000200774D6163696E746F7368204844
+															3A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A
+															00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00
+															446576696365733A00417564696F20456666656374733A00416D7000000E000800030041006D0070
+															000F001A000C004D006100630069006E0074006F00730068002000480044001200634170706C6963
+															6174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F436F6E74656E7473
+															2F4170702D5265736F75726365732F436F7265204C6962726172792F446576696365732F41756469
+															6F20456666656374732F416D7000001300012F00FFFF0000
+														</Data>
+														<RefersToFolder Value="true" />
+														<SearchHint>
+															<PathHint />
+															<FileSize Value="0" />
+															<Crc Value="0" />
+															<MaxCrcSize Value="0" />
+															<HasExtendedInfo Value="false" />
+														</SearchHint>
+														<LivePackName Value="Core Library" />
+														<LivePackId Value="www.ableton.com/0" />
+													</FileRef>
+													<DeviceId Name="Amp" />
+												</AbletonDefaultPresetRef>
+											</PresetRef>
+											<BranchDeviceId Value="device:ableton:audiofx:Amp?n=Amp" />
+										</BranchSourceContext>
+									</Value>
+								</SourceContext>
+								<OverwriteProtectionNumber Value="2305" />
+								<AmpType>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<EnumEvent Time="-63072000" Value="4" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="4" />
+									<AutomationTarget Id="21155">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+								</AmpType>
+								<Bass>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<FloatEvent Time="-63072000" Value="5" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="5" />
+									<MidiControllerRange>
+										<Min Value="0" />
+										<Max Value="10" />
+									</MidiControllerRange>
+									<AutomationTarget Id="21156">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<ModulationTarget Id="21157">
+										<LockEnvelope Value="0" />
+									</ModulationTarget>
+									<ModulationAutomation>
+										<Events />
+									</ModulationAutomation>
+								</Bass>
+								<Middle>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<FloatEvent Time="-63072000" Value="5" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="5" />
+									<MidiControllerRange>
+										<Min Value="0" />
+										<Max Value="10" />
+									</MidiControllerRange>
+									<AutomationTarget Id="21158">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<ModulationTarget Id="21159">
+										<LockEnvelope Value="0" />
+									</ModulationTarget>
+									<ModulationAutomation>
+										<Events />
+									</ModulationAutomation>
+								</Middle>
+								<Treble>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<FloatEvent Time="-63072000" Value="5" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="5" />
+									<MidiControllerRange>
+										<Min Value="0" />
+										<Max Value="10" />
+									</MidiControllerRange>
+									<AutomationTarget Id="21160">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<ModulationTarget Id="21161">
+										<LockEnvelope Value="0" />
+									</ModulationTarget>
+									<ModulationAutomation>
+										<Events />
+									</ModulationAutomation>
+								</Treble>
+								<Presence>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<FloatEvent Time="-63072000" Value="5" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="5" />
+									<MidiControllerRange>
+										<Min Value="0" />
+										<Max Value="10" />
+									</MidiControllerRange>
+									<AutomationTarget Id="21162">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<ModulationTarget Id="21163">
+										<LockEnvelope Value="0" />
+									</ModulationTarget>
+									<ModulationAutomation>
+										<Events />
+									</ModulationAutomation>
+								</Presence>
+								<Gain>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<FloatEvent Time="-63072000" Value="5" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="5" />
+									<MidiControllerRange>
+										<Min Value="0" />
+										<Max Value="10" />
+									</MidiControllerRange>
+									<AutomationTarget Id="21164">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<ModulationTarget Id="21165">
+										<LockEnvelope Value="0" />
+									</ModulationTarget>
+									<ModulationAutomation>
+										<Events />
+									</ModulationAutomation>
+								</Gain>
+								<Volume>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<FloatEvent Time="-63072000" Value="9" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="9" />
+									<MidiControllerRange>
+										<Min Value="0" />
+										<Max Value="10" />
+									</MidiControllerRange>
+									<AutomationTarget Id="21166">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<ModulationTarget Id="21167">
+										<LockEnvelope Value="0" />
+									</ModulationTarget>
+									<ModulationAutomation>
+										<Events />
+									</ModulationAutomation>
+								</Volume>
+								<DualMono>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<BoolEvent Time="-63072000" Value="false" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="false" />
+									<AutomationTarget Id="21168">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<MidiCCOnOffThresholds>
+										<Min Value="64" />
+										<Max Value="127" />
+									</MidiCCOnOffThresholds>
+								</DualMono>
+								<DryWet>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<FloatEvent Time="-63072000" Value="0.6499999762" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="0.6499999762" />
+									<MidiControllerRange>
+										<Min Value="0" />
+										<Max Value="1" />
+									</MidiControllerRange>
+									<AutomationTarget Id="21169">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<ModulationTarget Id="21170">
+										<LockEnvelope Value="0" />
+									</ModulationTarget>
+									<ModulationAutomation>
+										<Events />
+									</ModulationAutomation>
+								</DryWet>
+							</Amp>
 							<MultibandDynamics Id="1">
 								<LomId Value="0" />
 								<LomIdView Value="0" />
@@ -44370,7 +45419,7 @@
 									</MidiCCOnOffThresholds>
 								</On>
 								<ParametersListWrapper LomId="0" />
-								<LastSelectedTimeableIndex Value="0" />
+								<LastSelectedTimeableIndex Value="6" />
 								<LastSelectedClipEnvelopeIndex Value="0" />
 								<LastPresetRef>
 									<Value>
@@ -44384,14 +45433,23 @@
 													<RelativePathElement Dir="Multiband Dynamics" />
 												</RelativePath>
 												<Name Value="" />
-												<Type Value="1" />
+												<Type Value="2" />
 												<Data>
-													43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-													360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-													6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-													6900620072006100720079005C0044006500760069006300650073005C0041007500640069006F00
-													200045006600660065006300740073005C004D0075006C0074006900620061006E00640020004400
-													79006E0061006D006900630073005C000000
+													000000000232000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+													656C482B000001AEC985124D756C746962616E642044796E616D6963730000000000000000000000
+													0000000000000000000000000000000000000000000000000000000000000000000001AECAFCD252
+													9FE60000000000000000FFFFFFFF000009200000000000000000000000000000000D417564696F20
+													4566666563747300001000080000D189575C0000001100080000D2529FE600000001001C01AEC985
+													01AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F37000200864D6163696E746F7368204844
+													3A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A
+													00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00
+													446576696365733A00417564696F20456666656374733A004D756C746962616E642044796E616D69
+													6373000E00260012004D0075006C0074006900620061006E0064002000440079006E0061006D0069
+													00630073000F001A000C004D006100630069006E0074006F00730068002000480044001200724170
+													706C69636174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F436F6E74
+													656E74732F4170702D5265736F75726365732F436F7265204C6962726172792F446576696365732F
+													417564696F20456666656374732F4D756C746962616E642044796E616D696373001300012F00FFFF
+													0000
 												</Data>
 												<RefersToFolder Value="true" />
 												<SearchHint>
@@ -44426,14 +45484,23 @@
 														<RelativePathElement Dir="Multiband Dynamics" />
 													</RelativePath>
 													<Name Value="" />
-													<Type Value="1" />
+													<Type Value="2" />
 													<Data>
-														43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-														360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-														6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-														6900620072006100720079005C0044006500760069006300650073005C0041007500640069006F00
-														200045006600660065006300740073005C004D0075006C0074006900620061006E00640020004400
-														79006E0061006D006900630073005C000000
+														000000000232000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+														656C482B000001AEC985124D756C746962616E642044796E616D6963730000000000000000000000
+														0000000000000000000000000000000000000000000000000000000000000000000001AECAFCD252
+														9FE60000000000000000FFFFFFFF000009200000000000000000000000000000000D417564696F20
+														4566666563747300001000080000D189575C0000001100080000D2529FE600000001001C01AEC985
+														01AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F37000200864D6163696E746F7368204844
+														3A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A
+														00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00
+														446576696365733A00417564696F20456666656374733A004D756C746962616E642044796E616D69
+														6373000E00260012004D0075006C0074006900620061006E0064002000440079006E0061006D0069
+														00630073000F001A000C004D006100630069006E0074006F00730068002000480044001200724170
+														706C69636174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F436F6E74
+														656E74732F4170702D5265736F75726365732F436F7265204C6962726172792F446576696365732F
+														417564696F20456666656374732F4D756C746962616E642044796E616D696373001300012F00FFFF
+														0000
 													</Data>
 													<RefersToFolder Value="true" />
 													<SearchHint>
@@ -44459,14 +45526,23 @@
 															<RelativePathElement Dir="Multiband Dynamics" />
 														</RelativePath>
 														<Name Value="" />
-														<Type Value="1" />
+														<Type Value="2" />
 														<Data>
-															43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-															360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-															6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-															6900620072006100720079005C0044006500760069006300650073005C0041007500640069006F00
-															200045006600660065006300740073005C004D0075006C0074006900620061006E00640020004400
-															79006E0061006D006900630073005C000000
+															000000000232000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+															656C482B000001AEC985124D756C746962616E642044796E616D6963730000000000000000000000
+															0000000000000000000000000000000000000000000000000000000000000000000001AECAFCD252
+															9FE60000000000000000FFFFFFFF000009200000000000000000000000000000000D417564696F20
+															4566666563747300001000080000D189575C0000001100080000D2529FE600000001001C01AEC985
+															01AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F37000200864D6163696E746F7368204844
+															3A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A
+															00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00
+															446576696365733A00417564696F20456666656374733A004D756C746962616E642044796E616D69
+															6373000E00260012004D0075006C0074006900620061006E0064002000440079006E0061006D0069
+															00630073000F001A000C004D006100630069006E0074006F00730068002000480044001200724170
+															706C69636174696F6E732F41626C65746F6E204C69766520392053756974652E6170702F436F6E74
+															656E74732F4170702D5265736F75726365732F436F7265204C6962726172792F446576696365732F
+															417564696F20456666656374732F4D756C746962616E642044796E616D696373001300012F00FFFF
+															0000
 														</Data>
 														<RefersToFolder Value="true" />
 														<SearchHint>
@@ -44591,10 +45667,10 @@
 									<LomId Value="0" />
 									<ArrangerAutomation>
 										<Events>
-											<FloatEvent Time="-63072000" Value="1" />
+											<FloatEvent Time="-63072000" Value="0.5" />
 										</Events>
 									</ArrangerAutomation>
-									<Manual Value="1" />
+									<Manual Value="0.5" />
 									<MidiControllerRange>
 										<Min Value="0" />
 										<Max Value="1" />
@@ -45282,989 +46358,930 @@
 								</SideChain>
 								<ActiveEditMode Value="0" />
 							</MultibandDynamics>
+							<Overdrive Id="22">
+								<LomId Value="0" />
+								<LomIdView Value="0" />
+								<IsExpanded Value="true" />
+								<On>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<BoolEvent Time="-63072000" Value="true" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="true" />
+									<AutomationTarget Id="21234">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<MidiCCOnOffThresholds>
+										<Min Value="64" />
+										<Max Value="127" />
+									</MidiCCOnOffThresholds>
+								</On>
+								<ParametersListWrapper LomId="0" />
+								<LastSelectedTimeableIndex Value="5" />
+								<LastSelectedClipEnvelopeIndex Value="0" />
+								<LastPresetRef>
+									<Value>
+										<AbletonDefaultPresetRef>
+											<FileRef>
+												<HasRelativePath Value="true" />
+												<RelativePathType Value="5" />
+												<RelativePath>
+													<RelativePathElement Dir="Devices" />
+													<RelativePathElement Dir="Audio Effects" />
+													<RelativePathElement Dir="Overdrive" />
+												</RelativePath>
+												<Name Value="" />
+												<Type Value="2" />
+												<Data>
+													000000000210000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+													656C482B000001AEC985094F76657264726976650000000000000000000000000000000000000000
+													0000000000000000000000000000000000000000000000000000000000000000000001AECB09D252
+													9FE60000000000000000FFFFFFFF000009200000000000000000000000000000000D417564696F20
+													4566666563747300001000080000D189575C0000001100080000D2529FE600000001001C01AEC985
+													01AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F370002007D4D6163696E746F7368204844
+													3A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A
+													00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00
+													446576696365733A00417564696F20456666656374733A004F766572647269766500000E00140009
+													004F00760065007200640072006900760065000F001A000C004D006100630069006E0074006F0073
+													0068002000480044001200694170706C69636174696F6E732F41626C65746F6E204C697665203920
+													53756974652E6170702F436F6E74656E74732F4170702D5265736F75726365732F436F7265204C69
+													62726172792F446576696365732F417564696F20456666656374732F4F7665726472697665000013
+													00012F00FFFF0000
+												</Data>
+												<RefersToFolder Value="true" />
+												<SearchHint>
+													<PathHint />
+													<FileSize Value="0" />
+													<Crc Value="0" />
+													<MaxCrcSize Value="0" />
+													<HasExtendedInfo Value="false" />
+												</SearchHint>
+												<LivePackName Value="Core Library" />
+												<LivePackId Value="www.ableton.com/0" />
+											</FileRef>
+											<DeviceId Name="Overdrive" />
+										</AbletonDefaultPresetRef>
+									</Value>
+								</LastPresetRef>
+								<LockedScripts />
+								<IsFolded Value="false" />
+								<ShouldShowPresetName Value="false" />
+								<UserName Value="" />
+								<Annotation Value="" />
+								<SourceContext>
+									<Value>
+										<BranchSourceContext>
+											<OriginalFileRef>
+												<FileRef>
+													<HasRelativePath Value="true" />
+													<RelativePathType Value="5" />
+													<RelativePath>
+														<RelativePathElement Dir="Devices" />
+														<RelativePathElement Dir="Audio Effects" />
+														<RelativePathElement Dir="Overdrive" />
+													</RelativePath>
+													<Name Value="" />
+													<Type Value="2" />
+													<Data>
+														000000000210000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+														656C482B000001AEC985094F76657264726976650000000000000000000000000000000000000000
+														0000000000000000000000000000000000000000000000000000000000000000000001AECB09D252
+														9FE60000000000000000FFFFFFFF000009200000000000000000000000000000000D417564696F20
+														4566666563747300001000080000D189575C0000001100080000D2529FE600000001001C01AEC985
+														01AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F370002007D4D6163696E746F7368204844
+														3A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A
+														00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00
+														446576696365733A00417564696F20456666656374733A004F766572647269766500000E00140009
+														004F00760065007200640072006900760065000F001A000C004D006100630069006E0074006F0073
+														0068002000480044001200694170706C69636174696F6E732F41626C65746F6E204C697665203920
+														53756974652E6170702F436F6E74656E74732F4170702D5265736F75726365732F436F7265204C69
+														62726172792F446576696365732F417564696F20456666656374732F4F7665726472697665000013
+														00012F00FFFF0000
+													</Data>
+													<RefersToFolder Value="true" />
+													<SearchHint>
+														<PathHint />
+														<FileSize Value="0" />
+														<Crc Value="0" />
+														<MaxCrcSize Value="0" />
+														<HasExtendedInfo Value="false" />
+													</SearchHint>
+													<LivePackName Value="Core Library" />
+													<LivePackId Value="www.ableton.com/0" />
+												</FileRef>
+											</OriginalFileRef>
+											<BrowserContentPath Value="query:AudioFx#Overdrive" />
+											<PresetRef>
+												<AbletonDefaultPresetRef>
+													<FileRef>
+														<HasRelativePath Value="true" />
+														<RelativePathType Value="5" />
+														<RelativePath>
+															<RelativePathElement Dir="Devices" />
+															<RelativePathElement Dir="Audio Effects" />
+															<RelativePathElement Dir="Overdrive" />
+														</RelativePath>
+														<Name Value="" />
+														<Type Value="2" />
+														<Data>
+															000000000210000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+															656C482B000001AEC985094F76657264726976650000000000000000000000000000000000000000
+															0000000000000000000000000000000000000000000000000000000000000000000001AECB09D252
+															9FE60000000000000000FFFFFFFF000009200000000000000000000000000000000D417564696F20
+															4566666563747300001000080000D189575C0000001100080000D2529FE600000001001C01AEC985
+															01AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F370002007D4D6163696E746F7368204844
+															3A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A
+															00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00
+															446576696365733A00417564696F20456666656374733A004F766572647269766500000E00140009
+															004F00760065007200640072006900760065000F001A000C004D006100630069006E0074006F0073
+															0068002000480044001200694170706C69636174696F6E732F41626C65746F6E204C697665203920
+															53756974652E6170702F436F6E74656E74732F4170702D5265736F75726365732F436F7265204C69
+															62726172792F446576696365732F417564696F20456666656374732F4F7665726472697665000013
+															00012F00FFFF0000
+														</Data>
+														<RefersToFolder Value="true" />
+														<SearchHint>
+															<PathHint />
+															<FileSize Value="0" />
+															<Crc Value="0" />
+															<MaxCrcSize Value="0" />
+															<HasExtendedInfo Value="false" />
+														</SearchHint>
+														<LivePackName Value="Core Library" />
+														<LivePackId Value="www.ableton.com/0" />
+													</FileRef>
+													<DeviceId Name="Overdrive" />
+												</AbletonDefaultPresetRef>
+											</PresetRef>
+											<BranchDeviceId Value="device:ableton:audiofx:Overdrive?n=Overdrive" />
+										</BranchSourceContext>
+									</Value>
+								</SourceContext>
+								<OverwriteProtectionNumber Value="2305" />
+								<MidFreq>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<FloatEvent Time="-63072000" Value="150" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="150" />
+									<MidiControllerRange>
+										<Min Value="50" />
+										<Max Value="20000" />
+									</MidiControllerRange>
+									<AutomationTarget Id="21235">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<ModulationTarget Id="21236">
+										<LockEnvelope Value="0" />
+									</ModulationTarget>
+									<ModulationAutomation>
+										<Events />
+									</ModulationAutomation>
+								</MidFreq>
+								<BandWidth>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<FloatEvent Time="-63072000" Value="2" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="2" />
+									<MidiControllerRange>
+										<Min Value="0.5" />
+										<Max Value="9" />
+									</MidiControllerRange>
+									<AutomationTarget Id="21237">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<ModulationTarget Id="21238">
+										<LockEnvelope Value="0" />
+									</ModulationTarget>
+									<ModulationAutomation>
+										<Events />
+									</ModulationAutomation>
+								</BandWidth>
+								<Drive>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<FloatEvent Time="-63072000" Value="25" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="25" />
+									<MidiControllerRange>
+										<Min Value="0" />
+										<Max Value="100" />
+									</MidiControllerRange>
+									<AutomationTarget Id="21239">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<ModulationTarget Id="21240">
+										<LockEnvelope Value="0" />
+									</ModulationTarget>
+									<ModulationAutomation>
+										<Events />
+									</ModulationAutomation>
+								</Drive>
+								<DryWet>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<FloatEvent Time="-63072000" Value="50" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="50" />
+									<MidiControllerRange>
+										<Min Value="0" />
+										<Max Value="100" />
+									</MidiControllerRange>
+									<AutomationTarget Id="21241">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<ModulationTarget Id="21242">
+										<LockEnvelope Value="0" />
+									</ModulationTarget>
+									<ModulationAutomation>
+										<Events />
+									</ModulationAutomation>
+								</DryWet>
+								<Tone>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<FloatEvent Time="-63072000" Value="25" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="25" />
+									<MidiControllerRange>
+										<Min Value="0" />
+										<Max Value="100" />
+									</MidiControllerRange>
+									<AutomationTarget Id="21243">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<ModulationTarget Id="21244">
+										<LockEnvelope Value="0" />
+									</ModulationTarget>
+									<ModulationAutomation>
+										<Events />
+									</ModulationAutomation>
+								</Tone>
+								<PreserveDynamics>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<FloatEvent Time="-63072000" Value="0.5" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="0.5" />
+									<MidiControllerRange>
+										<Min Value="0" />
+										<Max Value="1" />
+									</MidiControllerRange>
+									<AutomationTarget Id="21245">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<ModulationTarget Id="21246">
+										<LockEnvelope Value="0" />
+									</ModulationTarget>
+									<ModulationAutomation>
+										<Events />
+									</ModulationAutomation>
+								</PreserveDynamics>
+							</Overdrive>
+							<Compressor2 Id="7">
+								<LomId Value="0" />
+								<LomIdView Value="0" />
+								<IsExpanded Value="true" />
+								<On>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<BoolEvent Time="-63072000" Value="true" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="true" />
+									<AutomationTarget Id="21171">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<MidiCCOnOffThresholds>
+										<Min Value="64" />
+										<Max Value="127" />
+									</MidiCCOnOffThresholds>
+								</On>
+								<ParametersListWrapper LomId="0" />
+								<LastSelectedTimeableIndex Value="18" />
+								<LastSelectedClipEnvelopeIndex Value="0" />
+								<LastPresetRef>
+									<Value>
+										<AbletonDefaultPresetRef>
+											<FileRef>
+												<HasRelativePath Value="true" />
+												<RelativePathType Value="5" />
+												<RelativePath>
+													<RelativePathElement Dir="Devices" />
+													<RelativePathElement Dir="Audio Effects" />
+													<RelativePathElement Dir="Compressor" />
+												</RelativePath>
+												<Name Value="" />
+												<Type Value="2" />
+												<Data>
+													000000000212000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+													656C482B000001AEC9850A436F6D70726573736F7200000000000000000000000000000000000000
+													0000000000000000000000000000000000000000000000000000000000000000000001AEC9F1D252
+													9FE60000000000000000FFFFFFFF000009200000000000000000000000000000000D417564696F20
+													4566666563747300001000080000D189575C0000001100080000D2529FE600000001001C01AEC985
+													01AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F370002007E4D6163696E746F7368204844
+													3A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A
+													00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00
+													446576696365733A00417564696F20456666656374733A00436F6D70726573736F72000E0016000A
+													0043006F006D00700072006500730073006F0072000F001A000C004D006100630069006E0074006F
+													007300680020004800440012006A4170706C69636174696F6E732F41626C65746F6E204C69766520
+													392053756974652E6170702F436F6E74656E74732F4170702D5265736F75726365732F436F726520
+													4C6962726172792F446576696365732F417564696F20456666656374732F436F6D70726573736F72
+													001300012F00FFFF0000
+												</Data>
+												<RefersToFolder Value="true" />
+												<SearchHint>
+													<PathHint />
+													<FileSize Value="0" />
+													<Crc Value="0" />
+													<MaxCrcSize Value="0" />
+													<HasExtendedInfo Value="false" />
+												</SearchHint>
+												<LivePackName Value="Core Library" />
+												<LivePackId Value="www.ableton.com/0" />
+											</FileRef>
+											<DeviceId Name="Compressor2" />
+										</AbletonDefaultPresetRef>
+									</Value>
+								</LastPresetRef>
+								<LockedScripts />
+								<IsFolded Value="false" />
+								<ShouldShowPresetName Value="false" />
+								<UserName Value="" />
+								<Annotation Value="" />
+								<SourceContext>
+									<Value>
+										<BranchSourceContext>
+											<OriginalFileRef>
+												<FileRef>
+													<HasRelativePath Value="true" />
+													<RelativePathType Value="5" />
+													<RelativePath>
+														<RelativePathElement Dir="Devices" />
+														<RelativePathElement Dir="Audio Effects" />
+														<RelativePathElement Dir="Compressor" />
+													</RelativePath>
+													<Name Value="" />
+													<Type Value="2" />
+													<Data>
+														000000000212000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+														656C482B000001AEC9850A436F6D70726573736F7200000000000000000000000000000000000000
+														0000000000000000000000000000000000000000000000000000000000000000000001AEC9F1D252
+														9FE60000000000000000FFFFFFFF000009200000000000000000000000000000000D417564696F20
+														4566666563747300001000080000D189575C0000001100080000D2529FE600000001001C01AEC985
+														01AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F370002007E4D6163696E746F7368204844
+														3A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A
+														00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00
+														446576696365733A00417564696F20456666656374733A00436F6D70726573736F72000E0016000A
+														0043006F006D00700072006500730073006F0072000F001A000C004D006100630069006E0074006F
+														007300680020004800440012006A4170706C69636174696F6E732F41626C65746F6E204C69766520
+														392053756974652E6170702F436F6E74656E74732F4170702D5265736F75726365732F436F726520
+														4C6962726172792F446576696365732F417564696F20456666656374732F436F6D70726573736F72
+														001300012F00FFFF0000
+													</Data>
+													<RefersToFolder Value="true" />
+													<SearchHint>
+														<PathHint />
+														<FileSize Value="0" />
+														<Crc Value="0" />
+														<MaxCrcSize Value="0" />
+														<HasExtendedInfo Value="false" />
+													</SearchHint>
+													<LivePackName Value="Core Library" />
+													<LivePackId Value="www.ableton.com/0" />
+												</FileRef>
+											</OriginalFileRef>
+											<BrowserContentPath Value="query:AudioFx#Compressor" />
+											<PresetRef>
+												<AbletonDefaultPresetRef>
+													<FileRef>
+														<HasRelativePath Value="true" />
+														<RelativePathType Value="5" />
+														<RelativePath>
+															<RelativePathElement Dir="Devices" />
+															<RelativePathElement Dir="Audio Effects" />
+															<RelativePathElement Dir="Compressor" />
+														</RelativePath>
+														<Name Value="" />
+														<Type Value="2" />
+														<Data>
+															000000000212000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+															656C482B000001AEC9850A436F6D70726573736F7200000000000000000000000000000000000000
+															0000000000000000000000000000000000000000000000000000000000000000000001AEC9F1D252
+															9FE60000000000000000FFFFFFFF000009200000000000000000000000000000000D417564696F20
+															4566666563747300001000080000D189575C0000001100080000D2529FE600000001001C01AEC985
+															01AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F370002007E4D6163696E746F7368204844
+															3A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A
+															00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00
+															446576696365733A00417564696F20456666656374733A00436F6D70726573736F72000E0016000A
+															0043006F006D00700072006500730073006F0072000F001A000C004D006100630069006E0074006F
+															007300680020004800440012006A4170706C69636174696F6E732F41626C65746F6E204C69766520
+															392053756974652E6170702F436F6E74656E74732F4170702D5265736F75726365732F436F726520
+															4C6962726172792F446576696365732F417564696F20456666656374732F436F6D70726573736F72
+															001300012F00FFFF0000
+														</Data>
+														<RefersToFolder Value="true" />
+														<SearchHint>
+															<PathHint />
+															<FileSize Value="0" />
+															<Crc Value="0" />
+															<MaxCrcSize Value="0" />
+															<HasExtendedInfo Value="false" />
+														</SearchHint>
+														<LivePackName Value="Core Library" />
+														<LivePackId Value="www.ableton.com/0" />
+													</FileRef>
+													<DeviceId Name="Compressor2" />
+												</AbletonDefaultPresetRef>
+											</PresetRef>
+											<BranchDeviceId Value="device:ableton:audiofx:Compressor2?n=Compressor" />
+										</BranchSourceContext>
+									</Value>
+								</SourceContext>
+								<OverwriteProtectionNumber Value="2305" />
+								<Threshold>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<FloatEvent Time="-63072000" Value="1" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="1" />
+									<MidiControllerRange>
+										<Min Value="0.0003162277571" />
+										<Max Value="1.99526238" />
+									</MidiControllerRange>
+									<AutomationTarget Id="21172">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<ModulationTarget Id="21173">
+										<LockEnvelope Value="0" />
+									</ModulationTarget>
+									<ModulationAutomation>
+										<Events />
+									</ModulationAutomation>
+								</Threshold>
+								<Ratio>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<FloatEvent Time="-63072000" Value="5.99999952" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="5.99999952" />
+									<MidiControllerRange>
+										<Min Value="1" />
+										<Max Value="340282326356119256160033759537265639424" />
+									</MidiControllerRange>
+									<AutomationTarget Id="21174">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<ModulationTarget Id="21175">
+										<LockEnvelope Value="0" />
+									</ModulationTarget>
+									<ModulationAutomation>
+										<Events />
+									</ModulationAutomation>
+								</Ratio>
+								<ExpansionRatio>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<FloatEvent Time="-63072000" Value="1.14999998" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="1.14999998" />
+									<MidiControllerRange>
+										<Min Value="1" />
+										<Max Value="2" />
+									</MidiControllerRange>
+									<AutomationTarget Id="21176">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<ModulationTarget Id="21177">
+										<LockEnvelope Value="0" />
+									</ModulationTarget>
+									<ModulationAutomation>
+										<Events />
+									</ModulationAutomation>
+								</ExpansionRatio>
+								<Attack>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<FloatEvent Time="-63072000" Value="0.009999999776" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="0.009999999776" />
+									<MidiControllerRange>
+										<Min Value="0.009999999776" />
+										<Max Value="1000" />
+									</MidiControllerRange>
+									<AutomationTarget Id="21178">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<ModulationTarget Id="21179">
+										<LockEnvelope Value="0" />
+									</ModulationTarget>
+									<ModulationAutomation>
+										<Events />
+									</ModulationAutomation>
+								</Attack>
+								<Release>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<FloatEvent Time="-63072000" Value="50.0000038" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="50.0000038" />
+									<MidiControllerRange>
+										<Min Value="1" />
+										<Max Value="3000" />
+									</MidiControllerRange>
+									<AutomationTarget Id="21180">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<ModulationTarget Id="21181">
+										<LockEnvelope Value="0" />
+									</ModulationTarget>
+									<ModulationAutomation>
+										<Events />
+									</ModulationAutomation>
+								</Release>
+								<AutoReleaseControlOnOff>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<BoolEvent Time="-63072000" Value="false" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="false" />
+									<AutomationTarget Id="21182">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<MidiCCOnOffThresholds>
+										<Min Value="64" />
+										<Max Value="127" />
+									</MidiCCOnOffThresholds>
+								</AutoReleaseControlOnOff>
+								<Gain>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<FloatEvent Time="-63072000" Value="0" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="0" />
+									<MidiControllerRange>
+										<Min Value="-36" />
+										<Max Value="36" />
+									</MidiControllerRange>
+									<AutomationTarget Id="21183">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<ModulationTarget Id="21184">
+										<LockEnvelope Value="0" />
+									</ModulationTarget>
+									<ModulationAutomation>
+										<Events />
+									</ModulationAutomation>
+								</Gain>
+								<GainCompensation>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<BoolEvent Time="-63072000" Value="true" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="true" />
+									<AutomationTarget Id="21185">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<MidiCCOnOffThresholds>
+										<Min Value="64" />
+										<Max Value="127" />
+									</MidiCCOnOffThresholds>
+								</GainCompensation>
+								<DryWet>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<FloatEvent Time="-63072000" Value="1" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="1" />
+									<MidiControllerRange>
+										<Min Value="0" />
+										<Max Value="1" />
+									</MidiControllerRange>
+									<AutomationTarget Id="21186">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<ModulationTarget Id="21187">
+										<LockEnvelope Value="0" />
+									</ModulationTarget>
+									<ModulationAutomation>
+										<Events />
+									</ModulationAutomation>
+								</DryWet>
+								<Model>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<EnumEvent Time="-63072000" Value="0" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="0" />
+									<AutomationTarget Id="21188">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+								</Model>
+								<LegacyModel>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<EnumEvent Time="-63072000" Value="1" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="1" />
+									<AutomationTarget Id="21189">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+								</LegacyModel>
+								<LogEnvelope>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<BoolEvent Time="-63072000" Value="true" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="true" />
+									<AutomationTarget Id="21190">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<MidiCCOnOffThresholds>
+										<Min Value="64" />
+										<Max Value="127" />
+									</MidiCCOnOffThresholds>
+								</LogEnvelope>
+								<LegacyEnvFollowerMode>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<EnumEvent Time="-63072000" Value="0" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="0" />
+									<AutomationTarget Id="21191">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+								</LegacyEnvFollowerMode>
+								<Knee>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<FloatEvent Time="-63072000" Value="6" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="6" />
+									<MidiControllerRange>
+										<Min Value="0" />
+										<Max Value="18" />
+									</MidiControllerRange>
+									<AutomationTarget Id="21192">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<ModulationTarget Id="21193">
+										<LockEnvelope Value="0" />
+									</ModulationTarget>
+									<ModulationAutomation>
+										<Events />
+									</ModulationAutomation>
+								</Knee>
+								<LookAhead>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<EnumEvent Time="-63072000" Value="0" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="0" />
+									<AutomationTarget Id="21194">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+								</LookAhead>
+								<SideListen>
+									<LomId Value="0" />
+									<ArrangerAutomation>
+										<Events>
+											<BoolEvent Time="-63072000" Value="false" />
+										</Events>
+									</ArrangerAutomation>
+									<Manual Value="false" />
+									<AutomationTarget Id="21195">
+										<LockEnvelope Value="0" />
+									</AutomationTarget>
+									<MidiCCOnOffThresholds>
+										<Min Value="64" />
+										<Max Value="127" />
+									</MidiCCOnOffThresholds>
+								</SideListen>
+								<SideChain>
+									<OnOff>
+										<LomId Value="0" />
+										<ArrangerAutomation>
+											<Events>
+												<BoolEvent Time="-63072000" Value="true" />
+											</Events>
+										</ArrangerAutomation>
+										<Manual Value="true" />
+										<AutomationTarget Id="21196">
+											<LockEnvelope Value="0" />
+										</AutomationTarget>
+										<MidiCCOnOffThresholds>
+											<Min Value="64" />
+											<Max Value="127" />
+										</MidiCCOnOffThresholds>
+									</OnOff>
+									<RoutedInput>
+										<Routable>
+											<Target Value="AudioIn/Track.12/PostFxOut" />
+											<UpperDisplayString Value="1-Kit-Core Chromatone" />
+											<LowerDisplayString Value="Post FX" />
+										</Routable>
+										<Volume>
+											<LomId Value="0" />
+											<ArrangerAutomation>
+												<Events>
+													<FloatEvent Time="-63072000" Value="1" />
+												</Events>
+											</ArrangerAutomation>
+											<Manual Value="1" />
+											<MidiControllerRange>
+												<Min Value="0.0003162277571" />
+												<Max Value="15.8489332" />
+											</MidiControllerRange>
+											<AutomationTarget Id="21197">
+												<LockEnvelope Value="0" />
+											</AutomationTarget>
+											<ModulationTarget Id="21198">
+												<LockEnvelope Value="0" />
+											</ModulationTarget>
+											<ModulationAutomation>
+												<Events />
+											</ModulationAutomation>
+										</Volume>
+									</RoutedInput>
+									<DryWet>
+										<LomId Value="0" />
+										<ArrangerAutomation>
+											<Events>
+												<FloatEvent Time="-63072000" Value="1" />
+											</Events>
+										</ArrangerAutomation>
+										<Manual Value="1" />
+										<MidiControllerRange>
+											<Min Value="0" />
+											<Max Value="1" />
+										</MidiControllerRange>
+										<AutomationTarget Id="21199">
+											<LockEnvelope Value="0" />
+										</AutomationTarget>
+										<ModulationTarget Id="21200">
+											<LockEnvelope Value="0" />
+										</ModulationTarget>
+										<ModulationAutomation>
+											<Events />
+										</ModulationAutomation>
+									</DryWet>
+								</SideChain>
+								<SideChainEq>
+									<On>
+										<LomId Value="0" />
+										<ArrangerAutomation>
+											<Events>
+												<BoolEvent Time="-63072000" Value="true" />
+											</Events>
+										</ArrangerAutomation>
+										<Manual Value="true" />
+										<AutomationTarget Id="21201">
+											<LockEnvelope Value="0" />
+										</AutomationTarget>
+										<MidiCCOnOffThresholds>
+											<Min Value="64" />
+											<Max Value="127" />
+										</MidiCCOnOffThresholds>
+									</On>
+									<Mode>
+										<LomId Value="0" />
+										<ArrangerAutomation>
+											<Events>
+												<EnumEvent Time="-63072000" Value="4" />
+											</Events>
+										</ArrangerAutomation>
+										<Manual Value="4" />
+										<AutomationTarget Id="21202">
+											<LockEnvelope Value="0" />
+										</AutomationTarget>
+									</Mode>
+									<Freq>
+										<LomId Value="0" />
+										<ArrangerAutomation>
+											<Events>
+												<FloatEvent Time="-63072000" Value="60" />
+											</Events>
+										</ArrangerAutomation>
+										<Manual Value="60" />
+										<MidiControllerRange>
+											<Min Value="30" />
+											<Max Value="15000" />
+										</MidiControllerRange>
+										<AutomationTarget Id="21203">
+											<LockEnvelope Value="0" />
+										</AutomationTarget>
+										<ModulationTarget Id="21204">
+											<LockEnvelope Value="0" />
+										</ModulationTarget>
+										<ModulationAutomation>
+											<Events />
+										</ModulationAutomation>
+									</Freq>
+									<Q>
+										<LomId Value="0" />
+										<ArrangerAutomation>
+											<Events>
+												<FloatEvent Time="-63072000" Value="1" />
+											</Events>
+										</ArrangerAutomation>
+										<Manual Value="1" />
+										<MidiControllerRange>
+											<Min Value="0.1000000015" />
+											<Max Value="12" />
+										</MidiControllerRange>
+										<AutomationTarget Id="21205">
+											<LockEnvelope Value="0" />
+										</AutomationTarget>
+										<ModulationTarget Id="21206">
+											<LockEnvelope Value="0" />
+										</ModulationTarget>
+										<ModulationAutomation>
+											<Events />
+										</ModulationAutomation>
+									</Q>
+									<Gain>
+										<LomId Value="0" />
+										<ArrangerAutomation>
+											<Events>
+												<FloatEvent Time="-63072000" Value="0" />
+											</Events>
+										</ArrangerAutomation>
+										<Manual Value="0" />
+										<MidiControllerRange>
+											<Min Value="-15" />
+											<Max Value="15" />
+										</MidiControllerRange>
+										<AutomationTarget Id="21207">
+											<LockEnvelope Value="0" />
+										</AutomationTarget>
+										<ModulationTarget Id="21208">
+											<LockEnvelope Value="0" />
+										</ModulationTarget>
+										<ModulationAutomation>
+											<Events />
+										</ModulationAutomation>
+									</Gain>
+								</SideChainEq>
+								<Live8LegacyMode Value="false" />
+								<ViewMode Value="0" />
+								<IsOutputCurveVisible Value="false" />
+								<RmsTimeShort Value="8" />
+								<RmsTimeLong Value="250" />
+								<ReleaseTimeShort Value="15" />
+								<ReleaseTimeLong Value="1500" />
+								<CrossfaderSmoothingTime Value="10" />
+							</Compressor2>
 						</Devices>
 					</DeviceChain>
 				</DeviceChain>
 				<ReWireSlaveMidiTargetId Value="2" />
 			</MidiTrack>
-			<AudioTrack Id="8">
-				<LomId Value="0" />
-				<LomIdView Value="0" />
-				<EnvelopeModePreferred Value="false" />
-				<TrackDelay>
-					<Value Value="0" />
-					<IsValueSampleBased Value="false" />
-				</TrackDelay>
-				<Name>
-					<EffectiveName Value="4-Audio" />
-					<UserName Value="" />
-					<Annotation Value="" />
-				</Name>
-				<ColorIndex Value="187" />
-				<TrackGroupId Value="-1" />
-				<TrackUnfolded Value="true" />
-				<DevicesListWrapper LomId="0" />
-				<ClipSlotsListWrapper LomId="0" />
-				<SavedPlayingSlot Value="-1" />
-				<SavedPlayingOffset Value="0" />
-				<MidiFoldIn Value="false" />
-				<MidiPrelisten Value="false" />
-				<Freeze Value="false" />
-				<VelocityDetail Value="0" />
-				<NeedArrangerRefreeze Value="true" />
-				<PostProcessFreezeClips Value="0" />
-				<MidiTargetPrefersFoldOrIsNotUniform Value="false" />
-				<DeviceChain>
-					<AutomationLanes>
-						<AutomationLanes>
-							<AutomationLane>
-								<SelectedDevice Value="0" />
-								<SelectedEnvelope Value="0" />
-								<IsContentSelected Value="false" />
-								<LaneHeight Value="85" />
-								<FadeViewVisible Value="false" />
-							</AutomationLane>
-						</AutomationLanes>
-						<PermanentLanesAreVisible Value="true" />
-					</AutomationLanes>
-					<EnvelopeChooser>
-						<SelectedDevice Value="1" />
-						<SelectedEnvelope Value="2" />
-					</EnvelopeChooser>
-					<AudioInputRouting>
-						<Target Value="AudioIn/External/M0" />
-						<UpperDisplayString Value="Ext. In" />
-						<LowerDisplayString Value="1" />
-					</AudioInputRouting>
-					<MidiInputRouting>
-						<Target Value="MidiIn/External.All/-1" />
-						<UpperDisplayString Value="Ext: All Ins" />
-						<LowerDisplayString Value="" />
-					</MidiInputRouting>
-					<AudioOutputRouting>
-						<Target Value="AudioOut/Master" />
-						<UpperDisplayString Value="Master" />
-						<LowerDisplayString Value="" />
-					</AudioOutputRouting>
-					<MidiOutputRouting>
-						<Target Value="MidiOut/None" />
-						<UpperDisplayString Value="None" />
-						<LowerDisplayString Value="" />
-					</MidiOutputRouting>
-					<Mixer>
-						<LomId Value="0" />
-						<LomIdView Value="0" />
-						<IsExpanded Value="true" />
-						<On>
-							<LomId Value="0" />
-							<ArrangerAutomation>
-								<Events>
-									<BoolEvent Time="-63072000" Value="true" />
-								</Events>
-							</ArrangerAutomation>
-							<Manual Value="true" />
-							<AutomationTarget Id="8630">
-								<LockEnvelope Value="0" />
-							</AutomationTarget>
-							<MidiCCOnOffThresholds>
-								<Min Value="64" />
-								<Max Value="127" />
-							</MidiCCOnOffThresholds>
-						</On>
-						<ParametersListWrapper LomId="0" />
-						<LastSelectedTimeableIndex Value="2" />
-						<LastSelectedClipEnvelopeIndex Value="2" />
-						<LastPresetRef>
-							<Value />
-						</LastPresetRef>
-						<LockedScripts />
-						<IsFolded Value="false" />
-						<ShouldShowPresetName Value="false" />
-						<UserName Value="" />
-						<Annotation Value="" />
-						<SourceContext>
-							<Value />
-						</SourceContext>
-						<Sends>
-							<TrackSendHolder>
-								<Send>
-									<LomId Value="0" />
-									<ArrangerAutomation>
-										<Events>
-											<FloatEvent Time="-63072000" Value="0.0003162277571" />
-										</Events>
-									</ArrangerAutomation>
-									<Manual Value="0.0003162277571" />
-									<MidiControllerRange>
-										<Min Value="0.0003162277571" />
-										<Max Value="1" />
-									</MidiControllerRange>
-									<AutomationTarget Id="8631">
-										<LockEnvelope Value="0" />
-									</AutomationTarget>
-									<ModulationTarget Id="8632">
-										<LockEnvelope Value="0" />
-									</ModulationTarget>
-									<ModulationAutomation>
-										<Events />
-									</ModulationAutomation>
-								</Send>
-								<Active Value="true" />
-							</TrackSendHolder>
-							<TrackSendHolder>
-								<Send>
-									<LomId Value="0" />
-									<ArrangerAutomation>
-										<Events>
-											<FloatEvent Time="-63072000" Value="0.0003162277571" />
-										</Events>
-									</ArrangerAutomation>
-									<Manual Value="0.0003162277571" />
-									<MidiControllerRange>
-										<Min Value="0.0003162277571" />
-										<Max Value="1" />
-									</MidiControllerRange>
-									<AutomationTarget Id="8633">
-										<LockEnvelope Value="0" />
-									</AutomationTarget>
-									<ModulationTarget Id="8634">
-										<LockEnvelope Value="0" />
-									</ModulationTarget>
-									<ModulationAutomation>
-										<Events />
-									</ModulationAutomation>
-								</Send>
-								<Active Value="true" />
-							</TrackSendHolder>
-						</Sends>
-						<Speaker>
-							<LomId Value="0" />
-							<ArrangerAutomation>
-								<Events>
-									<BoolEvent Time="-63072000" Value="true" />
-								</Events>
-							</ArrangerAutomation>
-							<Manual Value="true" />
-							<AutomationTarget Id="8635">
-								<LockEnvelope Value="0" />
-							</AutomationTarget>
-							<MidiCCOnOffThresholds>
-								<Min Value="64" />
-								<Max Value="127" />
-							</MidiCCOnOffThresholds>
-						</Speaker>
-						<SoloSink Value="false" />
-						<Pan>
-							<LomId Value="0" />
-							<ArrangerAutomation>
-								<Events>
-									<FloatEvent Time="-63072000" Value="0" />
-								</Events>
-							</ArrangerAutomation>
-							<Manual Value="0" />
-							<MidiControllerRange>
-								<Min Value="-1" />
-								<Max Value="1" />
-							</MidiControllerRange>
-							<AutomationTarget Id="8636">
-								<LockEnvelope Value="0" />
-							</AutomationTarget>
-							<ModulationTarget Id="8637">
-								<LockEnvelope Value="0" />
-							</ModulationTarget>
-							<ModulationAutomation>
-								<Events />
-							</ModulationAutomation>
-						</Pan>
-						<Volume>
-							<LomId Value="0" />
-							<ArrangerAutomation>
-								<Events>
-									<FloatEvent Time="-63072000" Value="1" />
-								</Events>
-							</ArrangerAutomation>
-							<Manual Value="1" />
-							<MidiControllerRange>
-								<Min Value="0.0003162277571" />
-								<Max Value="1.99526238" />
-							</MidiControllerRange>
-							<AutomationTarget Id="8638">
-								<LockEnvelope Value="0" />
-							</AutomationTarget>
-							<ModulationTarget Id="8639">
-								<LockEnvelope Value="0" />
-							</ModulationTarget>
-							<ModulationAutomation>
-								<Events />
-							</ModulationAutomation>
-						</Volume>
-						<ViewStateSesstionTrackWidth Value="93" />
-						<CrossFadeState>
-							<LomId Value="0" />
-							<ArrangerAutomation>
-								<Events>
-									<EnumEvent Time="-63072000" Value="1" />
-								</Events>
-							</ArrangerAutomation>
-							<Manual Value="1" />
-							<AutomationTarget Id="8640">
-								<LockEnvelope Value="0" />
-							</AutomationTarget>
-						</CrossFadeState>
-						<SendsListWrapper LomId="0" />
-					</Mixer>
-					<MainSequencer>
-						<LomId Value="0" />
-						<LomIdView Value="0" />
-						<IsExpanded Value="true" />
-						<On>
-							<LomId Value="0" />
-							<ArrangerAutomation>
-								<Events>
-									<BoolEvent Time="-63072000" Value="true" />
-								</Events>
-							</ArrangerAutomation>
-							<Manual Value="true" />
-							<AutomationTarget Id="8641">
-								<LockEnvelope Value="0" />
-							</AutomationTarget>
-							<MidiCCOnOffThresholds>
-								<Min Value="64" />
-								<Max Value="127" />
-							</MidiCCOnOffThresholds>
-						</On>
-						<ParametersListWrapper LomId="0" />
-						<LastSelectedTimeableIndex Value="0" />
-						<LastSelectedClipEnvelopeIndex Value="0" />
-						<LastPresetRef>
-							<Value />
-						</LastPresetRef>
-						<LockedScripts />
-						<IsFolded Value="false" />
-						<ShouldShowPresetName Value="false" />
-						<UserName Value="" />
-						<Annotation Value="" />
-						<SourceContext>
-							<Value />
-						</SourceContext>
-						<ClipSlotList>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-						</ClipSlotList>
-						<MonitoringEnum Value="2" />
-						<Sample>
-							<LomId Value="0" />
-							<ArrangerAutomation>
-								<Events />
-							</ArrangerAutomation>
-						</Sample>
-						<VolumeModulationTarget Id="8642">
-							<LockEnvelope Value="0" />
-						</VolumeModulationTarget>
-						<TranspositionModulationTarget Id="8643">
-							<LockEnvelope Value="0" />
-						</TranspositionModulationTarget>
-						<GrainSizeModulationTarget Id="8644">
-							<LockEnvelope Value="0" />
-						</GrainSizeModulationTarget>
-						<FluxModulationTarget Id="8645">
-							<LockEnvelope Value="0" />
-						</FluxModulationTarget>
-						<SampleOffsetModulationTarget Id="8646">
-							<LockEnvelope Value="0" />
-						</SampleOffsetModulationTarget>
-						<PitchViewScrollPosition Value="-1073741824" />
-						<SampleOffsetModulationScrollPosition Value="-1073741824" />
-						<Recorder>
-							<IsArmed Value="false" />
-							<TakeCounter Value="1" />
-						</Recorder>
-					</MainSequencer>
-					<FreezeSequencer>
-						<LomId Value="0" />
-						<LomIdView Value="0" />
-						<IsExpanded Value="true" />
-						<On>
-							<LomId Value="0" />
-							<ArrangerAutomation>
-								<Events>
-									<BoolEvent Time="-63072000" Value="true" />
-								</Events>
-							</ArrangerAutomation>
-							<Manual Value="true" />
-							<AutomationTarget Id="8647">
-								<LockEnvelope Value="0" />
-							</AutomationTarget>
-							<MidiCCOnOffThresholds>
-								<Min Value="64" />
-								<Max Value="127" />
-							</MidiCCOnOffThresholds>
-						</On>
-						<ParametersListWrapper LomId="0" />
-						<LastSelectedTimeableIndex Value="0" />
-						<LastSelectedClipEnvelopeIndex Value="0" />
-						<LastPresetRef>
-							<Value />
-						</LastPresetRef>
-						<LockedScripts />
-						<IsFolded Value="false" />
-						<ShouldShowPresetName Value="false" />
-						<UserName Value="" />
-						<Annotation Value="" />
-						<SourceContext>
-							<Value />
-						</SourceContext>
-						<ClipSlotList>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-						</ClipSlotList>
-						<MonitoringEnum Value="1" />
-						<Sample>
-							<LomId Value="0" />
-							<ArrangerAutomation>
-								<Events />
-							</ArrangerAutomation>
-						</Sample>
-						<VolumeModulationTarget Id="8648">
-							<LockEnvelope Value="0" />
-						</VolumeModulationTarget>
-						<TranspositionModulationTarget Id="8649">
-							<LockEnvelope Value="0" />
-						</TranspositionModulationTarget>
-						<GrainSizeModulationTarget Id="8650">
-							<LockEnvelope Value="0" />
-						</GrainSizeModulationTarget>
-						<FluxModulationTarget Id="8651">
-							<LockEnvelope Value="0" />
-						</FluxModulationTarget>
-						<SampleOffsetModulationTarget Id="8652">
-							<LockEnvelope Value="0" />
-						</SampleOffsetModulationTarget>
-						<PitchViewScrollPosition Value="-1073741824" />
-						<SampleOffsetModulationScrollPosition Value="-1073741824" />
-						<Recorder>
-							<IsArmed Value="false" />
-							<TakeCounter Value="1" />
-						</Recorder>
-					</FreezeSequencer>
-					<DeviceChain>
-						<Devices />
-					</DeviceChain>
-				</DeviceChain>
-			</AudioTrack>
-			<AudioTrack Id="14">
-				<LomId Value="0" />
-				<LomIdView Value="0" />
-				<EnvelopeModePreferred Value="false" />
-				<TrackDelay>
-					<Value Value="0" />
-					<IsValueSampleBased Value="false" />
-				</TrackDelay>
-				<Name>
-					<EffectiveName Value="5-Audio" />
-					<UserName Value="" />
-					<Annotation Value="" />
-				</Name>
-				<ColorIndex Value="175" />
-				<TrackGroupId Value="-1" />
-				<TrackUnfolded Value="true" />
-				<DevicesListWrapper LomId="0" />
-				<ClipSlotsListWrapper LomId="0" />
-				<SavedPlayingSlot Value="-1" />
-				<SavedPlayingOffset Value="0" />
-				<MidiFoldIn Value="false" />
-				<MidiPrelisten Value="false" />
-				<Freeze Value="false" />
-				<VelocityDetail Value="0" />
-				<NeedArrangerRefreeze Value="true" />
-				<PostProcessFreezeClips Value="0" />
-				<MidiTargetPrefersFoldOrIsNotUniform Value="false" />
-				<DeviceChain>
-					<AutomationLanes>
-						<AutomationLanes>
-							<AutomationLane>
-								<SelectedDevice Value="0" />
-								<SelectedEnvelope Value="0" />
-								<IsContentSelected Value="false" />
-								<LaneHeight Value="85" />
-								<FadeViewVisible Value="false" />
-							</AutomationLane>
-						</AutomationLanes>
-						<PermanentLanesAreVisible Value="true" />
-					</AutomationLanes>
-					<EnvelopeChooser>
-						<SelectedDevice Value="0" />
-						<SelectedEnvelope Value="0" />
-					</EnvelopeChooser>
-					<AudioInputRouting>
-						<Target Value="AudioIn/External/M1" />
-						<UpperDisplayString Value="Ext. In" />
-						<LowerDisplayString Value="2" />
-					</AudioInputRouting>
-					<MidiInputRouting>
-						<Target Value="MidiIn/External.All/-1" />
-						<UpperDisplayString Value="Ext: All Ins" />
-						<LowerDisplayString Value="" />
-					</MidiInputRouting>
-					<AudioOutputRouting>
-						<Target Value="AudioOut/Master" />
-						<UpperDisplayString Value="Master" />
-						<LowerDisplayString Value="" />
-					</AudioOutputRouting>
-					<MidiOutputRouting>
-						<Target Value="MidiOut/None" />
-						<UpperDisplayString Value="None" />
-						<LowerDisplayString Value="" />
-					</MidiOutputRouting>
-					<Mixer>
-						<LomId Value="0" />
-						<LomIdView Value="0" />
-						<IsExpanded Value="true" />
-						<On>
-							<LomId Value="0" />
-							<ArrangerAutomation>
-								<Events>
-									<BoolEvent Time="-63072000" Value="true" />
-								</Events>
-							</ArrangerAutomation>
-							<Manual Value="true" />
-							<AutomationTarget Id="16128">
-								<LockEnvelope Value="0" />
-							</AutomationTarget>
-							<MidiCCOnOffThresholds>
-								<Min Value="64" />
-								<Max Value="127" />
-							</MidiCCOnOffThresholds>
-						</On>
-						<ParametersListWrapper LomId="0" />
-						<LastSelectedTimeableIndex Value="2" />
-						<LastSelectedClipEnvelopeIndex Value="0" />
-						<LastPresetRef>
-							<Value />
-						</LastPresetRef>
-						<LockedScripts />
-						<IsFolded Value="false" />
-						<ShouldShowPresetName Value="false" />
-						<UserName Value="" />
-						<Annotation Value="" />
-						<SourceContext>
-							<Value />
-						</SourceContext>
-						<Sends>
-							<TrackSendHolder>
-								<Send>
-									<LomId Value="0" />
-									<ArrangerAutomation>
-										<Events>
-											<FloatEvent Time="-63072000" Value="0.0003162277571" />
-										</Events>
-									</ArrangerAutomation>
-									<Manual Value="0.0003162277571" />
-									<MidiControllerRange>
-										<Min Value="0.0003162277571" />
-										<Max Value="1" />
-									</MidiControllerRange>
-									<AutomationTarget Id="16129">
-										<LockEnvelope Value="0" />
-									</AutomationTarget>
-									<ModulationTarget Id="16130">
-										<LockEnvelope Value="0" />
-									</ModulationTarget>
-									<ModulationAutomation>
-										<Events />
-									</ModulationAutomation>
-								</Send>
-								<Active Value="true" />
-							</TrackSendHolder>
-							<TrackSendHolder>
-								<Send>
-									<LomId Value="0" />
-									<ArrangerAutomation>
-										<Events>
-											<FloatEvent Time="-63072000" Value="0.0003162277571" />
-										</Events>
-									</ArrangerAutomation>
-									<Manual Value="0.0003162277571" />
-									<MidiControllerRange>
-										<Min Value="0.0003162277571" />
-										<Max Value="1" />
-									</MidiControllerRange>
-									<AutomationTarget Id="16131">
-										<LockEnvelope Value="0" />
-									</AutomationTarget>
-									<ModulationTarget Id="16132">
-										<LockEnvelope Value="0" />
-									</ModulationTarget>
-									<ModulationAutomation>
-										<Events />
-									</ModulationAutomation>
-								</Send>
-								<Active Value="true" />
-							</TrackSendHolder>
-						</Sends>
-						<Speaker>
-							<LomId Value="0" />
-							<ArrangerAutomation>
-								<Events>
-									<BoolEvent Time="-63072000" Value="true" />
-								</Events>
-							</ArrangerAutomation>
-							<Manual Value="true" />
-							<AutomationTarget Id="16133">
-								<LockEnvelope Value="0" />
-							</AutomationTarget>
-							<MidiCCOnOffThresholds>
-								<Min Value="64" />
-								<Max Value="127" />
-							</MidiCCOnOffThresholds>
-						</Speaker>
-						<SoloSink Value="false" />
-						<Pan>
-							<LomId Value="0" />
-							<ArrangerAutomation>
-								<Events>
-									<FloatEvent Time="-63072000" Value="0" />
-								</Events>
-							</ArrangerAutomation>
-							<Manual Value="0" />
-							<MidiControllerRange>
-								<Min Value="-1" />
-								<Max Value="1" />
-							</MidiControllerRange>
-							<AutomationTarget Id="16134">
-								<LockEnvelope Value="0" />
-							</AutomationTarget>
-							<ModulationTarget Id="16135">
-								<LockEnvelope Value="0" />
-							</ModulationTarget>
-							<ModulationAutomation>
-								<Events />
-							</ModulationAutomation>
-						</Pan>
-						<Volume>
-							<LomId Value="0" />
-							<ArrangerAutomation>
-								<Events>
-									<FloatEvent Time="-63072000" Value="1" />
-								</Events>
-							</ArrangerAutomation>
-							<Manual Value="1" />
-							<MidiControllerRange>
-								<Min Value="0.0003162277571" />
-								<Max Value="1.99526238" />
-							</MidiControllerRange>
-							<AutomationTarget Id="16136">
-								<LockEnvelope Value="0" />
-							</AutomationTarget>
-							<ModulationTarget Id="16137">
-								<LockEnvelope Value="0" />
-							</ModulationTarget>
-							<ModulationAutomation>
-								<Events />
-							</ModulationAutomation>
-						</Volume>
-						<ViewStateSesstionTrackWidth Value="93" />
-						<CrossFadeState>
-							<LomId Value="0" />
-							<ArrangerAutomation>
-								<Events>
-									<EnumEvent Time="-63072000" Value="1" />
-								</Events>
-							</ArrangerAutomation>
-							<Manual Value="1" />
-							<AutomationTarget Id="16138">
-								<LockEnvelope Value="0" />
-							</AutomationTarget>
-						</CrossFadeState>
-						<SendsListWrapper LomId="0" />
-					</Mixer>
-					<MainSequencer>
-						<LomId Value="0" />
-						<LomIdView Value="0" />
-						<IsExpanded Value="true" />
-						<On>
-							<LomId Value="0" />
-							<ArrangerAutomation>
-								<Events>
-									<BoolEvent Time="-63072000" Value="true" />
-								</Events>
-							</ArrangerAutomation>
-							<Manual Value="true" />
-							<AutomationTarget Id="16139">
-								<LockEnvelope Value="0" />
-							</AutomationTarget>
-							<MidiCCOnOffThresholds>
-								<Min Value="64" />
-								<Max Value="127" />
-							</MidiCCOnOffThresholds>
-						</On>
-						<ParametersListWrapper LomId="0" />
-						<LastSelectedTimeableIndex Value="0" />
-						<LastSelectedClipEnvelopeIndex Value="0" />
-						<LastPresetRef>
-							<Value />
-						</LastPresetRef>
-						<LockedScripts />
-						<IsFolded Value="false" />
-						<ShouldShowPresetName Value="false" />
-						<UserName Value="" />
-						<Annotation Value="" />
-						<SourceContext>
-							<Value />
-						</SourceContext>
-						<ClipSlotList>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-						</ClipSlotList>
-						<MonitoringEnum Value="2" />
-						<Sample>
-							<LomId Value="0" />
-							<ArrangerAutomation>
-								<Events />
-							</ArrangerAutomation>
-						</Sample>
-						<VolumeModulationTarget Id="16140">
-							<LockEnvelope Value="0" />
-						</VolumeModulationTarget>
-						<TranspositionModulationTarget Id="16141">
-							<LockEnvelope Value="0" />
-						</TranspositionModulationTarget>
-						<GrainSizeModulationTarget Id="16142">
-							<LockEnvelope Value="0" />
-						</GrainSizeModulationTarget>
-						<FluxModulationTarget Id="16143">
-							<LockEnvelope Value="0" />
-						</FluxModulationTarget>
-						<SampleOffsetModulationTarget Id="16144">
-							<LockEnvelope Value="0" />
-						</SampleOffsetModulationTarget>
-						<PitchViewScrollPosition Value="-1073741824" />
-						<SampleOffsetModulationScrollPosition Value="-1073741824" />
-						<Recorder>
-							<IsArmed Value="false" />
-							<TakeCounter Value="1" />
-						</Recorder>
-					</MainSequencer>
-					<FreezeSequencer>
-						<LomId Value="0" />
-						<LomIdView Value="0" />
-						<IsExpanded Value="true" />
-						<On>
-							<LomId Value="0" />
-							<ArrangerAutomation>
-								<Events>
-									<BoolEvent Time="-63072000" Value="true" />
-								</Events>
-							</ArrangerAutomation>
-							<Manual Value="true" />
-							<AutomationTarget Id="16145">
-								<LockEnvelope Value="0" />
-							</AutomationTarget>
-							<MidiCCOnOffThresholds>
-								<Min Value="64" />
-								<Max Value="127" />
-							</MidiCCOnOffThresholds>
-						</On>
-						<ParametersListWrapper LomId="0" />
-						<LastSelectedTimeableIndex Value="0" />
-						<LastSelectedClipEnvelopeIndex Value="0" />
-						<LastPresetRef>
-							<Value />
-						</LastPresetRef>
-						<LockedScripts />
-						<IsFolded Value="false" />
-						<ShouldShowPresetName Value="false" />
-						<UserName Value="" />
-						<Annotation Value="" />
-						<SourceContext>
-							<Value />
-						</SourceContext>
-						<ClipSlotList>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-							<ClipSlot>
-								<LomId Value="0" />
-								<ClipSlot>
-									<Value />
-								</ClipSlot>
-								<HasStop Value="true" />
-								<NeedRefreeze Value="true" />
-							</ClipSlot>
-						</ClipSlotList>
-						<MonitoringEnum Value="1" />
-						<Sample>
-							<LomId Value="0" />
-							<ArrangerAutomation>
-								<Events />
-							</ArrangerAutomation>
-						</Sample>
-						<VolumeModulationTarget Id="16146">
-							<LockEnvelope Value="0" />
-						</VolumeModulationTarget>
-						<TranspositionModulationTarget Id="16147">
-							<LockEnvelope Value="0" />
-						</TranspositionModulationTarget>
-						<GrainSizeModulationTarget Id="16148">
-							<LockEnvelope Value="0" />
-						</GrainSizeModulationTarget>
-						<FluxModulationTarget Id="16149">
-							<LockEnvelope Value="0" />
-						</FluxModulationTarget>
-						<SampleOffsetModulationTarget Id="16150">
-							<LockEnvelope Value="0" />
-						</SampleOffsetModulationTarget>
-						<PitchViewScrollPosition Value="-1073741824" />
-						<SampleOffsetModulationScrollPosition Value="-1073741824" />
-						<Recorder>
-							<IsArmed Value="false" />
-							<TakeCounter Value="1" />
-						</Recorder>
-					</FreezeSequencer>
-					<DeviceChain>
-						<Devices />
-					</DeviceChain>
-				</DeviceChain>
-			</AudioTrack>
 			<ReturnTrack Id="2">
 				<LomId Value="0" />
 				<LomIdView Value="0" />
@@ -46520,15 +47537,23 @@
 													<RelativePathElement Dir="Room" />
 												</RelativePath>
 												<Name Value="Ambience Medium.adv" />
-												<Type Value="1" />
+												<Type Value="2" />
 												<Data>
-													43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-													360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-													6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-													6900620072006100720079005C0044006500760069006300650073005C0041007500640069006F00
-													200045006600660065006300740073005C005200650076006500720062005C0052006F006F006D00
-													5C0041006D006200690065006E006300650020004D0065006400690075006D002E00610064007600
-													0000
+													000000000250000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+													656C482B000001AECB5C13416D6269656E6365204D656469756D2E61647600000000000000000000
+													0000000000000000000000000000000000000000000000000000000000000000000001AECB5DD244
+													54920000000000000000FFFFFFFF0000092000000000000000000000000000000004526F6F6D0010
+													00080000D189575C0000001100080000D244468200000001002401AECB5C01AECB4401AEC98501AE
+													C98401AEBD2001AEB81001AEB80D01AEB80C01273F37000200954D6163696E746F73682048443A41
+													70706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A0043
+													6F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A004465
+													76696365733A00417564696F20456666656374733A005265766572623A00526F6F6D3A00416D6269
+													656E6365204D656469756D2E61647600000E002800130041006D006200690065006E006300650020
+													004D0065006400690075006D002E006100640076000F001A000C004D006100630069006E0074006F
+													007300680020004800440012007F4170706C69636174696F6E732F41626C65746F6E204C69766520
+													392053756974652E6170702F436F6E74656E74732F4170702D5265736F75726365732F436F726520
+													4C6962726172792F446576696365732F417564696F20456666656374732F5265766572622F526F6F
+													6D2F416D6269656E6365204D656469756D2E61647600001300012F00FFFF0000
 												</Data>
 												<RefersToFolder Value="false" />
 												<SearchHint>
@@ -46563,15 +47588,23 @@
 														<RelativePathElement Dir="Room" />
 													</RelativePath>
 													<Name Value="Ambience Medium.adv" />
-													<Type Value="1" />
+													<Type Value="2" />
 													<Data>
-														43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-														360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-														6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-														6900620072006100720079005C0044006500760069006300650073005C0041007500640069006F00
-														200045006600660065006300740073005C005200650076006500720062005C0052006F006F006D00
-														5C0041006D006200690065006E006300650020004D0065006400690075006D002E00610064007600
-														0000
+														000000000250000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+														656C482B000001AECB5C13416D6269656E6365204D656469756D2E61647600000000000000000000
+														0000000000000000000000000000000000000000000000000000000000000000000001AECB5DD244
+														54920000000000000000FFFFFFFF0000092000000000000000000000000000000004526F6F6D0010
+														00080000D189575C0000001100080000D244468200000001002401AECB5C01AECB4401AEC98501AE
+														C98401AEBD2001AEB81001AEB80D01AEB80C01273F37000200954D6163696E746F73682048443A41
+														70706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A0043
+														6F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A004465
+														76696365733A00417564696F20456666656374733A005265766572623A00526F6F6D3A00416D6269
+														656E6365204D656469756D2E61647600000E002800130041006D006200690065006E006300650020
+														004D0065006400690075006D002E006100640076000F001A000C004D006100630069006E0074006F
+														007300680020004800440012007F4170706C69636174696F6E732F41626C65746F6E204C69766520
+														392053756974652E6170702F436F6E74656E74732F4170702D5265736F75726365732F436F726520
+														4C6962726172792F446576696365732F417564696F20456666656374732F5265766572622F526F6F
+														6D2F416D6269656E6365204D656469756D2E61647600001300012F00FFFF0000
 													</Data>
 													<RefersToFolder Value="false" />
 													<SearchHint>
@@ -46598,15 +47631,23 @@
 															<RelativePathElement Dir="Room" />
 														</RelativePath>
 														<Name Value="Ambience Medium.adv" />
-														<Type Value="1" />
+														<Type Value="2" />
 														<Data>
-															43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-															360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-															6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-															6900620072006100720079005C0044006500760069006300650073005C0041007500640069006F00
-															200045006600660065006300740073005C005200650076006500720062005C0052006F006F006D00
-															5C0041006D006200690065006E006300650020004D0065006400690075006D002E00610064007600
-															0000
+															000000000250000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+															656C482B000001AECB5C13416D6269656E6365204D656469756D2E61647600000000000000000000
+															0000000000000000000000000000000000000000000000000000000000000000000001AECB5DD244
+															54920000000000000000FFFFFFFF0000092000000000000000000000000000000004526F6F6D0010
+															00080000D189575C0000001100080000D244468200000001002401AECB5C01AECB4401AEC98501AE
+															C98401AEBD2001AEB81001AEB80D01AEB80C01273F37000200954D6163696E746F73682048443A41
+															70706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A0043
+															6F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A004465
+															76696365733A00417564696F20456666656374733A005265766572623A00526F6F6D3A00416D6269
+															656E6365204D656469756D2E61647600000E002800130041006D006200690065006E006300650020
+															004D0065006400690075006D002E006100640076000F001A000C004D006100630069006E0074006F
+															007300680020004800440012007F4170706C69636174696F6E732F41626C65746F6E204C69766520
+															392053756974652E6170702F436F6E74656E74732F4170702D5265736F75726365732F436F726520
+															4C6962726172792F446576696365732F417564696F20456666656374732F5265766572622F526F6F
+															6D2F416D6269656E6365204D656469756D2E61647600001300012F00FFFF0000
 														</Data>
 														<RefersToFolder Value="false" />
 														<SearchHint>
@@ -47546,15 +48587,24 @@
 													<RelativePathElement Dir="Simple Delay" />
 												</RelativePath>
 												<Name Value="Dotted Eighth Note.adv" />
-												<Type Value="1" />
+												<Type Value="2" />
 												<Data>
-													43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-													360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-													6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-													6900620072006100720079005C0044006500760069006300650073005C0041007500640069006F00
-													200045006600660065006300740073005C00530069006D0070006C0065002000440065006C006100
-													79005C0044006F007400740065006400200045006900670068007400680020004E006F0074006500
-													2E006100640076000000
+													000000000260000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+													656C482B000001AECB9816446F7474656420456967687468204E6F74652E61647600000000000000
+													0000000000000000000000000000000000000000000000000000000000000000000001AECB9CD244
+													54100000000000000000FFFFFFFF000009200000000000000000000000000000000C53696D706C65
+													2044656C6179001000080000D189575C0000001100080000D244460000000001002001AECB9801AE
+													C98501AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F37000200984D6163696E746F736820
+													48443A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170
+													703A00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C696272617279
+													3A00446576696365733A00417564696F20456666656374733A0053696D706C652044656C61793A00
+													446F7474656420456967687468204E6F74652E616476000E002E00160044006F0074007400650064
+													00200045006900670068007400680020004E006F00740065002E006100640076000F001A000C004D
+													006100630069006E0074006F00730068002000480044001200834170706C69636174696F6E732F41
+													626C65746F6E204C69766520392053756974652E6170702F436F6E74656E74732F4170702D526573
+													6F75726365732F436F7265204C6962726172792F446576696365732F417564696F20456666656374
+													732F53696D706C652044656C61792F446F7474656420456967687468204E6F74652E616476000013
+													00012F00FFFF0000
 												</Data>
 												<RefersToFolder Value="false" />
 												<SearchHint>
@@ -47588,15 +48638,24 @@
 														<RelativePathElement Dir="Simple Delay" />
 													</RelativePath>
 													<Name Value="Dotted Eighth Note.adv" />
-													<Type Value="1" />
+													<Type Value="2" />
 													<Data>
-														43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-														360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-														6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-														6900620072006100720079005C0044006500760069006300650073005C0041007500640069006F00
-														200045006600660065006300740073005C00530069006D0070006C0065002000440065006C006100
-														79005C0044006F007400740065006400200045006900670068007400680020004E006F0074006500
-														2E006100640076000000
+														000000000260000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+														656C482B000001AECB9816446F7474656420456967687468204E6F74652E61647600000000000000
+														0000000000000000000000000000000000000000000000000000000000000000000001AECB9CD244
+														54100000000000000000FFFFFFFF000009200000000000000000000000000000000C53696D706C65
+														2044656C6179001000080000D189575C0000001100080000D244460000000001002001AECB9801AE
+														C98501AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F37000200984D6163696E746F736820
+														48443A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170
+														703A00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C696272617279
+														3A00446576696365733A00417564696F20456666656374733A0053696D706C652044656C61793A00
+														446F7474656420456967687468204E6F74652E616476000E002E00160044006F0074007400650064
+														00200045006900670068007400680020004E006F00740065002E006100640076000F001A000C004D
+														006100630069006E0074006F00730068002000480044001200834170706C69636174696F6E732F41
+														626C65746F6E204C69766520392053756974652E6170702F436F6E74656E74732F4170702D526573
+														6F75726365732F436F7265204C6962726172792F446576696365732F417564696F20456666656374
+														732F53696D706C652044656C61792F446F7474656420456967687468204E6F74652E616476000013
+														00012F00FFFF0000
 													</Data>
 													<RefersToFolder Value="false" />
 													<SearchHint>
@@ -47622,15 +48681,24 @@
 															<RelativePathElement Dir="Simple Delay" />
 														</RelativePath>
 														<Name Value="Dotted Eighth Note.adv" />
-														<Type Value="1" />
+														<Type Value="2" />
 														<Data>
-															43003A005C00500072006F006700720061006D002000460069006C00650073002000280078003800
-															360029005C00410062006C00650074006F006E005C004C0069007600650020003900200053007500
-															6900740065005C005200650073006F00750072006300650073005C0043006F007200650020004C00
-															6900620072006100720079005C0044006500760069006300650073005C0041007500640069006F00
-															200045006600660065006300740073005C00530069006D0070006C0065002000440065006C006100
-															79005C0044006F007400740065006400200045006900670068007400680020004E006F0074006500
-															2E006100640076000000
+															000000000260000200000C4D6163696E746F7368204844000000000000000000000000000000D189
+															656C482B000001AECB9816446F7474656420456967687468204E6F74652E61647600000000000000
+															0000000000000000000000000000000000000000000000000000000000000000000001AECB9CD244
+															54100000000000000000FFFFFFFF000009200000000000000000000000000000000C53696D706C65
+															2044656C6179001000080000D189575C0000001100080000D244460000000001002001AECB9801AE
+															C98501AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F37000200984D6163696E746F736820
+															48443A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170
+															703A00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C696272617279
+															3A00446576696365733A00417564696F20456666656374733A0053696D706C652044656C61793A00
+															446F7474656420456967687468204E6F74652E616476000E002E00160044006F0074007400650064
+															00200045006900670068007400680020004E006F00740065002E006100640076000F001A000C004D
+															006100630069006E0074006F00730068002000480044001200834170706C69636174696F6E732F41
+															626C65746F6E204C69766520392053756974652E6170702F436F6E74656E74732F4170702D526573
+															6F75726365732F436F7265204C6962726172792F446576696365732F417564696F20456666656374
+															732F53696D706C652044656C61792F446F7474656420456967687468204E6F74652E616476000013
+															00012F00FFFF0000
 														</Data>
 														<RefersToFolder Value="false" />
 														<SearchHint>
@@ -47948,7 +49016,7 @@
 					<AutomationLanes>
 						<AutomationLane>
 							<SelectedDevice Value="1" />
-							<SelectedEnvelope Value="2" />
+							<SelectedEnvelope Value="5" />
 							<IsContentSelected Value="false" />
 							<LaneHeight Value="85" />
 							<FadeViewVisible Value="false" />
@@ -48238,7 +49306,278 @@
 					</AudioSequencer>
 				</FreezeSequencer>
 				<DeviceChain>
-					<Devices />
+					<Devices>
+						<Limiter Id="0">
+							<LomId Value="0" />
+							<LomIdView Value="0" />
+							<IsExpanded Value="true" />
+							<On>
+								<LomId Value="0" />
+								<ArrangerAutomation>
+									<Events>
+										<BoolEvent Time="-63072000" Value="true" />
+									</Events>
+								</ArrangerAutomation>
+								<Manual Value="true" />
+								<AutomationTarget Id="21247">
+									<LockEnvelope Value="0" />
+								</AutomationTarget>
+								<MidiCCOnOffThresholds>
+									<Min Value="64" />
+									<Max Value="127" />
+								</MidiCCOnOffThresholds>
+							</On>
+							<ParametersListWrapper LomId="0" />
+							<LastSelectedTimeableIndex Value="5" />
+							<LastSelectedClipEnvelopeIndex Value="0" />
+							<LastPresetRef>
+								<Value>
+									<AbletonDefaultPresetRef>
+										<FileRef>
+											<HasRelativePath Value="true" />
+											<RelativePathType Value="5" />
+											<RelativePath>
+												<RelativePathElement Dir="Devices" />
+												<RelativePathElement Dir="Audio Effects" />
+												<RelativePathElement Dir="Limiter" />
+											</RelativePath>
+											<Name Value="" />
+											<Type Value="2" />
+											<Data>
+												000000000208000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+												656C482B000001AEC985074C696D6974657200000000000000000000000000000000000000000000
+												0000000000000000000000000000000000000000000000000000000000000000000001AECAE5D252
+												9FE60000000000000000FFFFFFFF000009200000000000000000000000000000000D417564696F20
+												4566666563747300001000080000D189575C0000001100080000D2529FE600000001001C01AEC985
+												01AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F370002007B4D6163696E746F7368204844
+												3A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A
+												00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00
+												446576696365733A00417564696F20456666656374733A004C696D6974657200000E00100007004C
+												0069006D0069007400650072000F001A000C004D006100630069006E0074006F0073006800200048
+												0044001200674170706C69636174696F6E732F41626C65746F6E204C69766520392053756974652E
+												6170702F436F6E74656E74732F4170702D5265736F75726365732F436F7265204C6962726172792F
+												446576696365732F417564696F20456666656374732F4C696D6974657200001300012F00FFFF0000
+											</Data>
+											<RefersToFolder Value="true" />
+											<SearchHint>
+												<PathHint />
+												<FileSize Value="0" />
+												<Crc Value="0" />
+												<MaxCrcSize Value="0" />
+												<HasExtendedInfo Value="false" />
+											</SearchHint>
+											<LivePackName Value="Core Library" />
+											<LivePackId Value="www.ableton.com/0" />
+										</FileRef>
+										<DeviceId Name="Limiter" />
+									</AbletonDefaultPresetRef>
+								</Value>
+							</LastPresetRef>
+							<LockedScripts />
+							<IsFolded Value="false" />
+							<ShouldShowPresetName Value="false" />
+							<UserName Value="" />
+							<Annotation Value="" />
+							<SourceContext>
+								<Value>
+									<BranchSourceContext>
+										<OriginalFileRef>
+											<FileRef>
+												<HasRelativePath Value="true" />
+												<RelativePathType Value="5" />
+												<RelativePath>
+													<RelativePathElement Dir="Devices" />
+													<RelativePathElement Dir="Audio Effects" />
+													<RelativePathElement Dir="Limiter" />
+												</RelativePath>
+												<Name Value="" />
+												<Type Value="2" />
+												<Data>
+													000000000208000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+													656C482B000001AEC985074C696D6974657200000000000000000000000000000000000000000000
+													0000000000000000000000000000000000000000000000000000000000000000000001AECAE5D252
+													9FE60000000000000000FFFFFFFF000009200000000000000000000000000000000D417564696F20
+													4566666563747300001000080000D189575C0000001100080000D2529FE600000001001C01AEC985
+													01AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F370002007B4D6163696E746F7368204844
+													3A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A
+													00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00
+													446576696365733A00417564696F20456666656374733A004C696D6974657200000E00100007004C
+													0069006D0069007400650072000F001A000C004D006100630069006E0074006F0073006800200048
+													0044001200674170706C69636174696F6E732F41626C65746F6E204C69766520392053756974652E
+													6170702F436F6E74656E74732F4170702D5265736F75726365732F436F7265204C6962726172792F
+													446576696365732F417564696F20456666656374732F4C696D6974657200001300012F00FFFF0000
+												</Data>
+												<RefersToFolder Value="true" />
+												<SearchHint>
+													<PathHint />
+													<FileSize Value="0" />
+													<Crc Value="0" />
+													<MaxCrcSize Value="0" />
+													<HasExtendedInfo Value="false" />
+												</SearchHint>
+												<LivePackName Value="Core Library" />
+												<LivePackId Value="www.ableton.com/0" />
+											</FileRef>
+										</OriginalFileRef>
+										<BrowserContentPath Value="query:AudioFx#Limiter" />
+										<PresetRef>
+											<AbletonDefaultPresetRef>
+												<FileRef>
+													<HasRelativePath Value="true" />
+													<RelativePathType Value="5" />
+													<RelativePath>
+														<RelativePathElement Dir="Devices" />
+														<RelativePathElement Dir="Audio Effects" />
+														<RelativePathElement Dir="Limiter" />
+													</RelativePath>
+													<Name Value="" />
+													<Type Value="2" />
+													<Data>
+														000000000208000200010C4D6163696E746F7368204844000000000000000000000000000000D189
+														656C482B000001AEC985074C696D6974657200000000000000000000000000000000000000000000
+														0000000000000000000000000000000000000000000000000000000000000000000001AECAE5D252
+														9FE60000000000000000FFFFFFFF000009200000000000000000000000000000000D417564696F20
+														4566666563747300001000080000D189575C0000001100080000D2529FE600000001001C01AEC985
+														01AEC98401AEBD2001AEB81001AEB80D01AEB80C01273F370002007B4D6163696E746F7368204844
+														3A4170706C69636174696F6E733A0041626C65746F6E204C69766520392053756974652E6170703A
+														00436F6E74656E74733A004170702D5265736F75726365733A00436F7265204C6962726172793A00
+														446576696365733A00417564696F20456666656374733A004C696D6974657200000E00100007004C
+														0069006D0069007400650072000F001A000C004D006100630069006E0074006F0073006800200048
+														0044001200674170706C69636174696F6E732F41626C65746F6E204C69766520392053756974652E
+														6170702F436F6E74656E74732F4170702D5265736F75726365732F436F7265204C6962726172792F
+														446576696365732F417564696F20456666656374732F4C696D6974657200001300012F00FFFF0000
+													</Data>
+													<RefersToFolder Value="true" />
+													<SearchHint>
+														<PathHint />
+														<FileSize Value="0" />
+														<Crc Value="0" />
+														<MaxCrcSize Value="0" />
+														<HasExtendedInfo Value="false" />
+													</SearchHint>
+													<LivePackName Value="Core Library" />
+													<LivePackId Value="www.ableton.com/0" />
+												</FileRef>
+												<DeviceId Name="Limiter" />
+											</AbletonDefaultPresetRef>
+										</PresetRef>
+										<BranchDeviceId Value="device:ableton:audiofx:Limiter?n=Limiter" />
+									</BranchSourceContext>
+								</Value>
+							</SourceContext>
+							<OverwriteProtectionNumber Value="2305" />
+							<Gain>
+								<LomId Value="0" />
+								<ArrangerAutomation>
+									<Events>
+										<FloatEvent Time="-63072000" Value="0" />
+									</Events>
+								</ArrangerAutomation>
+								<Manual Value="0" />
+								<MidiControllerRange>
+									<Min Value="-24" />
+									<Max Value="24" />
+								</MidiControllerRange>
+								<AutomationTarget Id="21248">
+									<LockEnvelope Value="0" />
+								</AutomationTarget>
+								<ModulationTarget Id="21249">
+									<LockEnvelope Value="0" />
+								</ModulationTarget>
+								<ModulationAutomation>
+									<Events />
+								</ModulationAutomation>
+							</Gain>
+							<Ceiling>
+								<LomId Value="0" />
+								<ArrangerAutomation>
+									<Events>
+										<FloatEvent Time="-63072000" Value="0" />
+									</Events>
+								</ArrangerAutomation>
+								<Manual Value="0" />
+								<MidiControllerRange>
+									<Min Value="-24" />
+									<Max Value="0" />
+								</MidiControllerRange>
+								<AutomationTarget Id="21250">
+									<LockEnvelope Value="0" />
+								</AutomationTarget>
+								<ModulationTarget Id="21251">
+									<LockEnvelope Value="0" />
+								</ModulationTarget>
+								<ModulationAutomation>
+									<Events />
+								</ModulationAutomation>
+							</Ceiling>
+							<Release>
+								<LomId Value="0" />
+								<ArrangerAutomation>
+									<Events>
+										<FloatEvent Time="-63072000" Value="300" />
+									</Events>
+								</ArrangerAutomation>
+								<Manual Value="300" />
+								<MidiControllerRange>
+									<Min Value="0.009999999776" />
+									<Max Value="3000" />
+								</MidiControllerRange>
+								<AutomationTarget Id="21252">
+									<LockEnvelope Value="0" />
+								</AutomationTarget>
+								<ModulationTarget Id="21253">
+									<LockEnvelope Value="0" />
+								</ModulationTarget>
+								<ModulationAutomation>
+									<Events />
+								</ModulationAutomation>
+							</Release>
+							<AutoRelease>
+								<LomId Value="0" />
+								<ArrangerAutomation>
+									<Events>
+										<BoolEvent Time="-63072000" Value="true" />
+									</Events>
+								</ArrangerAutomation>
+								<Manual Value="true" />
+								<AutomationTarget Id="21254">
+									<LockEnvelope Value="0" />
+								</AutomationTarget>
+								<MidiCCOnOffThresholds>
+									<Min Value="64" />
+									<Max Value="127" />
+								</MidiCCOnOffThresholds>
+							</AutoRelease>
+							<LinkChannels>
+								<LomId Value="0" />
+								<ArrangerAutomation>
+									<Events>
+										<BoolEvent Time="-63072000" Value="true" />
+									</Events>
+								</ArrangerAutomation>
+								<Manual Value="true" />
+								<AutomationTarget Id="21255">
+									<LockEnvelope Value="0" />
+								</AutomationTarget>
+								<MidiCCOnOffThresholds>
+									<Min Value="64" />
+									<Max Value="127" />
+								</MidiCCOnOffThresholds>
+							</LinkChannels>
+							<Lookahead>
+								<LomId Value="0" />
+								<ArrangerAutomation>
+									<Events>
+										<EnumEvent Time="-63072000" Value="1" />
+									</Events>
+								</ArrangerAutomation>
+								<Manual Value="1" />
+								<AutomationTarget Id="21256">
+									<LockEnvelope Value="0" />
+								</AutomationTarget>
+							</Lookahead>
+						</Limiter>
+					</Devices>
 				</DeviceChain>
 			</DeviceChain>
 		</MasterTrack>
@@ -48470,11 +49809,11 @@
 		<Transport>
 			<PhaseNudgeTempo Value="10" />
 			<ExternSyncOn Value="false" />
-			<LoopOn Value="false" />
-			<LoopStart Value="8" />
+			<LoopOn Value="true" />
+			<LoopStart Value="64" />
 			<LoopLength Value="16" />
 			<LoopIsSongStart Value="false" />
-			<CurrentTime Value="69.184567137011058" />
+			<CurrentTime Value="75.095085769134315" />
 			<PunchIn Value="false" />
 			<PunchOut Value="false" />
 			<DrawMode Value="false" />
@@ -48499,15 +49838,15 @@
 		</ScaleInformation>
 		<SmpteFormat Value="0" />
 		<TimeSelection>
-			<AnchorTime Value="64" />
-			<OtherTime Value="64" />
+			<AnchorTime Value="69" />
+			<OtherTime Value="69" />
 		</TimeSelection>
 		<SequencerNavigator>
 			<BeatTimeHelper>
-				<CurrentZoom Value="0.09037787300350604" />
+				<CurrentZoom Value="0.0511463844797178102" />
 			</BeatTimeHelper>
-			<ScrollerPos X="-357" Y="0" />
-			<ClientSize X="1288" Y="656" />
+			<ScrollerPos X="-1100" Y="0" />
+			<ClientSize X="894" Y="501" />
 		</SequencerNavigator>
 		<ViewStateLaunchPanel Value="false" />
 		<ViewStateEnvelopePanel Value="false" />
@@ -48533,7 +49872,7 @@
 		<SoloInPlace Value="true" />
 		<CrossfadeCurve Value="2" />
 		<LatencyCompensation Value="2" />
-		<HighlightedTrackIndex Value="2" />
+		<HighlightedTrackIndex Value="0" />
 		<GroovePool>
 			<Grooves />
 		</GroovePool>
@@ -48551,7 +49890,7 @@
 		<TrackHeaderWidth Value="93" />
 		<ViewStateArrangerHasDetail Value="true" />
 		<ViewStateSessionHasDetail Value="true" />
-		<ViewStateDetailIsSample Value="false" />
+		<ViewStateDetailIsSample Value="true" />
 		<ViewStates>
 			<SessionIO Value="1" />
 			<SessionSends Value="1" />
